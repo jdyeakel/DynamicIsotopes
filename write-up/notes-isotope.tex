@@ -1,0 +1,63 @@
+\documentclass[12pt]{iopart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cite}
+\begin{document}
+\title{Isotopic incorporation and the temporal dynamics of foraging among individuals and within populations}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+\section{Time-dependent Ornstein-Uhlenbeck process}
+We can define the evolution of the concentration of a particular isotope in the predator tissue by the following Langevin equation,
+\begin{equation}
+\label{langevin}
+\mathrm{d}X(t) = - \mathrm{f}\left(X(t)-\mu(t)\right)\mathrm{d}t + \mathrm{f}\sigma(t)\mathrm{d}W
+\end{equation}
+where, $X$ is the isotope-concentration, $\mathrm{f}$ is the tissue-dependent incorporation rate, $\mu(t)$ and $\sigma(t)$ are the time-dependent average and standard-deviations of isotope-concentration over the prey.
+\subsection{Expectation}
+ We can find the expectation of $X(t)$ as follows,
+\begin{equation}
+\label{EX1}
+\mathrm{d}X + \mathrm{f}\left(X(t)-\mu(t)\right)\mathrm{d}t = \mathrm{f}\sigma(t)\mathrm{d}W
+\end{equation}
+Multiplying throughout by the integrating factor, $e^{\mathrm{f}t}$ and integrating both sides w.r.t $t$, we get
+\begin{equation}
+\label{EX2}
+\int_{t=0}^t \mathrm{d}\left(e^{\mathrm{f}t}\left(X-\mu)\right)\right) + \int_{t=0}^t e^{\mathrm{f}t'}\frac{\mathrm{d}\mu}{\mathrm{d}t'}\mathrm{d}t' = \int_{t=0}^t\mathrm{f}e^{\mathrm{f}t'}\sigma(t')\mathrm{d}W'
+\end{equation}
+Taking the expectation of both sides, the RHS reduces to zero as $\mathbb{E}(\mathrm{d}W)=0$ and we get,
+\begin{equation}
+\label{EX-final}
+\mathbb{E}(X(t)) = X_0 e^{-\mathrm{f}t} + \mathrm{f}e^{-\mathrm{f}t}\int_{t'=0}^t\mu(t')e^{\mathrm{f}t'}\mathrm{d}t'
+\end{equation}
+
+\subsection{Variance}
+Similarly for the variance, we square Eq.~\eqref{EX2}, to get
+\begin{equation}
+\label{VX1}
+\left(e^{\mathrm{f}t}X - X_0 - \mathrm{f}\int_0^t \mu e^{\mathrm{f}t'}\mathrm{d}t'\right)^2=\mathrm{f}^2\int_0^t\int_0^t e^{\mathrm{f}(t'+t'')}\sigma(t')\sigma(t'')\mathrm{d}W(t')\mathrm{d}W(t'')
+\end{equation}
+Taking the expectation on both sides, in the RHS, using the property, $\mathbb{E}(\mathrm{d}W(t')\mathrm{d}W(t'')) = \delta(t'-t'')\mathrm{d}t'\mathrm{d}t''$, we get,
+\begin{equation}
+\label{VX2}
+\mathbb{E}\left(e^{\mathrm{f}t}X - X_0 - \mathrm{f}\int_0^t \mu e^{\mathrm{f}t'}\mathrm{d}t'\right)^2=\mathrm{f}^2\int_0^t e^{2\mathrm{f}t'}(\sigma(t'))^2\mathrm{d}t'
+\end{equation}
+Let us call the integrals $\int_0^t\mu(t') e^{\mathrm{f}t'}\mathrm{d}t'$ and $\int_0^t e^{2\mathrm{f}t'}(\sigma(t'))^2\mathrm{d}t'$ as $\mathcal{U}$ and $\mathcal{S}^2$ and expanding the LHS, we get
+\begin{equation}
+\label{VX3}
+e^{2\mathrm{f}t}\mathbb{E}(X^2) + X_0^2 + \mathrm{f}^2 \mathcal{U}^2 - 2 X_0 \mathbb{E}(X) e^{\mathrm{f}t} - 2 X_0 \mathrm{f}\mathcal{U}-2\mathrm{f}e^{\mathrm{f}t}\mathbb{E}(X)\mathcal{U} = \mathrm{f}^2\mathcal{S}^2
+\end{equation}
+And so the variance is given by,
+\begin{align}
+\label{VX4}
+\mathbb{V}(X) &= \mathbb{E}(X^2)-(\mathbb{E}(X))^2 \nonumber \\
+&= \mathrm{f}^2 e^{-2\mathrm{f}t}\mathcal{S}^2 - X_0^2 e^{-2\mathrm{f}t} - \mathrm{f}^2 e^{-2\mathrm{f}t}\mathcal{U}^2 + 2 X_0 \mathbb{E}(X)e^{-\mathrm{f}t} +2 X_0 \mathrm{f}e^{-2\mathrm{f}t}\mathcal{U}+2\mathrm{f}e^{-\mathrm{f}t}\mathbb{E}(X)\mathcal{U} - (\mathbb{E}(X))^2
+\end{align}
+\begin{equation}
+\label{VX-final}
+\mathbb{V}(X) = \mathrm{f}^2 e^{-2\mathrm{f}t} \int_0^t e^{2\mathrm{f}t'}(\sigma(t'))^2\mathrm{d}t'
+\end{equation}
+where to go from Eq.~\eqref{Vx} to Eq.~\eqref{VX-final} we used $\mathbb{E}(X)$ given by Eq.~\eqref{EX-final}.

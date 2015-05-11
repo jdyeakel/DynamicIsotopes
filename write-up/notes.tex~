@@ -1,0 +1,20 @@
+\documentclass[12pt]{iopart}
+\usepackage{cite}
+\begin{document}
+\title{Isotopic incorporation and the temporal dynamics of foraging among individuals and within populations}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+\section{Time-dependent Ornstein-Uhlenbeck process}
+We can define the evolution of the concentration of a particular isotope in the predator tissue by the following Langevin equation,
+\begin{equation}
+\mathrm{d}X(t) = - \mathcal{F}\left(X(t)-\mu(t)\right)\mathrm{d}t + \mathcal{F}\sigma(t)\mathrm{d}W
+\end{equation}
+where, $X$ is the isotope-concentration, $\mathcal{F}$ is the tissue-dependent incorporation rate, $\mu(t)$ and $\sigma(t)$ are the time-dependent average and standard-deviations of isotope-concentration over the prey.
+ To find the expectation of $X(t)$,
+
+
+\end{document}

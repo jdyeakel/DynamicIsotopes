@@ -1,0 +1,30 @@
+#include <iostream>
+#include <stdlib.h>
+#include <random>
+using namespace std;
+float uniform2();
+float gaussian();
+
+main()	
+	{
+	default_random_engine z;
+	normal_distribution<float> normal(0., 1.);
+
+
+	for(int i=0; i<10000000; i++) gaussian();
+
+	}
+	
+	
+float uniform2()
+	{
+	return rand()/RAND_MAX;
+	}
+	
+float gaussian()
+	{
+	float u1=rand()/RAND_MAX, u2=rand()/RAND_MAX;
+	float R=sqrt(-2.*log(u1));
+	float theta=2.*M_PI*u2;
+	return R*cos(theta);
+	}

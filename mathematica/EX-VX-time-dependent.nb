@@ -1,0 +1,378 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11790,        369]
+NotebookOptionsPosition[     11057,        339]
+NotebookOutlinePosition[     11394,        354]
+CellTagsIndexPosition[     11351,        351]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"f", " ", 
+  RowBox[{"Exp", "[", 
+   RowBox[{
+    RowBox[{"-", "f"}], " ", "t"}], "]"}], " ", 
+  RowBox[{"Integrate", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"a", "+", 
+       RowBox[{"b", " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"w", " ", "s"}], "]"}]}]}], ")"}], " ", 
+     RowBox[{"Exp", "[", " ", 
+      RowBox[{"f", " ", "s"}], "]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", "0", ",", "t"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6403682920059147`*^9, 3.6403683062556677`*^9}, {
+  3.640368370914906*^9, 3.6403683712642384`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "f"}], " ", "t"}]], " ", "f", " ", 
+  RowBox[{"(", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"a", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"f", " ", "t"}]]}], ")"}]}], "f"], "+", 
+    FractionBox[
+     RowBox[{"b", " ", 
+      RowBox[{"(", 
+       RowBox[{"w", "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"f", " ", "t"}]], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "w"}], " ", 
+            RowBox[{"Cos", "[", 
+             RowBox[{"t", " ", "w"}], "]"}]}], "+", 
+           RowBox[{"f", " ", 
+            RowBox[{"Sin", "[", 
+             RowBox[{"t", " ", "w"}], "]"}]}]}], ")"}]}]}], ")"}]}], 
+     RowBox[{
+      SuperscriptBox["f", "2"], "+", 
+      SuperscriptBox["w", "2"]}]]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.6403683097645283`*^9, 3.640368376382242*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"f", "^", "2"}], " ", 
+   RowBox[{"Exp", "[", 
+    RowBox[{
+     RowBox[{"-", "2"}], " ", "f", " ", "t"}], "]"}], " ", 
+   RowBox[{"Integrate", "[", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"a", "+", 
+         RowBox[{"b", " ", 
+          RowBox[{"Sin", "[", 
+           RowBox[{"w", " ", "s"}], "]"}]}]}], ")"}], "^", "2"}], " ", 
+      RowBox[{"Exp", "[", 
+       RowBox[{"2", " ", "f", " ", "s"}], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", "0", ",", "t"}], "}"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.6403683310905*^9, 3.640368343601963*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "4"], " ", 
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "2"}], " ", "f", " ", "t"}]], " ", 
+  SuperscriptBox["f", "2"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"2", " ", 
+        SuperscriptBox["a", "2"]}], "+", 
+       SuperscriptBox["b", "2"]}], "f"]}], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["b", "2"], " ", "f"}], 
+     RowBox[{
+      SuperscriptBox["f", "2"], "+", 
+      SuperscriptBox["w", "2"]}]], "+", 
+    FractionBox[
+     RowBox[{"8", " ", "a", " ", "b", " ", "w"}], 
+     RowBox[{
+      RowBox[{"4", " ", 
+       SuperscriptBox["f", "2"]}], "+", 
+      SuperscriptBox["w", "2"]}]], "+", 
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"2", " ", "f", " ", "t"}]], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["a", "2"]}], "+", 
+         SuperscriptBox["b", "2"]}], "f"], "-", 
+       FractionBox[
+        RowBox[{"8", " ", "a", " ", "b", " ", "w", " ", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"t", " ", "w"}], "]"}]}], 
+        RowBox[{
+         RowBox[{"4", " ", 
+          SuperscriptBox["f", "2"]}], "+", 
+         SuperscriptBox["w", "2"]}]], "-", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["b", "2"], " ", "f", " ", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"2", " ", "t", " ", "w"}], "]"}]}], 
+        RowBox[{
+         SuperscriptBox["f", "2"], "+", 
+         SuperscriptBox["w", "2"]}]], "+", 
+       FractionBox[
+        RowBox[{"16", " ", "a", " ", "b", " ", "f", " ", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"t", " ", "w"}], "]"}]}], 
+        RowBox[{
+         RowBox[{"4", " ", 
+          SuperscriptBox["f", "2"]}], "+", 
+         SuperscriptBox["w", "2"]}]], "-", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["b", "2"], " ", "w", " ", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"2", " ", "t", " ", "w"}], "]"}]}], 
+        RowBox[{
+         SuperscriptBox["f", "2"], "+", 
+         SuperscriptBox["w", "2"]}]]}], ")"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.640368350904499*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"f", " ", 
+   RowBox[{"Exp", "[", 
+    RowBox[{
+     RowBox[{"-", "f"}], " ", "t"}], "]"}], " ", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"a", "+", 
+        RowBox[{"b", " ", 
+         RowBox[{"UnitStep", "[", 
+          RowBox[{"t", "-", "w"}], "]"}]}]}], ")"}], " ", 
+      RowBox[{"Exp", "[", " ", 
+       RowBox[{"f", " ", "s"}], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", "0", ",", "t"}], "}"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.6403689602751293`*^9, 3.640368990958138*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "f"}], " ", "t"}]], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "1"}], "+", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"f", " ", "t"}]]}], ")"}], " ", 
+  RowBox[{"(", 
+   RowBox[{"a", "+", 
+    RowBox[{"b", " ", 
+     RowBox[{"UnitStep", "[", 
+      RowBox[{"t", "-", "w"}], "]"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.640369004815895*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "^", "2"}], " ", 
+  RowBox[{"Exp", "[", 
+   RowBox[{
+    RowBox[{"-", "2"}], " ", "f", " ", "t"}], "]"}], " ", 
+  RowBox[{"Integrate", "[", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"a", "+", 
+        RowBox[{"b", " ", 
+         RowBox[{"UnitStep", "[", 
+          RowBox[{"t", "-", "w"}], "]"}]}]}], ")"}], "^", "2"}], " ", 
+     RowBox[{"Exp", "[", 
+      RowBox[{"2", " ", "f", " ", "s"}], "]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", "0", ",", "t"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6403703822756653`*^9, 3.640370395250452*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "2"], " ", 
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "2"}], " ", "f", " ", "t"}]], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "1"}], "+", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"2", " ", "f", " ", "t"}]]}], ")"}], " ", "f", " ", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{"a", "+", 
+     RowBox[{"b", " ", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{"t", "-", "w"}], "]"}]}]}], ")"}], "2"]}]], "Input",
+ CellChangeTimes->{3.64037073070926*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", "2"], " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "f", " ", "t"}]], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"2", " ", "f", " ", "t"}]]}], ")"}], " ", "f", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"a", "+", 
+         RowBox[{"b", " ", 
+          RowBox[{"UnitStep", "[", 
+           RowBox[{
+            RowBox[{"-", "95"}], "+", "t"}], "]"}]}]}], ")"}], "2"]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "94", ",", "96"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"f", ",", "0", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.640370765319386*^9, 3.640370783246179*^9}},
+ NumberMarks->False],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{SubKernels`Private`a$$ = 0.436, SubKernels`Private`b$$ = 
+    0.274, SubKernels`Private`f$$ = 0.23600000000000002`, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[SubKernels`Private`a$$], 0, 1}, {
+      Hold[SubKernels`Private`b$$], 0, 1}, {
+      Hold[SubKernels`Private`f$$], 0, 1}}, Typeset`size$$ = {
+    360., {109., 113.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, SubKernels`Private`a$33771$$ = 0, 
+    SubKernels`Private`b$33772$$ = 0, SubKernels`Private`f$33773$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {
+       SubKernels`Private`a$$ = 0, SubKernels`Private`b$$ = 0, 
+        SubKernels`Private`f$$ = 0}, "ControllerVariables" :> {
+        Hold[SubKernels`Private`a$$, SubKernels`Private`a$33771$$, 0], 
+        Hold[SubKernels`Private`b$$, SubKernels`Private`b$33772$$, 0], 
+        Hold[SubKernels`Private`f$$, SubKernels`Private`f$33773$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[(1/2) 
+        E^((-2) SubKernels`Private`f$$ SubKernels`Private`t) (-1 + 
+         E^(2 SubKernels`Private`f$$ SubKernels`Private`t)) 
+        SubKernels`Private`f$$ (SubKernels`Private`a$$ + 
+          SubKernels`Private`b$$ UnitStep[-95 + SubKernels`Private`t])^2, {
+        SubKernels`Private`t, 94, 96}], 
+      "Specifications" :> {{SubKernels`Private`a$$, 0, 1}, {
+        SubKernels`Private`b$$, 0, 1}, {SubKernels`Private`f$$, 0, 1}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{407., {177., 184.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.6403707337650547`*^9, 3.640370783835045*^9}]
+}, Open  ]]
+},
+WindowSize->{1855, 1056},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (December 4, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 612, 18, 32, "Input"],
+Cell[1195, 42, 1049, 33, 60, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2281, 80, 682, 20, 55, "Input"],
+Cell[2966, 102, 2227, 69, 53, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5230, 176, 615, 18, 55, "Input"],
+Cell[5848, 196, 454, 15, 37, "Output"]
+}, Open  ]],
+Cell[6317, 214, 638, 19, 32, "Input"],
+Cell[6958, 235, 542, 17, 56, InheritFromParent],
+Cell[CellGroupData[{
+Cell[7525, 256, 1059, 31, 56, "Input"],
+Cell[8587, 289, 2454, 47, 378, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
