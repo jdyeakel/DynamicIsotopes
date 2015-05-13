@@ -1,0 +1,98 @@
+\documentclass[12pt]{iopart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cite}
+\begin{document}
+\title{Isotopic incorporation and the temporal dynamics of foraging among individuals and within populations}
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+\section{Time-dependent Ornstein-Uhlenbeck process}
+We can define the evolution of the concentration of a particular isotope in the predator tissue by the following Langevin equation,
+\begin{equation}
+\label{langevin}
+\mathrm{d}X(t) = - \lambda\left(X(t)-\mu(t)\right)\mathrm{d}t + \lambda\sigma(t)\mathrm{d}W
+\end{equation}
+where, $X$ is the isotope-concentration, $\lambda$ is the tissue-dependent incorporation rate, $\mu(t)$ and $\sigma(t)$ are the time-dependent average and standard-deviations of isotope-concentration over the prey.
+\subsection{Expectation}
+ We can find the expectation of $X(t)$ as follows,
+\begin{equation}
+\label{EX1}
+\mathrm{d}X + \lambda\left(X(t)-\mu(t)\right)\mathrm{d}t = \lambda\sigma(t)\mathrm{d}W
+\end{equation}
+Multiplying throughout by the integrating factor, $e^{\lambda t}$ and integrating both sides w.r.t $t$, we get
+\begin{equation}
+\label{EX2}
+\int_{t=0}^t \mathrm{d}\left(e^{\lambda t}\left(X-\mu)\right)\right) + \int_{t=0}^t e^{\lambda t'}\frac{\mathrm{d}\mu}{\mathrm{d}t'}\mathrm{d}t' = \int_{t=0}^t\lambda e^{\lambda t'}\sigma(t')\mathrm{d}W'
+\end{equation}
+Taking the expectation of both sides, the RHS reduces to zero as $\mathbb{E}(\mathrm{d}W)=0$ and we get,
+\begin{equation}
+\label{EX-final}
+\mathbb{E}(X(t)) = X_0 e^{-\lambda t} + \lambda e^{-\lambda t}\int_{t'=0}^t\mu(t')e^{\lambda t'}\mathrm{d}t'
+\end{equation}
+
+\subsection{Variance}
+Similarly for the variance, we square Eq.~\eqref{EX2}, to get
+\begin{equation}
+\label{VX1}
+\left(e^{\lambda t}X - X_0 - \lambda\int_0^t \mu e^{\lambda t'}\mathrm{d}t'\right)^2=\lambda^2\int_0^t\int_0^t e^{\lambda(t'+t'')}\sigma(t')\sigma(t'')\mathrm{d}W(t')\mathrm{d}W(t'')
+\end{equation}
+Taking the expectation on both sides, in the RHS, using the property, $\mathbb{E}(\mathrm{d}W(t')\mathrm{d}W(t'')) = \delta(t'-t'')\mathrm{d}t'\mathrm{d}t''$, we get,
+\begin{equation}
+\label{VX2}
+\mathbb{E}\left(e^{\lambda t}X - X_0 - \lambda\int_0^t \mu e^{\lambda t'}\mathrm{d}t'\right)^2=\lambda^2\int_0^t e^{2\lambda t'}(\sigma(t'))^2\mathrm{d}t'
+\end{equation}
+Let us call the integrals $\int_0^t\mu(t') e^{\lambda t'}\mathrm{d}t'$ and $\int_0^t e^{2\lambda t'}(\sigma(t'))^2\mathrm{d}t'$ as $\mathcal{U}$ and $\mathcal{S}^2$ and expanding the LHS, we get
+\begin{equation}
+\label{VX3}
+e^{2\lambda t}\mathbb{E}(X^2) + X_0^2 + \lambda^2 \mathcal{U}^2 - 2 X_0 \mathbb{E}(X) e^{\lambda t} - 2 X_0 \lambda\mathcal{U}-2\lambda e^{\lambda t}\mathbb{E}(X)\mathcal{U} = \lambda^2\mathcal{S}^2
+\end{equation}
+And so the variance is given by,
+\begin{align}
+\label{VX4}
+\mathbb{V}(X) &= \mathbb{E}(X^2)-(\mathbb{E}(X))^2 \nonumber \\
+&= \lambda^2 e^{-2\lambda t}\mathcal{S}^2 - X_0^2 e^{-2\lambda t} - \lambda^2 e^{-2\lambda t}\mathcal{U}^2 + 2 X_0 \mathbb{E}(X)e^{-\lambda t} +2 X_0 \lambda e^{-2\lambda t}\mathcal{U}+2\lambda e^{-\lambda t}\mathbb{E}(X)\mathcal{U} - (\mathbb{E}(X))^2
+\end{align}
+\begin{equation}
+\label{VX-final}
+\mathbb{V}(X) = \lambda^2 e^{-2\lambda t} \int_0^t e^{2\lambda t'}(\sigma(t'))^2\mathrm{d}t'
+\end{equation}
+where, to go from Eq.~\eqref{VX4} to Eq.~\eqref{VX-final} we used $\mathbb{E}(X)$ given by Eq.~\eqref{EX-final}.
+
+\subsection{Sinusoidal input}
+Suppose the inputs $\mu(t)$ and $\sigma(t)$ to the system are sinusoidal, i.e,
+\begin{equation}
+\label{sin-input}
+\mu(t)=a_1 + b_1 \sin{(\omega t)}\;,\quad\sigma(t)=a_2+b_2\sin{(\omega t)}
+\end{equation}
+Using Eq.~\eqref{EX-final} and Eq.~\eqref{VX-final}, we get
+\begin{equation}
+\label{EX-sin-full}
+\mathbb{E}(X) = X_0 e^{-\lambda t} + a_1\left(1-e^{-\lambda t}\right) + \frac{b_1\omega\lambda}{\lambda^2+\omega^2} e^{-\lambda t} + \frac{b_1 \lambda}{\sqrt{\lambda^2+\omega^2}} \sin{\left(\omega t + \tan^{-1}{\left(\frac{\omega}{\lambda}\right)}\right)}
+\end{equation}
+\begin{align}
+\label{VX-sin-full}
+\mathbb{V}(X) &= \frac{1}{4}\lambda\left(2 a_2^2 + b_2^2\right)\left(1-e^{-2\lambda t}\right) +e^{-2\lambda t}\lambda^2\left(\frac{b_2^2\lambda}{4(\lambda^2+\omega^2)}+\frac{2 a_2 b_2 \omega}{4\lambda^2 + \omega^2}\right) \nonumber \\
+&+ \frac{2 a_2 b_2 \lambda^2}{\sqrt{4\lambda^2+\omega^2}} \sin{\left(\omega t + \tan^{-1}{\left(\frac{\omega}{2\lambda}\right)}\right)}-\frac{b_2^2\lambda^2}{4\sqrt{\lambda^2+\omega^2}} \sin{\left(2 \omega t + \tan^{-1}{\left(\frac{\lambda}{\omega}\right)}\right)}
+\end{align}
+Getting rid of transients, we get,
+\begin{equation}
+\label{EX-sin}
+\mathbb{E}(X) = a_1 + \frac{b_1 \lambda}{\sqrt{\lambda^2+\omega^2}} \sin{\left(\omega t + \tan^{-1}{\left(\frac{\omega}{\lambda}\right)}\right)}
+\end{equation}
+\begin{align}
+\label{VX-sin}
+\mathbb{V}(X) = \frac{1}{4}\lambda\left(2 a_2^2 + b_2^2\right) &+ \frac{2 a_2 b_2 \lambda^2}{\sqrt{4\lambda^2+\omega^2}} \sin{\left(\omega t + \tan^{-1}{\left(\frac{\omega}{2\lambda}\right)}\right)} \nonumber \\ &- \frac{b_2^2\lambda^2}{4\sqrt{\lambda^2+\omega^2}} \sin{\left(2 \omega t + \tan^{-1}{\left(\frac{\lambda}{\omega}\right)}\right)}
+\end{align}
+If we time-average over the oscillations, we get,
+\begin{equation}
+\label{EX-VX-sin-timeaverage}
+\left\langle \mathbb{E}(X)\right\rangle_t = a_1\;,\quad \left\langle\mathbb{V}(X)\right\rangle_t = \frac{1}{4}\lambda\left(2 a_2^2+b_2^2\right)
+\end{equation}
+
+
+
+\end{document}
