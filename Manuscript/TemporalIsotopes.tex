@@ -39,7 +39,7 @@ Understanding how diets change, and to what extent different conditions promote 
 %Difference between the isotopic diet view vs. other diet views
 
 
-
+%Backward integrating vs. Forward integrating
 
 %Prey-switching dynamic
 %Micro time frame
@@ -49,6 +49,110 @@ Understanding how diets change, and to what extent different conditions promote 
 
 
 \section{Methods}
+We start by establishing a forward-integrating approach for modeling the incorporation of stable isotopes of multiple resources into the tissue of a consumer individual.
+This framework will provide a flexible platform for building in additional ecological complexities, such as time-dependent foraging behaviors and dietary specialization both among and within individuals.
+We will first focus on the dietary dynamics of an individual consumer, and then extend our results to multiple individuals within a population.
+Finally, we will show how the temporal integration of isotopes from foraging can be linked to the dynamics of resource and consumer populations.
+We will demonstrate how different qualitative population dynamics are translated into the isotopic incorporation of resources, which will be important for drawning ecological conclusions from stable isotope data.
+
+The incorporation of stable isotope ratios from a mix of resources into the consumer's tissues must take into account: {\it i}) the isotopic value of the consumer's tissues at a point in time $X(t)$ (we will assume for simplicity that the isotopic value in question is the ratio of heavy to light carbon isotope relative to a known standard $\delta^{13}{\rm C}$), {\it ii}) the isotopic value for some combination of $N$ resources $\sum_{i=1}^N p_i \bar{X}_i$ (where $p_i$ is the proportional contribution of resource $i$ and $\bar{X}_i$ is the mean isotopic value of resource $i$), and {\it iii}) the incorporation rate of the average isotopic value of the resource relative to that of the consumer $\lambda$.
+In a completely deterministic framework, the isotopic composition of the consumer can be written as an ordinary differential equation
+
+\begin{equation}
+\frac{\rm d}{\rm dt}X = (1-\lambda)X + \lambda \sum_{i=1}^N p_i \bar{X}_i - X
+\end{equation}
+
+However, we must also take into account different sources of stochasticity, and here we consider two.
+First, the different resources have a distribution of isotope values, with an expecation ${\rm E}\{X_i\}=\bar{X}_i$, and a variance ${\rm Var}\{X_i\}$.
+Secondly, there will be differences in the dietary proclivities of the consumer, such that $p_i \in {\bm p}$ is a random variable with expectations ${\rm E}\{p_i\}$, variances ${\rm Var}\{p_i\}$ and because $\sum_i p_i = 1$, Covariances ${\rm Cov}\{p_i p_j\}$.
+The distribution of isotope values for all potential resources are assumed to be Gaussian, whereas the proportional contribution of these resources are drawn from a Dirichlet distribution (a multivariate Beta distribution, with axes that range from 0 to 1).
+An N-dimenstional Dirichlet distribution (with each dimension corresponding to a potential resource) is parameterized by a vector with elements $a_{i=1,...,N}$.
+The expected proportional contribution of each resource is then ${\rm E}\{p_i\}=a_i/a_0$ where $a_0 = \sum_i a_i$, and its variance is ${\rm Var}\{p_i\} = (a_i[a_0 - a_i])/(a_0^2[a_0 - 1])$. 
+We define the random variable $Z = \sum_i p_i X_i$ to be the combined isotopic value of the potential resources, thus incorporating variability in the behavior of the consumer and isotopic variability of the prey, where
+
+\begin{align}
+{\rm E}\{Z\} &= \sum_{i=1}^N p_i X_i, \nonumber \\
+{\rm Var}\{Z\} &= \sum_{i=1}^N {\rm Var}\{p_i\}{\rm Var}\{X_i\} + {\rm Var}\{p_i\}{\rm E}\{X_i\}^2 + {\rm E}\{p_i\}^2{\rm Var}\{X_i\} \\ \nonumber
+&+ \sum_{i \neq j}{\rm Cov}\{p_i,p_j\}{\rm E}\{X_i\}{\rm E}\{X_j\}.
+\end{align} 
+
+We integrate these different sources of variance by assuming that the integration of isotopic values from the different resources follows an instantaneous random walk.
+Because the time interval is extremely short at the continuous time limit, the time evolution of the consumer tissue's isotopic value will be Gaussian distributed, the dynamics of which are formally known as an Ornstein Uhlenbeck process, written as
+
+\begin{equation}
+{\rm d}X = (1-\lambda)X{\rm dt} + \lambda\left({\rm E}\{Z\}{\rm dt} + \sqrt{{\rm Var}\{Z\}}{\rm dW}\right) - X{\rm dt}.
+\end{equation}
+
+\noindent where ${\rm dW}$ is the increment of Brownian motion. 
+In this case, if the initial isotopic values of the consumer is $X(0)$, the expectation and variability of $X$ at time $t$ are
+
+\begin{align}
+{\rm E}\{X(t)\} &= {\rm E}\{Z\} + (X(0) - {\rm E}\{Z\}){\rm e}^{-\lambda t}, \nonumber \\
+{\rm Var}\{X(t)\} &= \frac{\lambda {\rm Var}\{Z\}}{2}\left(1 - {\rm e}^{-2\lambda t}\right).
+\end{align}
+
+By uniting both dietary and isotopic variability into the single random variable $Z$, the above framework provides a means towards predicting the isotopic composition of a consumer over time, given a dietary strategy (described by the Dirichlet distribution) and the isotopic distribution of the potential resources (the isotopic mixing space).
+Permitting the consumer's dietary strategy to vary provides a direct means of incorporating behavioral variability in estimates of a consumer's isotopic composition.
+An implicit assumption in this model is that the consumer's diet varies instantaneously over a given parameterization of the Dirichlet distribution.
+This will be relevant for organisms that have a consistently varying diet over time, however most organisms have diets that undergo large shifts over time, such that the Dirichlet distribution that might characterize their diets during one temporal window might be different the the Dirichlet distribution that characterizes their diet in another window in time.
+Such a shift might be due to seasonal, ontogenetic, or demographic changes in the consumer's prey base.
+In the following section, we will relax the assumption that diet is characterized by a single Dirichlet distribution over time, thus generalizing the dietary/isotopic dynamics as a function of time.
+
+\subsection{Temporal dietary dynamics}
+We now assume that diet (but not the isotopic distribution of prey) changes over time, such that the random variable of interest is now $Z(t)$.
+Solving for $X(t)$, we find
+
+\begin{align}
+{\rm E}\{X(t)\} = X(0){\rm e}^{-\lambda t} + \lambda{\rm e}^{-\lambda t} \int_{s=0}^t {\rm e}^{\lambda s} {\rm E}\{Z(s)\}{\rm ds}, \nonumber \\
+{\rm Var}\{X(t)\} = \lambda^2 {\rm e}^{-2\lambda t} \int_{s=0}^t {\rm e}^{2\lambda s} {\rm Var}\{Z(s)\} {\rm ds}
+\end{align}
+
+\noindent where $Z(t)$ is the time trajectory of the consumer diet's isotopic values.
+Because we have assumed that the isotopic distributions of resources are constant, only the dietary strategy of the consumer can change through time.
+For example, we might assume that if the consumer prefers prey 1 over prey 2 in the first part of the year, and prey 2 over prey 1 in the second part of the year, the expectation of the proportional contribution of prey to the diet of the consumer might oscillate sinusoidally over a year.
+Because the isotopic values of prey are incorporated into the tissues of the consumer non-instantaneously, we would expect that the isotopic realization of such a dietary shift to be offset in time from the actual shift in prey.
+
+Incorporating different classes of prey-switching dynamics permits an understanding of how the isotopic composition of a consumer reflects changes in its behavior over time as a function of the incorporation rate $\lambda$.
+To gain an intuitive understanding of how ecological dynamics are portrayed by consumer isotope values, we consider two types of prey-switching behavior: {\it i}) an instantaneous shift from one dietary strategy to another (such as those used in feeding experiments), and {\it ii}) a sinusoidally varying dietary strategy.
+
+
+
+
+
+\subsection{Linking isotopic and population dynamics}
+
+In this section, we aim to integrate the population dynamics of prey with the dietary dynamics of a consumer.
+The overarching goal is to understand how the isotopic composition of a consumer over time reflects its underlying dietary dynamics, and by extenstion the population dynamics of its potential prey.
+We begin by assuming that the consumer selects prey in proportion to its abundance, but our methods are extendable to other types of prey-selection strategies (such as optimal foraging).
+
+In the case of density dependent foraging preferences, the consumer's diet is directly related to the abundances of prey (which themselves change over time), such that we must first describe how the Dirichlet distribution describing consumer diet at a given point in time changes as a function of prey densities.
+We begin by assuming that the consumer encounters each prey at a frequency determined by a Poisson Process with parameter $\lambda_i$, which determines the number of encounters between time 0 and time $t$,
+
+\begin{equation}
+{\rm Pr}\{N_i(t) = n | \lambda_i\} = {\rm e}^{-\lambda_i t}\frac{(\lambda_i t)^n}{n!}
+\end{equation}
+
+If we assume that a given prey can be unevenly distributed throughout its environment, the encounter rate will be variable.
+We integrate this by assuming $\lambda_i$ is itself a random variable that has a Gamma Density
+
+\begin{equation}
+f_\gamma (\lambda_i | c, \alpha_i) = \frac{c^{\alpha_i}}{\Gamma (\alpha_i)}{\rm e}^{-c \lambda_i}\lambda_i^{\alpha_i - 1}.
+\end{equation}
+
+\noindent We then assume that the mean encounter rate is proportional to prey abundance $\alpha_i/c = a_i N_i$, and that the variance $\alpha_i/c^2 = \nu N_i$, where $\nu$ is a parameter that measures the dispersion of the resource (when $\nu$ is close to zero, the resource is evenly distributed; when $\nu \gg 0$, the resource is unevenly distributed, or patchy).
+From this, we find that $\alpha_i = n_i/\nu$ and $c=1\nu$.
+A Dirichlet distribution can be built from a composite of Gamma densities, where the $\alpha_i$ parameter of the Gamma density is the same as the $\alpha_i$ paramter for the Dirichlet, though this only holds for a constant $\nu$ across resources $i$.
+Accordingly, the Dirichlet distribution that determines the dietary strategy for the conusmer at a given point in time is $f_{\rm Dir}(p_i,...p_{k-1};t) | \alpha_i=N(t)_i/\nu,...,\alpha_k=N(t)_k/\nu)$.
+We have thus linked the dietary strategy of the consumer to the densities of its prey, and as a function of the dispersion of these prey within the environment.
+For example, a resource that is both patchy (high $\nu$) and rare (low $N_i$) will have a Dirichlet paramater $\alpha_i < 1$, which will bias the consumer against foraging for this resource.
+In contrast, if a resource that is evenly distributed (low $\nu$) and common (high $N_i$) will make it more likely that the consumer will have a higher proportion of this resource in its diet at that point in time.
+ 
+
+
+
+
+
+
 
 \section{Results}
 

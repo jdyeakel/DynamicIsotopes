@@ -71,7 +71,7 @@ Suppose the inputs $\mu(t)$ and $\sigma(t)$ to the system are sinusoidal, i.e,
 Using Eq.~\eqref{EX-final} and Eq.~\eqref{VX-final}, we get
 \begin{equation}
 \label{EX-sin-full}
-\mathbb{E}(X) = X_0 e^{-\lambda t} + a_1\left(1-e^{-\lambda t}\right) + \frac{b_1\omega\lambda}{\lambda^2+\omega^2} e^{-\lambda t} + \frac{\mathrm{b_1 f}}{\sqrt{\lambda^2+\omega^2}} \sin{\left(\omega t + \tan^{-1}{\left(\frac{\omega}{\lambda}\right)}\right)}
+\mathbb{E}(X) = X_0 e^{-\lambda t} + a_1\left(1-e^{-\lambda t}\right) + \frac{b_1\omega\lambda}{\lambda^2+\omega^2} e^{-\lambda t} + \frac{b_1 \lambda}{\sqrt{\lambda^2+\omega^2}} \sin{\left(\omega t + \tan^{-1}{\left(\frac{\omega}{\lambda}\right)}\right)}
 \end{equation}
 \begin{align}
 \label{VX-sin-full}

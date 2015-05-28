@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+main()
+	{
+	const int N=3;
+	double x[N]={0.L}, dxbydt[N]={0.L};
+	const double r[N]={-1.L, 60.L, 60.L};
+	const double A[N][N]={{0.L, 1.L, 1.L},{-1.L,0.L,0.L},{-1.L,0.L,0.L}};
+	
+	const double dt=0.001L;
+	const double tmax=100.L;
+	
+	double p[N]={0.L};
+
+	x[0]=10.L; x[1]=40.L; x[2]=40.L;
+	for(double t=0.L; t<tmax; t+=dt)
+		{
+		for(int i=0; i<N; i++)
+			{
+			dxbydt[i]=r[i]*x[i];
+			for(int j=0; j<N; j++) dxbydt[i] += x[i]*A[i][j]*x[j];
+			}
+		
+		for(int i=0; i<N; i++) p[i]=x[i];
+		for(int i=0; i<N; i++) x[i] += dxbydt[i]*dt;
+		cout << t; for(int i=0; i<N; i++) cout << '\t' << x[i]; cout << endl;
+		}
+		
+	
+	}

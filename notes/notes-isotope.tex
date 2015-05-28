@@ -93,6 +93,16 @@ If we time-average over the oscillations, we get,
 \left\langle \mathbb{E}(X)\right\rangle_t = a_1\;,\quad \left\langle\mathbb{V}(X)\right\rangle_t = \frac{1}{4}\lambda\left(2 a_2^2+b_2^2\right)
 \end{equation}
 
+\section{On the input to the O-U equation}
+In the previous section we had assumed $\mu(t)$ and $\sigma(t)$ was given by some underlying dynamics. One possible way to incorporate the dynamics is to assume a Lotka-Volterra system. The simplest system where we can expect prey switching behavior is a Lotka-Volterra system with one predator and two preys. We have,
+\begin{align}
+\label{Lotka-Volterra-system}
+\dot{c} &= -r_0 c + a c n_1 + a c n_2 \nonumber \\
+\dot{n}_1 &= r_1 n_1 - c n_1 \nonumber \\
+\dot{n}_2 &= r_2 n_2 - c n_2 
+\end{align}
+where $c$ is the number density of the consumer, $n_i$ are the number densities of the prey. The dynamics we adopt are deterministic. However, we introduce noise in the encounter rates as follows. We define the encounters as a Poisson process with encounter rate given by a gamma distribution with parameters $(n_i/v, 1/v)$. Here $v$ is the `patchiness' or the additional variance to constant rate Poisson process. For simplicity we assume the patchiness is the same accross the preys. Imposing constant feeding rate, we combine the two independent gamma distribution to a two variable Dirichlet distribution with parameters $(n_1/v, n_2/v)$. 
+
 
 
 \end{document}
