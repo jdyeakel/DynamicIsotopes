@@ -34,7 +34,7 @@
 \section{Introduction}
 
 Consumer foraging behaviors are dynamic, resulting in diets that change over time as a function of environmental conditions, the densities of consumer and resource populations, and even the physiological states of individual foragers.
-Understanding how diets change, and to what extent different conditions promote or inhibit specific changes, is both a challenging theoretical and empirical problem in ecology. 
+Understanding how diets change, and to what extent different conditions promote or inhibit specific changes, is both a challenging theoretical and empirical problem in ecology.
 
 %Difference between the isotopic diet view vs. other diet views
 
@@ -67,14 +67,14 @@ First, the different resources have a distribution of isotope values, with an ex
 Secondly, there will be differences in the dietary proclivities of the consumer, such that $p_i \in {\bm p}$ is a random variable with expectations ${\rm E}\{p_i\}$, variances ${\rm Var}\{p_i\}$ and because $\sum_i p_i = 1$, Covariances ${\rm Cov}\{p_i p_j\}$.
 The distribution of isotope values for all potential resources are assumed to be Gaussian, whereas the proportional contribution of these resources are drawn from a Dirichlet distribution (a multivariate Beta distribution, with axes that range from 0 to 1).
 An N-dimenstional Dirichlet distribution (with each dimension corresponding to a potential resource) is parameterized by a vector with elements $a_{i=1,...,N}$.
-The expected proportional contribution of each resource is then ${\rm E}\{p_i\}=a_i/a_0$ where $a_0 = \sum_i a_i$, and its variance is ${\rm Var}\{p_i\} = (a_i[a_0 - a_i])/(a_0^2[a_0 - 1])$. 
+The expected proportional contribution of each resource is then ${\rm E}\{p_i\}=a_i/a_0$ where $a_0 = \sum_i a_i$, and its variance is ${\rm Var}\{p_i\} = (a_i[a_0 - a_i])/(a_0^2[a_0 - 1])$.
 We define the random variable $Z = \sum_i p_i X_i$ to be the combined isotopic value of the potential resources, thus incorporating variability in the behavior of the consumer and isotopic variability of the prey, where
 
 \begin{align}
 {\rm E}\{Z\} &= \sum_{i=1}^N p_i X_i, \nonumber \\
 {\rm Var}\{Z\} &= \sum_{i=1}^N {\rm Var}\{p_i\}{\rm Var}\{X_i\} + {\rm Var}\{p_i\}{\rm E}\{X_i\}^2 + {\rm E}\{p_i\}^2{\rm Var}\{X_i\} \\ \nonumber
 &+ \sum_{i \neq j}{\rm Cov}\{p_i,p_j\}{\rm E}\{X_i\}{\rm E}\{X_j\}.
-\end{align} 
+\end{align}
 
 We integrate these different sources of variance by assuming that the integration of isotopic values from the different resources follows an instantaneous random walk.
 Because the time interval is extremely short at the continuous time limit, the time evolution of the consumer tissue's isotopic value will be Gaussian distributed, the dynamics of which are formally known as an Ornstein Uhlenbeck process, written as
@@ -83,7 +83,7 @@ Because the time interval is extremely short at the continuous time limit, the t
 {\rm d}X = (1-\lambda)X{\rm dt} + \lambda\left({\rm E}\{Z\}{\rm dt} + \sqrt{{\rm Var}\{Z\}}{\rm dW}\right) - X{\rm dt}.
 \end{equation}
 
-\noindent where ${\rm dW}$ is the increment of Brownian motion. 
+\noindent where ${\rm dW}$ is the increment of Brownian motion.
 In this case, if the initial isotopic values of the consumer is $X(0)$, the expectation and variability of $X$ at time $t$ are
 
 \begin{align}
@@ -146,7 +146,7 @@ Accordingly, the Dirichlet distribution that determines the dietary strategy for
 We have thus linked the dietary strategy of the consumer to the densities of its prey, and as a function of the dispersion of these prey within the environment.
 For example, a resource that is both patchy (high $\nu$) and rare (low $N_i$) will have a Dirichlet paramater $\alpha_i < 1$, which will bias the consumer against foraging for this resource.
 In contrast, if a resource that is evenly distributed (low $\nu$) and common (high $N_i$) will make it more likely that the consumer will have a higher proportion of this resource in its diet at that point in time.
- 
+
 
 
 
@@ -155,6 +155,23 @@ In contrast, if a resource that is evenly distributed (low $\nu$) and common (hi
 
 
 \section{Results}
+
+%Static results (primary)
+
+%Single prey specialists: If preferred prey has high isotopic variability, the isotopic niche width of the consumer increases with increasing specialization; the generalist niche width is relatively small
+
+%Single prey specialists: If preferred prey has low isotopic variability, both 100% generalism and 100% specialism can have the same isotopic niche width. The intermediate case actually results in a smaller niche width. This is due to (??)
+  %The 0,1 values are not interesting... the intermediate specialist values are:
+  %The value at '0' is defined by the mean SD of the niche space
+  %The value at '1' is defined by the mean SD of the specialized prey
+  %The trough at 0.5 is because ???
+
+
+%Multiple prey specialist: When isotopic ratios are sourcing from a small subset of prey, moderate specialization results in smaller niche widths than generalization, and can strongly limit the size of the niche width in general.
+
+
+
+
 
 \section{Discussion}
 
