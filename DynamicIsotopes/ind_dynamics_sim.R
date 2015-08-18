@@ -110,6 +110,8 @@ for (jj in 1:length(alpha_seq)) {
       cp_vec_int <- sapply(seq(1,nprey),function(x){rnorm(int[x],prey$CM[x],prey$CSD[x])})
       np_vec_int <- sapply(seq(1,nprey),function(x){rnorm(int[x],prey$NM[x],prey$NSD[x])})
       
+      cp_int <- rep(1/max_int,length(unlist(cp_vec_int))) %*% unlist(cp_vec_int)
+      np_int <- rep(1/max_int,length(unlist(cp_vec_int))) %*% unlist(np_vec_int)
       
       #Prey biomass
       #set to one if each prey is to be equally weighted
@@ -126,19 +128,21 @@ for (jj in 1:length(alpha_seq)) {
       cb_next <- f*cb + (1-f)*cp
       nb_next <- f*nb + (1-f)*np
       
-      cb_next_int <- cb_int
-      nb_next_int <- nb_int
-      f_int <-1 - (incorp_rate/max_int)
-      for (j in 1:nprey) {
-        if (int[j] > 0) {
-          for (s in 1:length(int[j])) {
-            cp_int <- cp_vec_int[[j]][[s]]
-            np_int <- np_vec_int[[j]][[s]]
-            cb_next_int <- (f_int)*cb_next_int + (1-f_int)*cp_int
-            nb_next_int <- (f_int)*nb_next_int + (1-f_int)*np_int
-          } 
-        }
-      }
+      cb_next_int <- f*cb_int + (1-f)*cp_int
+      nb_next_int <- f*nb_int + (1-f)*np_int
+#       cb_next_int <- cb_int
+#       nb_next_int <- nb_int
+#       f_int <-1 - (incorp_rate/max_int)
+#       for (j in 1:nprey) {
+#         if (int[j] > 0) {
+#           for (s in 1:length(int[j])) {
+#             cp_int <- cp_vec_int[[j]][[s]]
+#             np_int <- np_vec_int[[j]][[s]]
+#             cb_next_int <- (f_int)*cb_next_int + (1-f_int)*cp_int
+#             nb_next_int <- (f_int)*nb_next_int + (1-f_int)*np_int
+#           } 
+#         }
+#       }
       
       
       c_m[i,t+1] <- cb_next
