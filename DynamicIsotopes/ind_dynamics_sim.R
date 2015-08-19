@@ -86,16 +86,10 @@ for (jj in 1:length(alpha_seq)) {
       cb_int <- c_m_int[i,t]
       nb_int <- n_m_int[i,t]
       
-      #DIRICHLET VERSION
       #draw proportional contribution vector from random dirichlet
       p_vec <- numeric(nprey)
-      #if (N == 1) {
-      #  p_vec[1:nprey-1] <- rdirichlet(1,Dir_param)
-      #} else {
       p_vec[1:nprey] <- rdirichlet(1,Dir_param[i,])
       
-      
-      #}
       #p_vec[nprey] <- 1 - sum(p_vec)
       #Draw prey values from each prey
       cp_vec <- sapply(seq(1,nprey),function(x){rnorm(1,prey$CM[x],prey$CSD[x])})
@@ -107,22 +101,15 @@ for (jj in 1:length(alpha_seq)) {
       #Multiple encounter method
       max_int <- 100
       int <- round(p_vec * max_int,0)
+      tot_int <- sum(int)
       cp_vec_int <- sapply(seq(1,nprey),function(x){rnorm(int[x],prey$CM[x],prey$CSD[x])})
       np_vec_int <- sapply(seq(1,nprey),function(x){rnorm(int[x],prey$NM[x],prey$NSD[x])})
       
-      cp_int <- rep(1/max_int,length(unlist(cp_vec_int))) %*% unlist(cp_vec_int)
-      np_int <- rep(1/max_int,length(unlist(cp_vec_int))) %*% unlist(np_vec_int)
-      
-      #Prey biomass
-      #set to one if each prey is to be equally weighted
-      #(assume 1 kg of each thing is eaten rather than at individual level)
-      #mp <- 1 #prey$Biomass[next_prey]
+      cp_int <- rep(1/tot_int,tot_int) %*% unlist(cp_vec_int)
+      np_int <- rep(1/tot_int,tot_int) %*% unlist(np_vec_int)
       
       #Define incorporation rate
       incorp_rate <- 0.05
-      
-      #weights for body size
-      #f <- mb/(mb + mp)
       f <- 1 - incorp_rate
       
       cb_next <- f*cb + (1-f)*cp
@@ -228,11 +215,13 @@ for (jj in 1:length(alpha_seq)) {
   
 } #end jj
 
+pal <- brewer.pal(3,"Set1")
+
 plot(propi,VarA_x_c,
      ylim=c(min(c(VarA_x_c,Var_x_c,Var_x_c_int)),max(c(VarA_x_c,Var_x_c,Var_x_c_int))),type="l",lwd=2,
      xlab="Specialization",ylab=expression("Consumer niche width as t" %->% infinity))
 points(propi,Var_x_c,pch=16,cex=1)
-points(propi,Var_x_c_int,pch=16,cex=1,col="red")
+points(propi,Var_x_c_int,pch=16,cex=1,col=pal[2])
 
 plot(propi,Var_x_c_int,pch=16,cex=1,col="red",
      xlab="Specialization",ylab=expression("Consumer niche width as t" %->% infinity))
