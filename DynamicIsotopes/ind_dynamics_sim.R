@@ -105,8 +105,10 @@ for (jj in 1:length(alpha_seq)) {
       cp_vec_int <- sapply(seq(1,nprey),function(x){rnorm(int[x],prey$CM[x],prey$CSD[x])})
       np_vec_int <- sapply(seq(1,nprey),function(x){rnorm(int[x],prey$NM[x],prey$NSD[x])})
       
-      cp_int <- rep(1/tot_int,tot_int) %*% unlist(cp_vec_int)
-      np_int <- rep(1/tot_int,tot_int) %*% unlist(np_vec_int)
+      #cp_int <- rep(1/max_int,tot_int) %*% unlist(cp_vec_int)
+      #np_int <- rep(1/max_int,tot_int) %*% unlist(np_vec_int)
+      cp_int <- mean(unlist(cp_vec_int))
+      np_int <- mean(unlist(np_vec_int))
       
       #Define incorporation rate
       incorp_rate <- 0.05
