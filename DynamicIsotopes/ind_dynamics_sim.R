@@ -99,16 +99,13 @@ for (jj in 1:length(alpha_seq)) {
       np <- p_vec %*% np_vec
       
       #Multiple encounter method
-      max_int <- 100
+      max_int <- 1000
       int <- round(p_vec * max_int,0)
-      tot_int <- sum(int)
-      cp_vec_int <- sapply(seq(1,nprey),function(x){rnorm(int[x],prey$CM[x],prey$CSD[x])})
-      np_vec_int <- sapply(seq(1,nprey),function(x){rnorm(int[x],prey$NM[x],prey$NSD[x])})
+      #Draw prey according to Dirichlet probabilities
+      r_draw <- sample(unlist(sapply(seq(1:nprey),function(x){rep(x,int[x])})),1)
       
-      #cp_int <- rep(1/max_int,tot_int) %*% unlist(cp_vec_int)
-      #np_int <- rep(1/max_int,tot_int) %*% unlist(np_vec_int)
-      cp_int <- mean(unlist(cp_vec_int))
-      np_int <- mean(unlist(np_vec_int))
+      cp_int <- rnorm(1,prey$CM[r_draw],prey$CSD[r_draw])
+      np_int <- rnorm(1,prey$NM[r_draw],prey$NSD[r_draw])
       
       #Define incorporation rate
       incorp_rate <- 0.05
