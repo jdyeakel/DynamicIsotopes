@@ -1,0 +1,17 @@
+#include <iostream>
+#include </home/uttam/Dropbox/c/randfunctions.h>
+using namespace std;
+
+main()
+	{
+	int a[3]={10,10,10};
+	int bin[101][101]={0};
+	double p[3]={0.L};
+	for(int i=0; i<10000000; i++)
+		{
+		dirichlet(a,p,3);
+		bin[(int)(p[0]*100.L)][(int)(p[1]*100.L)]++;
+		}
+		
+	for(int i=0; i<101; i++) for(int j=0; j<101; j++) if(bin[i][j]!=0) cout << i << '\t' << j << '\t' << bin[i][j] << endl;
+	}

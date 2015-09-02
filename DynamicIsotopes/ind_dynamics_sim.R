@@ -26,7 +26,7 @@ bmass <- rep(20,N)
 #Time-steps
 t_term <- 5000
 
-alpha_seq <- seq(1,100,1)
+alpha_seq <- seq(1,1000,10)
 propi = numeric(length(alpha_seq))
 Var_x_c <- numeric(length(alpha_seq))
 VarA_x_c <- numeric(length(alpha_seq))
@@ -97,6 +97,15 @@ for (jj in 1:length(alpha_seq)) {
       #Calculate weighted average
       cp <- p_vec %*% cp_vec
       np <- p_vec %*% np_vec
+      
+      n_vec <- sapply(p_vec,function(x){rpois(1,x)})
+      consumed_prey <- which(n_vec>0)
+      Ck <- numeric(length(which(n_vec>0)))
+      Nk <- numeric(length(which(n_vec>0)))
+      for (k in 1:length(consumed_prey)) {
+          Ck[k] <- rnorm(n_vec[consumed_prey[k]],prey$CM[consumed_prey[k]],prey$CSD[consumed_prey[k]])
+          Nk[k] <- rnorm(n_vec[consumed_prey[k]],prey$NM[consumed_prey[k]],prey$NSD[consumed_prey[k]])
+      }
       
       #Multiple encounter method
       max_int <- 1000

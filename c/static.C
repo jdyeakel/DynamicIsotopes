@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include </home/uttam/Dropbox/c/randfunctions.h>
 using namespace std;
 double E(double a[], int i, size_t N);
 double var(double a[], int i, size_t N);
@@ -7,25 +8,40 @@ double cov(double a[], int i, int j, size_t N);
 
 main()
 	{
-	const int N=2;
-	double EX[N]={15.L,15.L};
-	double VX[N]={1.L,1.L};
-	double a[N]={1.L, 1.L};
-/*	for(double a1=1.L; a1<10000.L; a1+=10.L)
-		{
-		a[1]=a1;
-		double VZ=0.L;
-		for(int i=0; i<N; i++)
+	const int N=3;
+	double EX[N]={15.L,15.L,15.L};
+	double VX[N]={1.L,1.L,10.L};
+	int a[N]={1, 1, 1};
+	int a0=0; for(int i=0; i<N; i++) a0 += a[i];
+	double p[N]={0.L};
+	int n[N]={0};
+
+	const double r=0.01L,dt=1.L;
+	const int relaxtime=(int)(1.L/r);
+	const int iterations=100000;
+	
+	for(int a2=1; a2<100; a2++)
+		{	
+		a[2]=a2; a0=0; for(int i=0; i<N; i++) a0 += a[i];
+		double X=0.L, Z=0.L;
+		double sum=0.L, sum2=0.L, m=0.L;
+		for(int iterate=0; iterate<iterations; iterate++)
 			{
-			VZ += var(a,i,N)*VX[i] + var(a,i,N)*EX[i]*EX[i] + E(a,i,N)*E(a,i,N)*VX[i];
-			for(int j=0; j<N; j++) if(j!=i) VZ += cov(a,i,j,N)*EX[i]*EX[j];
+			dirichlet(a,p,N);
+			for(int i=0; i<N; i++) n[i]=poisson(p[i]);
+
+			Z=0.L;
+
+			for(int i=0; i<N; i++) for(int j=0; j<n[i]; j++) Z += gaussrand(EX[i], sqrt(VX[i]));
+
+			X += (-r*X + r*Z)*dt;
+
+
+//			cout << (double)iterate*dt << '\t' << X << endl;
+			if(iterate>10*relaxtime){ sum += X; sum2 += X*X; m += 1.L; }
 			}
-		cout << E(a,1,N) << '\t' << VZ << endl;
+		cout << (double)a[2]/(double)a0 << '\t' << sum2/m - (sum/m)*(sum/m) << endl;
 		}
-*/
-	// dX = (-lambda*X + Xpi ) dt	
-	
-	
 	
 	
 	}
