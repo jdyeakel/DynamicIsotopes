@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 SEP 2015 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 SEP 2015 09:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -378,60 +378,65 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 ) [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
- [4]
-<fig_specvar.pdf, id=32, 592.2125pt x 190.7125pt>
+
+
+LaTeX Warning: Reference `eqDirVar' on page 4 undefined on input line 188.
+
+[4] [5] <fig_specvar.pdf, id=36, 592.2125pt x 190.7125pt>
 File: fig_specvar.pdf Graphic file (type pdf)
- <use fig_specvar.pdf>
-Package pdftex.def Info: fig_specvar.pdf used on input line 274.
+
+<use fig_specvar.pdf>
+Package pdftex.def Info: fig_specvar.pdf used on input line 312.
 (pdftex.def)             Requested size: 469.75502pt x 151.28105pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fig_ottervar.pdf, id=33, 540.0175pt x 140.525pt>
+ <fig_ottervar.pdf, id=37, 540.0175pt x 140.525pt>
 File: fig_ottervar.pdf Graphic file (type pdf)
- <use fig_ottervar.pdf>
-Package pdftex.def Info: fig_ottervar.pdf used on input line 283.
+
+<use fig_ottervar.pdf>
+Package pdftex.def Info: fig_ottervar.pdf used on input line 321.
 (pdftex.def)             Requested size: 469.75502pt x 122.24287pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] [6 <./fig_specvar.pdf> <./fig_ottervar.pdf
+[6 <./fig_specvar.pdf>] [7 <./fig_ottervar.pdf>] (./TemporalIsotopes.aux)
 
-pdfTeX warning: pdflatex (file ./fig_ottervar.pdf): PDF inclusion: multiple pdf
-s with page group included in a single page
->] (./TemporalIsotopes.aux) ) 
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5030 strings out of 493117
- 71077 string characters out of 6135433
+ 5031 strings out of 493117
+ 71087 string characters out of 6135433
  142977 words of memory out of 5000000
- 8378 multiletter control sequences out of 15000+600000
+ 8379 multiletter control sequences out of 15000+600000
  21128 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,38p,410b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvip
-s/cm-super/cm-super-t1.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx109
-5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pf
-b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on TemporalIsotopes.pdf (6 pages, 364967 bytes).
+ 38i,9n,38p,414b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/cm-super/sfti1095.pfb>
+Output written on TemporalIsotopes.pdf (7 pages, 367370 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
+ 163 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
