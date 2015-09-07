@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  6 SEP 2015 16:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 SEP 2015 10:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**TemporalIsotopes.tex
-(./TemporalIsotopes.tex
+**frontiers.tex
+(./frontiers.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (./frontiersSCNS.cls
@@ -487,155 +487,61 @@ File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen133
-\WF@size=\dimen134
-\c@WF@wrappedlines=\count153
-\WF@box=\box36
-\WF@everypar=\toks35
-Package: wrapfig 2003/01/31  v 3.6
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
-Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup6
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup7
-\symboldletters=\mathgroup8
-\symboldsymbols=\mathgroup9
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
-LaTeX Info: Redefining \bm on input line 203.
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/wasysym/wasysym.sty
-Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
-\symwasy=\mathgroup10
-LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
-(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
-Package: placeins 2005/04/18  v 2.2
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen135
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+No file frontiers.aux.
+\openout1 = `frontiers.aux'.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip61
-\fb@frw=\dimen136
-\fb@frh=\dimen137
-\FrameRule=\dimen138
-\FrameSep=\dimen139
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen140
-\captionmargin@=\dimen141
-\captionwidth=\dimen142
-\caption@tempdima=\dimen143
-\caption@indent=\dimen144
-\caption@parindent=\dimen145
-\caption@hangindent=\dimen146
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-)
-
-Package caption Warning: Unsupported document class (or package) detected,
-(caption)                usage of the caption package is not recommended.
-See the caption package documentation for explanation.
-
-Package caption Info: \@makecaption = \long macro:#1#2->\vspace {\abovecaptions
-kip }\begingroup \footnotesize \textbf {#1.}\enskip {#2}\par \endgroup .
-\c@ContinuedFloat=\count154
-Package caption Info: hyperref package is loaded.
-Package caption Info: wrapfig package is loaded.
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip62
-\LTright=\skip63
-\LTpre=\skip64
-\LTpost=\skip65
-\LTchunksize=\count155
-\LTcapwidth=\dimen147
-\LT@head=\box37
-\LT@firsthead=\box38
-\LT@foot=\box39
-\LT@lastfoot=\box40
-\LT@cols=\count156
-\LT@rows=\count157
-\c@LT@tables=\count158
-\c@LT@chunks=\count159
-\LT@p@ftn=\toks36
-)
-(./TemporalIsotopes.aux)
-\openout1 = `TemporalIsotopes.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 54.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1ptm.fd
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 41.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count160
-\scratchdimen=\dimen148
-\scratchbox=\box41
-\nofMPsegments=\count161
-\nofMParguments=\count162
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count163
-\MPscratchDim=\dimen149
-\MPnumerator=\count164
-\makeMPintoPDFobject=\count165
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count153
+\scratchdimen=\dimen133
+\scratchbox=\box36
+\nofMPsegments=\count154
+\nofMParguments=\count155
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count156
+\MPscratchDim=\dimen134
+\MPnumerator=\count157
+\makeMPintoPDFobject=\count158
+\everyMPtoPDFconversion=\toks36
 )
-Package crop Info: requested driver: `' on input line 54.
-Package crop Info: detected driver: `pdftex' on input line 54.
-Package crop Info: using `pdftex' graphics driver on input line 54.
-\AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 54.
+Package crop Info: requested driver: `' on input line 41.
+Package crop Info: detected driver: `pdftex' on input line 41.
+Package crop Info: using `pdftex' graphics driver on input line 41.
+\AtBeginShipoutBox=\box37
+Package hyperref Info: Link coloring OFF on input line 41.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count166
+\c@section@level=\count159
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
-
-(./TemporalIsotopes.out) (./TemporalIsotopes.out)
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
 \@outlinefile=\write3
-\openout3 = `TemporalIsotopes.out'.
+\openout3 = `frontiers.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 54.
+LaTeX Info: Redefining \microtypecontext on input line 41.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2),
 (microtype)             factor: 1500.
@@ -650,34 +556,27 @@ Package microtype Info: No adjustment of character kerning.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: longtable package is loaded.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 56.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
-)
-Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 69.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 Package microtype Info: Loading generic settings for font family
-(microtype)             `phv' (encoding: T1).
+(microtype)             `phv' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<./logo1.jpg, id=24, 335.3328pt x 120.2091pt>
+<./logo1.jpg, id=4, 335.3328pt x 120.2091pt>
 File: ./logo1.jpg Graphic file (type jpg)
  <use ./logo1.jpg>
-Package pdftex.def Info: ./logo1.jpg used on input line 69.
+Package pdftex.def Info: ./logo1.jpg used on input line 56.
 (pdftex.def)             Requested size: 180.0pt x 64.52492pt.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+LaTeX Font Info:    Try loading font information for U+msa on input line 56.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -685,7 +584,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+LaTeX Font Info:    Try loading font information for U+msb on input line 56.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -693,163 +592,146 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 69.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Try loading font information for U+wasy on input line 69.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
-)
-Underfull \hbox (badness 10000) detected at line 69
+Underfull \hbox (badness 10000) detected at line 56
 $[]$
  []
 
 
-Overfull \hbox (8.53581pt too wide) in paragraph at lines 69--69
+Overfull \hbox (8.53581pt too wide) in paragraph at lines 56--56
 [][] 
  []
 
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 69.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 69.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 56.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 56.
 
-Underfull \hbox (badness 10000) detected at line 69
+Underfull \hbox (badness 10000) detected at line 56
 []
  []
 
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 82.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 77.
 
-LaTeX Warning: Reference `Tab:01' on page 1 undefined on input line 82.
+LaTeX Warning: Reference `Tab:01' on page 1 undefined on input line 77.
 
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 86.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <13> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 90.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <11> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 124.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 81.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <13> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 84.
+
+Package natbib Warning: Citation `conference' on page 1 undefined on input line
+ 95.
+
+
+Package natbib Warning: Citation `patent' on page 1 undefined on input line 95.
+
+
+
+Package natbib Warning: Citation `article' on page 1 undefined on input line 95
+.
+
+
+Package natbib Warning: Citation `book' on page 1 undefined on input line 96.
+
+
+Package natbib Warning: Citation `chapter' on page 1 undefined on input line 96
+.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.5> not available
+(Font)              size <7> substituted on input line 124.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.5> not available
+(Font)              size <7> substituted on input line 124.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.5> not available
+(Font)              size <7> substituted on input line 124.
+
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 132.
 [1
 
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo1
 .jpg>]
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <11> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 157.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <11> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 157.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 135.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 135.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 135.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 135.
+
+LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <11> not available
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 143.
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <11> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 143.
 
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [2]
+
+LaTeX Warning: Reference `Tab:02' on page 3 undefined on input line 178.
+
+
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [3]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [4]
-Overfull \vbox (3.49998pt too high) has occurred while \output is active []
-
-
-[5]
-Overfull \vbox (3.49998pt too high) has occurred while \output is active []
-
-
-[6]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 389.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 389.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 389.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 389.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 389.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 389.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 389.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 389.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 389.
-
+No file frontiers.bbl.
 
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-[7]
-Overfull \vbox (3.49998pt too high) has occurred while \output is active []
-
-
-[8] <fig_var.pdf, id=109, 301.125pt x 176.66pt>
-File: fig_var.pdf Graphic file (type pdf)
- <use fig_var.pdf>
-Package pdftex.def Info: fig_var.pdf used on input line 444.
-(pdftex.def)             Requested size: 252.0pt x 147.84616pt.
-
-<fig_specvar.pdf, id=110, 592.2125pt x 197.73875pt>
-File: fig_specvar.pdf Graphic file (type pdf)
- <use fig_specvar.pdf>
-Package pdftex.def Info: fig_specvar.pdf used on input line 455.
-(pdftex.def)             Requested size: 504.0pt x 168.28993pt.
-
-<fig_ottervar.pdf, id=111, 540.0175pt x 145.54375pt>
-File: fig_ottervar.pdf Graphic file (type pdf)
- <use fig_ottervar.pdf>
-Package pdftex.def Info: fig_ottervar.pdf used on input line 470.
-(pdftex.def)             Requested size: 504.0pt x 135.83841pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[5] <logo1.jpg, id=68, 335.3328pt x 120.2091pt>
+File: logo1.jpg Graphic file (type jpg)
+ <use logo1.jpg>
+Package pdftex.def Info: logo1.jpg used on input line 281.
+(pdftex.def)             Requested size: 284.52756pt x 102.00212pt.
 
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-[9 <./fig_var.pdf> <./fig_specvar.pdf
+[6 <./logo1.jpg>]
 
-pdfTeX warning: pdflatex (file ./fig_specvar.pdf): PDF inclusion: multiple pdfs
- with page group included in a single page
->]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
+(./frontiers.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 299.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 299.
 
 
-Overfull \vbox (3.49998pt too high) has occurred while \output is active []
+Package rerunfilecheck Warning: File `frontiers.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-
-[10 <./fig_ottervar.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 479.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 479.
- (./TemporalIsotopes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 479.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 479.
-Package rerunfilecheck Info: File `TemporalIsotopes.out' has not changed.
-(rerunfilecheck)             Checksum: 0FA003FC727085CC5BA3B89AB0382F2E;264.
-
+Package rerunfilecheck Info: Checksums for `frontiers.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  2C06D15A21FAB645AF6714BD43F98C61;934.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -857,38 +739,36 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 12184 strings out of 493117
- 181252 string characters out of 6135433
- 323040 words of memory out of 5000000
- 15140 multiletter control sequences out of 15000+600000
- 72142 words of font info for 208 fonts, out of 8000000 for 9000
+ 10370 strings out of 493117
+ 151947 string characters out of 6135433
+ 297188 words of memory out of 5000000
+ 13458 multiletter control sequences out of 15000+600000
+ 43535 words of font info for 155 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 49i,9n,38p,1042b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,10n,37p,1035b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-urw/helvetic/uhvro8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/ti
-mes/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TemporalIsotopes.pdf (10 pages, 1102327 bytes).
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
+/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utm
+r8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on frontiers.pdf (6 pages, 1422338 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 35 named destinations out of 1000 (max. 500000)
- 36413 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 35851 words of extra memory for PDF output out of 42996 (max. 10000000)
 

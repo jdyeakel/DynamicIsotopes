@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    499667,       8572]
-NotebookOptionsPosition[    498804,       8538]
-NotebookOutlinePosition[    499165,       8554]
-CellTagsIndexPosition[    499122,       8551]
+NotebookDataLength[    500012,       8576]
+NotebookOptionsPosition[    499153,       8542]
+NotebookOutlinePosition[    499510,       8558]
+CellTagsIndexPosition[    499467,       8555]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -170,8 +170,9 @@ Cell[BoxData[
     RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
     RowBox[{"FrameLabel", "\[Rule]", 
      RowBox[{"{", 
-      RowBox[{"\"\<Specialization\>\"", ",", "\"\<Consumer Variance\>\""}], 
-      "}"}]}], ",", 
+      RowBox[{
+      "\"\<Specialization\>\"", ",", 
+       "\"\<Consumer isotopic niche width\>\""}], "}"}]}], ",", 
     RowBox[{"AxesOrigin", "\[Rule]", 
      RowBox[{"{", 
       RowBox[{"0", ",", "0"}], "}"}]}], ",", 
@@ -179,7 +180,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.650136629406303*^9, 3.6501367280157957`*^9}, {
    3.6501368118269377`*^9, 3.6501368246653833`*^9}, {3.6501369505210533`*^9, 
    3.650137019212592*^9}, 3.650138039433139*^9, {3.6501387110576267`*^9, 
-   3.65013871390396*^9}, {3.650138791862018*^9, 3.650138827544485*^9}}],
+   3.65013871390396*^9}, {3.650138791862018*^9, 3.650138827544485*^9}, {
+   3.650395582728114*^9, 3.6503955866400537`*^9}}],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{}, {}, 
@@ -3771,7 +3773,7 @@ yBnawvwK1vUMn8/5DA9qX9v3Cd4fV/uxFv4PFKzjBA==
   DisplayFunction->Identity,
   Frame->{{True, True}, {True, True}},
   FrameLabel->{{
-     FormBox["\"Consumer Variance\"", TraditionalForm], None}, {
+     FormBox["\"Consumer isotopic niche width\"", TraditionalForm], None}, {
      FormBox["\"Specialization\"", TraditionalForm], None}},
   FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
   GridLines->{None, None},
@@ -3790,7 +3792,7 @@ yBnawvwK1vUMn8/5DA9qX9v3Cd4fV/uxFv4PFKzjBA==
    3.6501368964613543`*^9}, {3.6501369517281313`*^9, 3.65013702013062*^9}, 
    3.650137549057992*^9, 3.65013804004391*^9, {3.6501387359993*^9, 
    3.6501387477680483`*^9}, {3.650138824238443*^9, 3.6501388281498623`*^9}, 
-   3.650209598745113*^9}]
+   3.650209598745113*^9, 3.650395505304525*^9, 3.650395589149659*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3945,7 +3947,7 @@ Cell[BoxData[
      RowBox[{"(", 
       RowBox[{"c", "+", "d", "-", 
        RowBox[{"d", " ", "n"}]}], ")"}], "2"]}]], "}"}]], "Output",
- CellChangeTimes->{3.650213511800333*^9}]
+ CellChangeTimes->{3.650213511800333*^9, 3.650395505341085*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3967,8 +3969,8 @@ Cell[BoxData[
     RowBox[{"FrameLabel", "\[Rule]", 
      RowBox[{"{", 
       RowBox[{
-      "\"\<Inversion Point \!\(\*OverscriptBox[\(S\), \(^\)]\)\>\"", ",", 
-       "\"\<Offset from Prey Centroid\>\""}], "}"}]}], ",", 
+      "\"\<Maximum consumer isotopic niche width \!\(\*OverscriptBox[\(S\), \
+\(^\)]\)\>\"", ",", "\"\<Offset from Prey Centroid\>\""}], "}"}]}], ",", 
     RowBox[{"ImageSize", "\[Rule]", "300"}]}], 
    RowBox[{"(*", 
     RowBox[{",", "\[IndentingNewLine]", 
@@ -3981,12 +3983,12 @@ Cell[BoxData[
         "\"\<R.Urchins\>\"", ",", "\"\<K.Crabs\>\"", ",", "\"\<Sea Stars\>\"",
          ",", "\"\<S.Crabs\>\""}], "}"}]}]}], "*)"}], "]"}]}]], "Input",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQBmIQLcF9aLeo0WvHmCeV+0D0EdH4QyB62oZTYLrvTftp
+1:eJxTTMoPSmViYGAQAWIQLcF9aLeo0WvHmCeV+0D0EdH4QyB62oZTYLrvTftp
 EP0mLvcSiJZhu38dRB8Qkr4Jom+laj8E0ZvcIp6A6HQGoS8g2qipD0z/VVT9
 B6K7zvL/B9HnUl8wiwHpd1PecoFot2kSQiD6jcEdNRC9ZFmkHojW0kkB09kN
 pzxBdMrTMC8QPcN1SzCI/nbbJwREG/Q/jwTRzw4siQPRepo9ySA6TyyqAERb
 Cdo0gGjbT/aNIHpffwGHJchf8tx8IHpmuJMEiE7X2AimH0WdsADRO/a1WoLo
-X3L24rZA+uCcr2AaAELNgv4=
+X3L24rZA+uCcr2C6UC9h9WQgnbytYw2IBgC0NorY
   "]],
 
 Cell[BoxData[
@@ -4049,8 +4051,8 @@ Cell[BoxData[
   FrameLabel->{{
      FormBox["\"Offset from Prey Centroid\"", TraditionalForm], None}, {
      FormBox[
-     "\"Inversion Point \\!\\(\\*OverscriptBox[\\(S\\), \\(^\\)]\\)\"", 
-      TraditionalForm], None}},
+     "\"Maximum consumer isotopic niche width \\!\\(\\*OverscriptBox[\\(S\\), \
+\\(^\\)]\\)\"", TraditionalForm], None}},
   FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
   GridLines->{None, None},
   GridLinesStyle->Directive[
@@ -4063,7 +4065,7 @@ Cell[BoxData[
      Scaled[0.02], 
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.650218182780136*^9}]
+ CellChangeTimes->{3.650218182780136*^9, 3.6503955053910427`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -7712,7 +7714,8 @@ yBnawvwK1vUMn8/5DA9qX9v3Cd4fV/uxFv4PFKzjBA==
       DisplayFunction->Identity,
       Frame->{{True, True}, {True, True}},
       FrameLabel->{{
-         FormBox["\"Consumer Variance\"", TraditionalForm], None}, {
+         FormBox["\"Consumer isotopic niche width\"", TraditionalForm], 
+         None}, {
          FormBox["\"Specialization\"", TraditionalForm], None}},
       FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
       GridLines->{None, None},
@@ -7788,8 +7791,8 @@ yBnawvwK1vUMn8/5DA9qX9v3Cd4fV/uxFv4PFKzjBA==
       FrameLabel->{{
          FormBox["\"Offset from Prey Centroid\"", TraditionalForm], None}, {
          FormBox[
-         "\"Inversion Point \\!\\(\\*OverscriptBox[\\(S\\), \\(^\\)]\\)\"", 
-          TraditionalForm], None}},
+         "\"Maximum consumer isotopic niche width \\!\\(\\*OverscriptBox[\\(S\
+\\), \\(^\\)]\\)\"", TraditionalForm], None}},
       FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
       GridLines->{None, None},
       GridLinesStyle->Directive[
@@ -8515,7 +8518,8 @@ yBnawvwK1vUMn8/5DA9qX9v3Cd4fV/uxFv4PFKzjBA==
  CellChangeTimes->{{3.6502104792063713`*^9, 3.6502104940297623`*^9}, 
    3.650210691265699*^9, 3.650210871947049*^9, {3.650211079998226*^9, 
    3.650211146767395*^9}, {3.6502112973538857`*^9, 3.650211322306467*^9}, 
-   3.650211391156605*^9, 3.6502181897126093`*^9}]
+   3.650211391156605*^9, 3.6502181897126093`*^9, 3.650395505499058*^9, 
+   3.650395592357843*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8533,11 +8537,11 @@ Manuscript/fig_ottervar.pdf\"\>"], "Output",
   3.650139258242041*^9, 3.6501392982963877`*^9, 3.650210578843383*^9, 
    3.650210885325869*^9, 3.650211096424548*^9, {3.650211129395935*^9, 
    3.650211150149931*^9}, {3.650211302555361*^9, 3.650211326608135*^9}, 
-   3.650211400068318*^9}]
+   3.650211400068318*^9, 3.65039555352229*^9, 3.650395595573926*^9}]
 }, Open  ]]
 },
-WindowSize->{1365, 1170},
-WindowMargins->{{318, Automatic}, {Automatic, 75}},
+WindowSize->{1365, 855},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 9, \
 2014)",
 StyleDefinitions->"Default.nb"
@@ -8555,24 +8559,24 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 5969, 133, 388, "Input"],
 Cell[CellGroupData[{
-Cell[6552, 157, 1088, 24, 46, "Input"],
-Cell[7643, 183, 218823, 3609, 207, "Output"]
+Cell[6552, 157, 1160, 26, 46, "Input"],
+Cell[7715, 185, 218879, 3609, 207, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[226503, 3797, 4870, 129, 340, "Input"],
-Cell[231376, 3928, 580, 19, 53, "Output"]
+Cell[226631, 3799, 4870, 129, 340, "Input"],
+Cell[231504, 3930, 602, 19, 53, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[231993, 3952, 1628, 37, 95, "Input"],
-Cell[233624, 3991, 3539, 74, 214, "Output"]
+Cell[232143, 3954, 1660, 37, 95, "Input"],
+Cell[233806, 3993, 3580, 74, 248, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[237200, 4070, 2161, 41, 131, "Input"],
-Cell[239364, 4113, 258750, 4404, 251, "Output"]
+Cell[237423, 4072, 2161, 41, 131, "Input"],
+Cell[239587, 4115, 258833, 4406, 217, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[498151, 8522, 252, 5, 28, "Input"],
-Cell[498406, 8529, 382, 6, 28, "Output"]
+Cell[498457, 8526, 252, 5, 28, "Input"],
+Cell[498712, 8533, 425, 6, 28, "Output"]
 }, Open  ]]
 }
 ]
