@@ -35,14 +35,15 @@
 \def\firstAuthorLast{Yeakel {et~al.}} %use et al only if is more than 1 author
 \def\Authors{
 Justin D. Yeakel\,$^{1,2,\dagger,*}$,
-Uttam Bhat\,$^{1,\dagger}$,
+Uttam Bhat\,$^{1,3,\dagger}$,
 Emma E. Smith\,$^3$,
 and Seth D. Newsome\,$^3$}
 % Affiliations should be keyed to the author's name with superscript numbers and be listed as follows: Laboratory, Institute, Department, Organization, City, State abbreviation (USA, Canada, Australia), and Country (without detailed address information such as city zip codes or street names).
 % If one of the authors has a change of address, list the new address below the correspondence details using a superscript symbol and use the same symbol to indicate the author in the author list.
 \def\Address{$^{1}$Santa Fe Institute, Santa Fe, New Mexico, USA \\
 $^{2}$School of Natural Sciences, University of California, Merced, Merced, California, USA \\
-$^{3}$Department of Biological Sciences, University of New Mexico, Albuquerque, New Mexico, USA \\
+$^{3}$Department of Physics, Boston University, Boston, Massachusetts 02215, USA \\
+$^{4}$Department of Biological Sciences, University of New Mexico, Albuquerque, New Mexico, USA \\
 $^{\dagger}$Contributed equally}
 % The Corresponding Author should be marked with an asterisk
 % Provide the exact contact address (this time including street name and city zip code) and email of the corresponding author
@@ -174,6 +175,8 @@ As such, the expected proportional contribution of a prey $i$ to the consumer's 
   {\rm Var}\{p_i\} = \frac{a_i(a_0 - a_i)}{a_0^2(a_0 + 1)}.
 \end{equation}
 
+\noindent Accordingly, we assume each time interval represents a single foraging bout, where we draw a single prey $i$ with probability $p_i$ for inclusion to the consumer's diet.
+
 Describing the dietary behavior of a consumer as a Dirichlet distribution provides a flexible and powerful framework to investigate how different foraging strategies influence a consumer's isotopic niche.
 For example, a pure generalist consumer would have a Dirchlet distribution with parameters $a_i = 1$ for all prey $i=1,...,n$, such that the marginal distribution for $P_i = p_i$ is close to uniform with expectation ${\rm E}\{p_i\} = 1/n$.
 Because we have assumed that the proportional contribution of a prey to the consumer's diet scales with the prey's encounter rate, this would be analogous to a system where a consumer is equally likely to encounter the same number of any prey.
@@ -181,12 +184,13 @@ In contrast, an obligate specialist would have a Dirichlet density that is spike
 The use of a Dirichlet distribution is also at the heart of Bayesian isotope mixing models (REFS), which assume a Dirichlet prior and enable the input of alternative dietary information to inform isotopic data.
 
 
+
 %Describing Z
-If the isotopic distributions for the set of potential prey follow independent Gaussian distributions, and the dietary behavior of the consumer has a Dirichlet density, the resultant density that describes the isotopic distribution of a consumer's diet $f_Z(Z=z)$ is a mixed Gaussian distribution, with weights given by ${\rm E}\{p_{i}\} = a_i/a_0$ for prey $i = 1,...,n$.
+If the isotopic distributions for the set of potential prey follow independent Gaussian distributions, and the dietary behavior of the consumer has a Dirichlet density, the resultant density that describes the isotopic distribution of a consumer's diet $f_Z(Z=z)$ is a mixed Gaussian distribution, with weights given by $\bm p$ drawn from the Dirichlet distribution.
 This density can be written as
 
 \begin{equation}
-f_Z(z|{\bm a},{\bm \mu},{\bm \sigma}) = \sum_{i=1}^n \frac{a_i}{a_0}\frac{1}{\sqrt{2 \pi \sigma_i^2}}{\rm e}^{-\frac{(z-\mu_i)^2}{2\sigma_i^2}},
+f_Z(z|{\bm p},{\bm \mu},{\bm \sigma}) = \sum_{i=1}^n p_i\frac{1}{\sqrt{2 \pi \sigma_i^2}}{\rm e}^{-\frac{(z-\mu_i)^2}{2\sigma_i^2}},
 \end{equation}
 
 \noindent with the expectation
@@ -199,7 +203,7 @@ f_Z(z|{\bm a},{\bm \mu},{\bm \sigma}) = \sum_{i=1}^n \frac{a_i}{a_0}\frac{1}{\sq
 \noindent where $\mu_i$ is the mean isotopic value for prey $i$.
 This is simply the weighted average of the isotopic values for the prey community, where weights are determined by the mean proportional contribution of prey to the consumer's diet.
 
-Of more interest to us here is the variance of $f_Z(z)$, which will allow us to analytically determine the isotopic niche width of the consumer as a function of its dietary behavior and the isotopic distributions (or mixing space) of its prey.
+Of more interest to us here is the variance of $Z$, which will allow us to analytically determine the isotopic niche width of the consumer as a function of its dietary behavior and the isotopic distributions (or mixing space) of its prey.
 We find that
 
 \begin{equation}
@@ -225,8 +229,8 @@ We can then rewrite Eq. \ref{eqVarZ} as
 \noindent and note that, independent of the prey mixing space (a function of $\mu_i$ and $\sigma_i^2$ for prey $i=1,...,n$), the isotopic variance of the consumer's diet will always be a concave parabolic function over $s_k$.
 With respect to the size of the consumer's isotopic niche width, this means that there can be a peak variance for a value of $s_k$ intermediate to pure generalization ($s_k=1/n$) and pure specialization ($s_k=1$).
 
-The peak, or inflection point $\hat s_k$, that describes the maximum isotopic variance of the consumer may or may not fall between $s_k=1/n$ and $s=1$, and is only of ecological interest if it does.
-This inflection point can be solved analytically by setting the derivative of Eq. \ref{eqVarZs} with respect to $s_k$ equal to zero, and solving for $s_k$, which results in
+The peak $\hat s_k$, that describes the maximum isotopic variance of the consumer may or may not fall between $s_k=1/n$ and $s=1$, and is only of ecological interest if it does.
+The peak variance can be solved analytically by setting the derivative of Eq. \ref{eqVarZs} with respect to $s_k$ equal to zero, and solving for $s_k$, which results in
 
 \begin{equation}
 	\hat s_k = \frac{A(1-n)+B (n-1)^2+2 C (C-D n+D)}{2 (C-D n+D)^2},
@@ -234,7 +238,7 @@ This inflection point can be solved analytically by setting the derivative of Eq
 
 \noindent where $A = \sum_{i \neq k}^n \left(\sigma_i^2 + \mu_i^2\right)$, $B = \left(\sigma_k^2 + \mu_k^2\right)$, $C = \sum_{i \neq k}^n \mu_i$, $D = \mu_k$.
 
-Determination of the inflextion point for consumer isotopic variance allows us to predict where the consumer's isotopic niche is expected to be maximized as a function of specialization on different prey.
+Determination of the peak variance allows us to predict where the consumer's isotopic niche is expected to be maximized as a function of specialization on different prey.
 Although here we have focused on the special case where a consumer targets a single prey, one can rewrite the equation for the consumer's isotopic niche width with respect to increasing specialization on any number or combination of prey in the mixing space.
 For example, in the case where a consumer specializes on two prey (i.e. two species of crab), one would rewrite Eq. \ref{eqVarZ} in terms of both $s_k$ (specialization on prey $k$) and $s_l$ (specialization on prey $l$), resulting in a concave parabolic sheet in dimensions $s_k$ and $s_l$.
 Determining the maximum variance would then entail taking the derivative of Eq. \ref{eqVarZ} with respect to both $s_k$ and $s_l$.
@@ -258,7 +262,8 @@ In multiple compartment frameworks, it is assumed that incorporation occurs over
 Though an assumption of multi-compartmental incorporation often does provide better statistical fit with experimental data, the physiological processes that drive incorporation of isotope ratios from one compartment to the other are not well understood, and such fits are only marginally better than a single-compartment approach.
 
 In this next section, we assume the ingested isotope ratios are incorporated into consumer body tissues directly, moderated by the rate of incorporation $\lambda$, which is treated as a free parameter.
-Thus, we aim to determine the isotopic compostion of the consumer $X_c$ as a function of the consumer diet, the isotopic distribution of its prey (or mixing space), and $\lambda$.
+Here we assume that the consumer is incorporating prey of smaller size than itself, such that $ 0 < \lambda < 1$.
+Thus, we aim to determine the isotopic composition of the consumer $X_c$ as a function of the consumer diet, the isotopic distribution of its prey (or mixing space), and $\lambda$.
 % The carbon and nitrogen isotope composition of a consumer's tissues are a product of its diet.
 % If this diet incorporates multiple prey in different quantities, as is the case for most consumers, the resulting consumer isotopic distribution must take into account:
 % \emph{i}) the initial isotopic signature of the consumer's tissues at a point in time $X_c(t)$ (we will assume for simplicity that the isotopic value in question is the ratio of heavy to light carbon isotope relative to a known standard $\delta^{13}{\rm C}$, though are methods are equivalent for any isotope that is integrated through diet),
@@ -297,19 +302,24 @@ The consumer's isotopic distribution changes in accordance to the stochastic dif
 \end{equation}
 
 \noindent where ${\rm dW}$ is the increment of Brownian motion (REF MANGEL).
-This stochastic differential equation is generally known as an Orstein-Uhlenbeck process (more?).
-Because the time interval is infinitely short at the continuous time limit, the consumer's isotopic distribution will have a Gaussian density.
+This stochastic differential equation describes a process known as Orstein-Uhlenbeck process, which describes a stochastic process which has a steady state variance around the mean.
+Because the time interval ${\rm dt}$ is infinitely short at the continuous limit, the consumer's isotopic distribution will have a Gaussian density (REF).
 In this case, if the initial isotopic values of the consumer at time $t=0$ is $X_c(0)$, the expectation and variability of $X_c$ at time $t$ are
 
 \begin{align}
-{\rm E}\{X_c(t)\} &= {\rm E}\{Z\} + (X_c(0) - {\rm E}\{Z\}){\rm e}^{-\lambda t}, \nonumber \\
+  \begin{split}
+    \label{eqEVar}
+{\rm E}\{X_c(t)\} &= {\rm E}\{Z\} + (X_c(0) - {\rm E}\{Z\}){\rm e}^{-\lambda t},\\
 {\rm Var}\{X_c(t)\} &= \frac{\lambda {\rm Var}\{Z\}}{2}\left(1 - {\rm e}^{-2\lambda t}\right).
+\end{split}
 \end{align}
 
 \noindent where ${\rm E}\{Z\}$ and ${\rm Var}\{Z\}$ are as defined in Eqns. \ref{eqEZ} and \ref{eqVarZ}.
 One can observe that as $t$ increases, the exponential part of ${\rm E}\{X_c(t)\}$ and ${\rm Var}\{X_c(t)\}$ go to zero, such that ${\rm E}\{X_c(t)\} \to {\rm E}\{Z\}$, and ${\rm Var}\{X_c(t)\} \to \lambda{\rm Var}\{Z\}/2$.
 In other words, the expectation of the consumer's isotopic distribution will equilibrate to that of its diet, while its variance will always be less than the variance of its diet by a factor of $\lambda/2$.
-This decrease in variance is due to the fact that the consumer-diet mix has a biased weight towards its own body tissues, such that $\lambda < 1(2)$. %if \lamabda = 2, then it will look like what it eats... weird... worth going into at all?
+Variance decreases as the rate of incorporation decreases due to the consumer averaging its isotopic value over more prey (because the tissue is turning over more slowly), and this averages the fluctuations of the consumer's diet.
+% This decrease in variance is due to the fact that the consumer-diet mix has a biased weight towards its own body tissues, such that $\lambda < 1(2)$.
+%if \lamabda = 2, then it will look like what it eats... weird... worth going into at all?
 
 
 
@@ -318,6 +328,33 @@ This decrease in variance is due to the fact that the consumer-diet mix has a bi
 
 %By uniting both dietary and isotopic variability into the single random variable $Z$, the above framework provides a means towards predicting the isotopic composition of a consumer over time, given a dietary strategy (described by the Dirichlet distribution) and the isotopic distribution of the potential resources (the isotopic mixing space).
 %Permitting the consumer's dietary strategy to vary provides a direct means of incorporating behavioral variability in estimates of a consumer's isotopic composition.
+
+
+
+
+
+\subsection*{Temporal dietary dynamics}
+An implicit assumption of the static model is that the consumer's diet varies instantaneously over a given parameterization of $f_Z(Z)$.
+This is relevant for organisms that have a consistently varying diet over time, however most organisms have diets that undergo large shifts over longer periods time.
+In such cases, the Dirichlet distribution that characterizes diet during one small temporal interval will be different than the Dirichlet distribution characterizing diet during another interval separated in time.
+Such a shift might be due to seasonal, ontogenetic, or demographic changes in the consumer's prey base over the course of months to years.
+In the following section, we will relax the assumption that diet is characterized by a single Dirichlet distribution over time, thus generalizing our formulation of consumer isotopic dynamics as a function of time.
+
+We now assume that a consumer's diet changes over time, such that the random variable of interest is now $Z(t)$.
+Solving for $X(t)$, we find
+
+\begin{align}
+{\rm E}\{X(t)\} = X(0){\rm e}^{-\lambda t} + \lambda{\rm e}^{-\lambda t} \int_{s=0}^t {\rm e}^{\lambda s} {\rm E}\{Z(s)\}{\rm d}s, \nonumber \\
+{\rm Var}\{X(t)\} = \lambda^2 {\rm e}^{-2\lambda t} \int_{s=0}^t {\rm e}^{2\lambda s} {\rm Var}\{Z(s)\} {\rm d}s
+\end{align}
+
+\noindent where $Z(t)$ is the time trajectory of the consumer diet's isotopic values.
+Because we have assumed that the isotopic distributions of resources are constant, only the dietary strategy of the consumer can change over time.
+For example, we might assume that if the consumer prefers prey 1 over prey 2 in the first part of the year, and prey 2 over prey 1 in the second part of the year, the expectation of the proportional contribution of prey to the diet of the consumer might oscillate sinusoidally.
+Because the isotopic values of prey are incorporated into the tissues of the consumer non-instantaneously, we would expect that the isotopic realization of such a dietary shift to be offset in time from the actual shift in prey.
+
+Incorporating different classes of prey-switching dynamics permits an understanding of how the isotopic composition of a consumer reflects changes in its behavior over time as a function of the incorporation rate $\lambda$.
+To gain an intuitive understanding of how ecological dynamics are portrayed by consumer isotope values, we consider two types of prey-switching behavior: {\it i}) an instantaneous shift from one dietary strategy to another (such as those used in feeding experiments), and {\it ii}) a sinusoidally varying dietary strategy.
 
 
 
@@ -339,8 +376,9 @@ This point may or may not exist at a value intermediate to an obligate generalis
 
 
 %1-2: Concave parabolic variance curve & geometry of mixing space
-The width, or variance, of the consumer's isotopic niche is necessarily concave parabolic over the specialization metric $s$, where $s=1/n$ refers to an obligate generalist, and $s=1$ refers to an obligate specialist.
-This means that there is a peak isotopic variance that lies somewhere along this specialization continuum, however it is only of interest to us of it lies in $s \in [1/n,1]$.
+
+% The width, or variance, of the consumer's isotopic niche is necessarily concave parabolic over the specialization metric $s$, where $s=1/n$ refers to an obligate generalist, and $s=1$ refers to an obligate specialist.
+% This means that there is a peak isotopic variance that lies somewhere along this specialization continuum, however it is only of interest to us of it lies in $s \in [1/n,1]$.
 
 
 One can gain some intuitive understanding of this nonlinearity by considering the following example, illustrated in Fig. \ref{figvar}.
@@ -356,37 +394,47 @@ The concave parabolic nature of consumer isotopic variability can thus be explai
 
 %3: Inversion point location
 Understanding what dietary strategy or mixing space geometry can maximize the isotopic niche width of the consumer will serve to help ecologists determine what mechanisms - ecological or statistical - may be driving isotopic data.
-Our analytical solution for this inflection over dietary specialization ($\hat s$) reveals that maximum isotopic niche width can, but doesn't always, fall in $s \in [1/n,1]$.
+Our analytical solution for this peak variance over dietary specialization ($\hat s$) reveals that maximum isotopic niche width can, but doesn't always, fall in $s \in [1/n,1]$.
 If the peak lies outside of this region, changes in isotopic variance as specialization on a targeted prey is increased will appear monotonic or even linear.
 
-Although the specific nature of $\hat s$ will depend strongly on mixing space geometry, we can determine certain key ingredients that will determine the general nature of where this value falls.
-For mixing space geometries where the targeted prey has higher than average variance, $\hat s$ will tend to lie towards specialization, however the offset of the mean value for the targeted prey from the mixing space centroid will push $\hat s$ towards $s=0.5$ (Fig. \ref{figspecvar}A,B).
+Although the specific nature of $\hat s$ will depend strongly on mixing space geometry, we can elucidate certain key ingredients that will determine the general nature of where this value falls.
+For mixing space geometries where the targeted prey has higher than average variance, $\hat s$ will tend to lie towards specialization ($s>0.5$), however the offset of the mean value for the targeted prey from the mixing space centroid will push $\hat s$ to $s \to 0.5$ (Fig. \ref{figspecvar}A,B).
 In contrast, if the targeted prey has lower than average variance, $\hat s$ will tend to lie towards generalization (Fig. \ref{figspecvar}B,C).
 As before, if the offset of the targeted prey's mean value increases, $\hat s \to 0.5$.
-In both cases, if the mean value for the targeted prey is close to the mixing space centroid, the maximum isotopic variance for the consumer could lie anywhere.
+In both cases, if the mean value for the targeted prey is close to the mixing space centroid, the maximum isotopic variance for the consumer could lie in any region.
 
 %Otter example
+To demonstrate the empirical relevance of the nonlinear nature of ${\rm Var}\{Z\}$, we examine a prey-rich sea otter system from xx.
+In this system, there are 12 potential prey resources with varying isotopic means and variances (FIGURE?), including sea urchins, multiple species of crab, abalone, mussels, and snails.
+By altering the underlaying Dirichlet distribution for the sea otter consumer, we can investigate how alternatively targeting each prey alters its isotopic variance across different degrees of specialization.
+We determined the existence of strong nonlinear effects on the isotopic variance of the consumer for 5 out of the 12 potential prey, due to both the relative magnitudes of each prey's means and variance relative to that of the mixing space (Fig. \ref{figottervar}).
+For targeted prey that resulted in nonlinear variance (including mussels, snails, purple sea urchins, kelp crabs, and seastars), the maximum isotopic variance was found in the region $s \leq 0.5$.
+
 
 %Incorporation results
+The equilibrial solution to our stochastic differential equation (Eq. \ref{eqSDE}) reveals that the isotopic variability of the consumer scales to diet as a factor of $\lambda/2$.
+As the incorporate rate decreases, such that the turnover time is long, the isotopic variability of the consumer declines.
+Moreover, we observe that as the consumer transitions from some initial isotopic state $X_c(0)$ to diet, the variance of the consumer's isotopic values equilibrate twice as fast as the mean value, as shown in the exponential component of Eq. \ref{eqEVar}.
+This is a well-known result of time-independent Ornstein-Uhlenbeck processes, though will play an important role when we consider time-varying diets in the Discussion section.
 
 %%Static results (primary)
-\emph{
-\begin{itemize}
-  \item Consumer isotopic niche width is concave parabolic
-  \item This means that there is a maximum isotopic niche width for the consumer; this maximum value may lie between the consumer being a generalist or a specialist
-  \item {\bf see figure 2:} Where the maximum value lies is a function of the mixing space...
-  \begin{itemize}
-    \item If the targeted prey has a higher than average variance, the maximum variance for the consumer will tend to be on the specialist side of the specialization metrix
-    \item If the targeted prey has a lower than average variance, the maximum variance for the consumer will tend to be on the generalist side of the spectrum
-  \end{itemize}
-  \item Where the maximum value lies also has to do with how different the targeted prey's mean value is from the rest of the isotope mixing space (the offset).
-  \begin{itemize}
-    \item If the offset is low (such that the targeted prey's mean is near... but not on... the centroid), the maximum consumer niche width can be very close to the `generalization' or `specialization' side of the spectrum.
-    \item If the offset is HIGH (such that the targeted prey's mean is far from the centroid), the maximum consumer niche width becomes very close to $s=0.5$...
-  \end{itemize}
-  \item {\bf see Figure 3:} This is not theoretical... we see that the consumer isotopic variance shows these properties for different targeted prey in the sea otter example!
-\end{itemize}
-}
+% \emph{
+% \begin{itemize}
+%   \item Consumer isotopic niche width is concave parabolic
+%   \item This means that there is a maximum isotopic niche width for the consumer; this maximum value may lie between the consumer being a generalist or a specialist
+%   \item {\bf see figure 2:} Where the maximum value lies is a function of the mixing space...
+%   \begin{itemize}
+%     \item If the targeted prey has a higher than average variance, the maximum variance for the consumer will tend to be on the specialist side of the specialization metric
+%     \item If the targeted prey has a lower than average variance, the maximum variance for the consumer will tend to be on the generalist side of the spectrum
+%   \end{itemize}
+%   \item Where the maximum value lies also has to do with how different the targeted prey's mean value is from the rest of the isotope mixing space (the offset).
+%   \begin{itemize}
+%     \item If the offset is low (such that the targeted prey's mean is near... but not on... the centroid), the maximum consumer niche width can be very close to the `generalization' or `specialization' side of the spectrum.
+%     \item If the offset is HIGH (such that the targeted prey's mean is far from the centroid), the maximum consumer niche width becomes very close to $s=0.5$...
+%   \end{itemize}
+%   \item {\bf see Figure 3:} This is not theoretical... we see that the consumer isotopic variance shows these properties for different targeted prey in the sea otter example!
+% \end{itemize}
+% }
 
 %The variance is concave parabolic
 
@@ -409,28 +457,6 @@ In both cases, if the mean value for the targeted prey is close to the mixing sp
 %Introducing preferences and/or state dependence thought
 
 
-
-\subsection{Temporal dietary dynamics}
-An implicit assumption of the static model is that the consumer's diet varies instantaneously over a given parameterization of $f_Z(Z)$.
-This will be relevant for organisms that have a consistently varying diet over time, however most organisms have diets that undergo large shifts over time, such that the Dirichlet distribution that might characterize their diets during one temporal window might be different the the Dirichlet distribution that characterizes their diet in another window in time.
-Such a shift might be due to seasonal, ontogenetic, or demographic changes in the consumer's prey base.
-In the following section, we will relax the assumption that diet is characterized by a single Dirichlet distribution over time, thus generalizing the dietary/isotopic dynamics as a function of time.
-
-We now assume that diet (but not the isotopic distribution of prey) changes over time, such that the random variable of interest is now $Z(t)$.
-Solving for $X(t)$, we find
-
-\begin{align}
-{\rm E}\{X(t)\} = X(0){\rm e}^{-\lambda t} + \lambda{\rm e}^{-\lambda t} \int_{s=0}^t {\rm e}^{\lambda s} {\rm E}\{Z(s)\}{\rm d}s, \nonumber \\
-{\rm Var}\{X(t)\} = \lambda^2 {\rm e}^{-2\lambda t} \int_{s=0}^t {\rm e}^{2\lambda s} {\rm Var}\{Z(s)\} {\rm d}s
-\end{align}
-
-\noindent where $Z(t)$ is the time trajectory of the consumer diet's isotopic values.
-Because we have assumed that the isotopic distributions of resources are constant, only the dietary strategy of the consumer can change through time.
-For example, we might assume that if the consumer prefers prey 1 over prey 2 in the first part of the year, and prey 2 over prey 1 in the second part of the year, the expectation of the proportional contribution of prey to the diet of the consumer might oscillate sinusoidally over a year.
-Because the isotopic values of prey are incorporated into the tissues of the consumer non-instantaneously, we would expect that the isotopic realization of such a dietary shift to be offset in time from the actual shift in prey.
-
-Incorporating different classes of prey-switching dynamics permits an understanding of how the isotopic composition of a consumer reflects changes in its behavior over time as a function of the incorporation rate $\lambda$.
-To gain an intuitive understanding of how ecological dynamics are portrayed by consumer isotope values, we consider two types of prey-switching behavior: {\it i}) an instantaneous shift from one dietary strategy to another (such as those used in feeding experiments), and {\it ii}) a sinusoidally varying dietary strategy.
 
 
 %Linking our approach to population dynamics
