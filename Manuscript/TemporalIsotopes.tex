@@ -163,7 +163,7 @@ Following the derivation described by Ainsworth (REF), if we define the proporti
 \noindent then the random variable $P_i \in {\bm P} = p_i \in {\bm p}$, where $\sum_i p_i = 1$, has a Dirichlet distribution with density
 
 \begin{equation}
-  f_{\bm P}(p_1,...,p_n|a_1,...,a_n) = \frac{\Gamma(\sum_{i=1}^n a_i)}{\sum_{i=1}^n\Gamma(a_i)}\prod_{i=1}^n p_i^{a_i - 1},
+  f_{\bm P}(p_1,...,p_n|\alpha_{\rm E},...,a_n) = \frac{\Gamma(\sum_{i=1}^n a_i)}{\sum_{i=1}^n\Gamma(a_i)}\prod_{i=1}^n p_i^{a_i - 1},
 \end{equation}
 
 \noindent where $\Gamma(\cdot)$ is the gamma function (REF Mangel).
@@ -215,8 +215,8 @@ We find that
 
 The isotopic variance of the consumer's diet ${\rm Var}\{Z\}$ can be simplified by considering a specific set of dietary behaviors.
 Here we examine how ${\rm Var}\{Z\}$ is influenced by generalist vs. specialist consumer diets, as well as the role of general mixing space geometries, in determining consumer isotopic niche width.
-If a generalist consumer alters its diet to become a specialist on a single prey, the Dirichlet distribution that defines its dietary behavior goes from $a_i=1$ for all $i=1,...,n$ to $a_{i \neq k}=1$ for $i=1,...,n$, with $a_k>1$.
-As specialization increases, the Dirichlet parameter corresponding to the preferred prey $k$, increases to a value much higher than one (pure specialization is obtained only at the limit $a_k \to \infty$).
+If a generalist consumer alters its diet to include more of a certain prey $k$ relative to the others, the Dirichlet distribution that defines its dietary behavior goes from $a_i=1$ for all $i=1,...,n$ to $a_{i \neq k}=1$ for $i=1,...,n$, with $a_k>1$.
+As specialization increases, the Dirichlet parameter corresponding to the targeted prey $k$, increases to a value much higher than one (pure specialization is obtained only at the limit $a_k \to \infty$).
 Thus, we can assume that $a_i=1$ for all $i \neq k$, and $a_k = (n-1)s_k/(1-s_k)$, where $s_k$ denotes specialization on prey $k$, ranging from $1/n$ (generalization) to $1$ (specialization).
 We can thus substitute $a_0 = (n-1)/(1-s_k)$ and $p_i = a_i/a_0 = (1-s_k)/(n-1)$ for all $i \neq k$, and $a_k/a_0 = s_k$.
 We can then rewrite Eq. \ref{eqVarZ} as
@@ -240,28 +240,29 @@ The peak variance can be solved analytically by setting the derivative of Eq. \r
 
 Determination of the peak variance allows us to predict where the consumer's isotopic niche is expected to be maximized as a function of specialization on different prey.
 Although here we have focused on the special case where a consumer targets a single prey, one can rewrite the equation for the consumer's isotopic niche width with respect to increasing specialization on any number or combination of prey in the mixing space.
-For example, in the case where a consumer specializes on two prey (i.e. two species of crab), one would rewrite Eq. \ref{eqVarZ} in terms of both $s_k$ (specialization on prey $k$) and $s_l$ (specialization on prey $l$), resulting in a concave parabolic sheet in dimensions $s_k$ and $s_l$.
+For example, in the case where a consumer specializes on two prey (i.e. two species of crab), one would rewrite Eq. \ref{eqVarZ} in terms of both $s_k$ (specialization on prey $k$) and $s_l$ (specialization on prey $l$), resulting in a concave parabolic plane in dimensions $s_k$ and $s_l$.
 Determining the maximum variance would then entail taking the derivative of Eq. \ref{eqVarZ} with respect to both $s_k$ and $s_l$.
-In dimensions higher than 2, the process would be the same, with the goal of finding the maximum variance over a hyperplane with a number of dimensions determined by the number of prey on which the consumer is specializing.
+In dimensions higher than 2, the process would be the same, with the goal of finding the maximum variance over a hyperplane with a number of dimensions determined by the number of prey on which the consumer is preferentially targeting.
 Because specializing on multiple prey does not introduce anything conceptually unique, we consider only the case of a single-prey specialist.
 
 
 
 \subsection*{The Dynamics of Isotopic Incorporation}
 We have established a framework for analytically calculating the distribution of isotope values that characterizes a consumer's diet, composed of multiple, isotopically distinct prey.
-The dietary behavior of the consumer is a function of a single Dirichlet distribution, which is assumed not to change over time, although we will relax this assumption later on.
-Due to the central limit theorem, over long timescales the dietary distribution of the consumer is static, with a fixed mean and variance.
-However, over short timescales, the diet of the consumer varies as Eq. \ref{eqDirVar}, while its isotopic values vary by the combined effects of the Dirichlet and the mixed Gaussian framework, shown in Eq. \ref{eqVarZ}.
+The dietary behavior of the consumer is a function of a single Dirichlet distribution, which is assumed not to change over time, although we will relax this assumption in the next section.
+By the central limit theorem, over long timescales the dietary distribution of the consumer is static, with a fixed mean and variance.
+However, over short timescales, the diet of the consumer varies as Eq. \ref{eqDirVar}, while its isotopic values vary by the combined effects of the Dirichlet and the mixed Gaussian framework, described by Eq. \ref{eqVarZ}.
 
-As the consumer incorporates prey into its diet, the dietary isotopic distribution is incorporated into its tissues.
-The timescale of physiological isotopic incorporation is based on the turnover rate of consumer tissues, which on the fast end can occur within days to weeks (blood plasma), and on the slow end occur over years (bone).
+%Not sure, but this might be more appropriate in the discussion
+As the consumer incorporates prey into its diet, the isotopic distribution of its diet is incorporated into its tissues.
+The timescale of physiological isotopic incorporation is based on the turnover rate of consumer tissues, which on the fast end can occur within days to weeks (e.g. blood plasma), and on the slow end occur over years (e.g. bone).
 Incorporation rates are well known to isotope ecologists and have been observed in both controlled feeding studies (REFS), and occasionally in the wild (REFS?).
 Although the physiological details are not well understood, isotopic incorporation can be modeled using either single- or multi-compartmental approaches (REFS).
 In a single compartment framework, isotope ratios are ingested with food, and directly incorporated into consumer tissues at a tissue-specific rate.
 In multiple compartment frameworks, it is assumed that incorporation occurs over multiple body pools, the turnover of each occuring at different rates.
-Though an assumption of multi-compartmental incorporation often does provide better statistical fit with experimental data, the physiological processes that drive incorporation of isotope ratios from one compartment to the other are not well understood, and such fits are only marginally better than a single-compartment approach.
+Though an assumption of multi-compartmental incorporation often does provide better statistical fit with experimental data (REFS), the physiological processes that drive incorporation of isotope ratios from one compartment to the other are not well understood (REF), and such fits are only marginally better than a single-compartment approach.
 
-In this next section, we assume the ingested isotope ratios are incorporated into consumer body tissues directly, moderated by the rate of incorporation $\lambda$, which is treated as a free parameter.
+In this next section, we assume that the ingested isotope ratios are incorporated into consumer body tissues directly, moderated by the rate of incorporation $\lambda$, which is treated as a free parameter.
 Here we assume that the consumer is incorporating prey of smaller size than itself, such that $ 0 < \lambda < 1$.
 Thus, we aim to determine the isotopic composition of the consumer $X_c$ as a function of the consumer diet, the isotopic distribution of its prey (or mixing space), and $\lambda$.
 % The carbon and nitrogen isotope composition of a consumer's tissues are a product of its diet.
@@ -281,20 +282,10 @@ In a completely deterministic framework, the isotopic composition of the consume
 
 \noindent where the overdot denotes the derivative with respect to time $t$, and $p_i$ and $\mu_i$ are the proportional contribution of prey $i$ to the diet of the consumer, and the mean isotopic value of prey $i$, respectively.
 
-However, we must also take into account the stochastic effects described in the previous section, and here we consider two indepedent sources of variation.
-First, each potential resource $i$ is composed of individuals with isotopic values varying according to independent Gaussian distributions with expecation ${\rm E}\{X_i\}=\mu_i$, and variance ${\rm Var}\{X_i\}=\sigma^2_i$.
-Secondly, in this section we consider a consumer diet is variable, yet static (such that it can be described by a time-invariant probability distribution), there is variation in the consumption of prey across short periods of time.
-% In other words, a consumer's diet is described by a probability distribution that itself is temporally static (a constraint that we will ease later on).
-
-%Integration over time with a static diet
-%{\bf The Dynamics of Incorporation.}
-% The isotopic distribution of a consumer changes with the consumption of different prey.
-% The extent of this change is a function of
-% 1) the difference between the isotopic value of the consumer compared to its diet, and
-% 2) the incorporation rate.
-% Because the consumer's diet is stochastic, we must take into account both the isotopic expectation of diet, as well as the isotopic variance of diet, and this will allow us to determine both the expectation and variance of the consumer's isotopic value as a give dietary isotopic distribution is incorporated over time.
-
-The consumer's isotopic distribution changes in accordance to the stochastic differential equation
+However, we must also take into account the stochastic effects described in the previous section, inluding the variation associated with the consumer's diet, as well as the isotopic variation of each potential prey.
+% First, each potential resource $i$ is composed of individuals with isotopic values varying according to independent Gaussian distributions with expecation ${\rm E}\{X_i\}=\mu_i$, and variance ${\rm Var}\{X_i\}=\sigma^2_i$.
+% Secondly, in this section we consider a consumer diet is variable, yet static (such that it can be described by a time-invariant probability distribution), there is variation in the consumption of prey across short periods of time.
+We account for these stochastic effects by describing changes in the consumer's isotopic distribution with the stochastic differential equation
 
 \begin{equation}
 \label{eqSDE}
@@ -302,7 +293,7 @@ The consumer's isotopic distribution changes in accordance to the stochastic dif
 \end{equation}
 
 \noindent where ${\rm dW}$ is the increment of Brownian motion (REF MANGEL).
-This stochastic differential equation describes a process known as Orstein-Uhlenbeck process, which describes a stochastic process which has a steady state variance around the mean.
+This stochastic differential equation describes a process known as an Orstein-Uhlenbeck process, which describes a stochastic process that has a steady state variance around the mean.
 Because the time interval ${\rm dt}$ is infinitely short at the continuous limit, the consumer's isotopic distribution will have a Gaussian density (REF).
 In this case, if the initial isotopic values of the consumer at time $t=0$ is $X_c(0)$, the expectation and variability of $X_c$ at time $t$ are
 
@@ -317,7 +308,7 @@ In this case, if the initial isotopic values of the consumer at time $t=0$ is $X
 \noindent where ${\rm E}\{Z\}$ and ${\rm Var}\{Z\}$ are as defined in Eqns. \ref{eqEZ} and \ref{eqVarZ}.
 One can observe that as $t$ increases, the exponential part of ${\rm E}\{X_c(t)\}$ and ${\rm Var}\{X_c(t)\}$ go to zero, such that ${\rm E}\{X_c(t)\} \to {\rm E}\{Z\}$, and ${\rm Var}\{X_c(t)\} \to \lambda{\rm Var}\{Z\}/2$.
 In other words, the expectation of the consumer's isotopic distribution will equilibrate to that of its diet, while its variance will always be less than the variance of its diet by a factor of $\lambda/2$.
-Variance decreases as the rate of incorporation decreases due to the consumer averaging its isotopic value over more prey (because the tissue is turning over more slowly), and this averages the fluctuations of the consumer's diet.
+Variance decreases as the rate of incorporation decreases due to the consumer averaging its isotopic value over more prey (because the tissue is turning over more slowly), and this serves to average out fluctuations in the consumer's diet.
 % This decrease in variance is due to the fact that the consumer-diet mix has a biased weight towards its own body tissues, such that $\lambda < 1(2)$.
 %if \lamabda = 2, then it will look like what it eats... weird... worth going into at all?
 
@@ -335,26 +326,24 @@ Variance decreases as the rate of incorporation decreases due to the consumer av
 
 \subsection*{Temporal dietary dynamics}
 An implicit assumption of the static model is that the consumer's diet varies instantaneously over a given parameterization of $f_Z(Z)$.
-This is relevant for organisms that have a consistently varying diet over time, however most organisms have diets that undergo large shifts over longer periods time.
-In such cases, the Dirichlet distribution that characterizes diet during one small temporal interval will be different than the Dirichlet distribution characterizing diet during another interval separated in time.
+This is relevant for organisms that have a consistently varying diet over time, however most organisms have diets that undergo large changes over longer periods time.
+In such cases, the Dirichlet distribution that characterizes diet during one small temporal interval will be different than the Dirichlet distribution characterizing diet during another interval far apart in time.
 Such a shift might be due to seasonal, ontogenetic, or demographic changes in the consumer's prey base over the course of months to years.
 In the following section, we will relax the assumption that diet is characterized by a single Dirichlet distribution over time, thus generalizing our formulation of consumer isotopic dynamics as a function of time.
 
-We now assume that a consumer's diet changes over time, such that the random variable of interest is now $Z(t)$.
+As the consumer's diet changes over time, the random variable of interest is now $Z(t)$, which is the trajectory defining the isotopic values of the consumer's diet over time.
 Solving for $X(t)$, we find
 
 \begin{align}
+  \label{eqEVarZt}
 {\rm E}\{X(t)\} = X(0){\rm e}^{-\lambda t} + \lambda{\rm e}^{-\lambda t} \int_{s=0}^t {\rm e}^{\lambda s} {\rm E}\{Z(s)\}{\rm d}s, \nonumber \\
-{\rm Var}\{X(t)\} = \lambda^2 {\rm e}^{-2\lambda t} \int_{s=0}^t {\rm e}^{2\lambda s} {\rm Var}\{Z(s)\} {\rm d}s
+{\rm Var}\{X(t)\} = \lambda^2 {\rm e}^{-2\lambda t} \int_{s=0}^t {\rm e}^{2\lambda s} {\rm Var}\{Z(s)\} {\rm d}s.
 \end{align}
 
-\noindent where $Z(t)$ is the time trajectory of the consumer diet's isotopic values.
-Because we have assumed that the isotopic distributions of resources are constant, only the dietary strategy of the consumer can change over time.
-For example, we might assume that if the consumer prefers prey 1 over prey 2 in the first part of the year, and prey 2 over prey 1 in the second part of the year, the expectation of the proportional contribution of prey to the diet of the consumer might oscillate sinusoidally.
-Because the isotopic values of prey are incorporated into the tissues of the consumer non-instantaneously, we would expect that the isotopic realization of such a dietary shift to be offset in time from the actual shift in prey.
 
-Incorporating different classes of prey-switching dynamics permits an understanding of how the isotopic composition of a consumer reflects changes in its behavior over time as a function of the incorporation rate $\lambda$.
-To gain an intuitive understanding of how ecological dynamics are portrayed by consumer isotope values, we consider two types of prey-switching behavior: {\it i}) an instantaneous shift from one dietary strategy to another (such as those used in feeding experiments), and {\it ii}) a sinusoidally varying dietary strategy.
+
+% Incorporating different classes of prey-switching dynamics permits an understanding of how the isotopic composition of a consumer reflects changes in its behavior over time as a function of the incorporation rate $\lambda$.
+% To gain an intuitive understanding of how ecological dynamics are portrayed by consumer isotope values, we consider two types of prey-switching behavior: {\it i}) an instantaneous shift from one dietary strategy to another (such as those used in feeding experiments), and {\it ii}) a sinusoidally varying dietary strategy.
 
 
 
@@ -413,9 +402,56 @@ For targeted prey that resulted in nonlinear variance (including mussels, snails
 
 %Incorporation results
 The equilibrial solution to our stochastic differential equation (Eq. \ref{eqSDE}) reveals that the isotopic variability of the consumer scales to diet as a factor of $\lambda/2$.
-As the incorporate rate decreases, such that the turnover time is long, the isotopic variability of the consumer declines.
+As the incorporation rate decreases, such that the turnover time is long, the isotopic variability of the consumer declines.
 Moreover, we observe that as the consumer transitions from some initial isotopic state $X_c(0)$ to diet, the variance of the consumer's isotopic values equilibrate twice as fast as the mean value, as shown in the exponential component of Eq. \ref{eqEVar}.
-This is a well-known result of time-independent Ornstein-Uhlenbeck processes, though will play an important role when we consider time-varying diets in the Discussion section.
+
+%Dynamic diet results
+However, if the consumer's diet is itself variable, we do not expect the isotopic distribution of the consumer to equilibrate as it would in a controlled feeding study.
+A common example of such a temporally dynamic diet is one that varies from one season to another; for example, we might assume that if the consumer exhibits one dietary strategy in the dry season, and another in the wet season, the expectation of the proportional contribution of prey to the consumer's diet would oscillate sinusoidally.
+
+The isotopic distribution of a consumer over time $X_c(t)$ during a single dietary shift (as in a controlled feeding study) is governed by a single physiological timescale: that of the rate of incorporation.
+In contrast, a sinusoidal dietary dynamic introduces a timescale that affects the isotopic composition of the consumer of ecological origin.
+To illustrate this interplay of both physiological and ecological timescales on how a consumer's isotope composition changes over time, we consider a diet with an isotopic mean and variance that changes sinusoially over time, such that
+
+\begin{align}
+  \begin{split}
+    \label{eqSinZ}
+    {\rm E}\{Z(t)\} &= \alpha_{\rm E} + \beta_{\rm E}\sin(\omega t), \\
+    {\rm Var}\{Z(t)\} &= \alpha_{\rm V} + \beta_{\rm V}\sin(\omega t)
+  \end{split}
+\end{align}
+
+\noindent Here, $\alpha_{\rm E}$ is the central tendency of the oscillating mean dietary isotope values, while $\beta_{\rm E}$ is the amplitude of the mean dietary isotope values.
+Because we are simulating a continuous switch between two dietry strategies, $\beta_{\rm E}$ effectively measures the difference in the mean isotope values for each strategy.
+Because we do not assume that both dietary strategies have the same variance, we have a similar equation for ${\rm Var}\{Z\}$, where $\alpha_{\rm V}$ is the mean isotopic variance between each dietary strategy, and $\beta_{\rm V}$ determines the amplitude of the variance.
+As the difference in the isotopic variance of each dietary strategy increases (e.g. a low isotopic variance for the dry season diet, and a high isotopic variance for the wet season diet), $\beta_{\rm V}$ increases.
+Both the mean and the variance share the frequency $\omega$, and it is this term that determines the ecological timescale of the consumer's isotopic composition; a high frequency implies a greater number of shifts between dietary strategies over a given amount of time, while a low frequency implies fewer shifts.
+
+To determine the effect of an oscillating diet on the consumer's isotope distribution, we must solve Eq. \ref{eqEVarZt}, where ${\rm E}\{Z(t)\}$ and ${\rm Var}\{Z(t)\}$ are as defined in Eq. \ref{eqSinZ}.
+Doing this and throwing out the exponentially decaying components of the equation (which describes the transition to the shifting diet from some intitial condition $X_c(0)$, we find that the isotopic mean and variance of the consumer is written
+
+\begin{equation}
+\label{EX-sin}
+{\rm E}\{X_c\} = \alpha_{\rm E} + \frac{\beta_{\rm E} \lambda}{\sqrt{\lambda^2+\omega^2}} \sin{\left(\omega t - \tan^{-1}{\left(\frac{\omega}{\lambda}\right)}\right)}
+\end{equation}
+\begin{align}
+\label{VX-sin}
+{\rm Var}\{X_c\} = \frac{1}{4}\lambda\left(2 \alpha_{\rm V}^2 + \beta_{\rm V}^2\right) &+ \frac{2 \alpha_{\rm V} \beta_{\rm V} \lambda^2}{\sqrt{4\lambda^2+\omega^2}} \sin{\left(\omega t - \tan^{-1}{\left(\frac{\omega}{2\lambda}\right)}\right)} \nonumber \\ &- \frac{\beta_{\rm V}^2\lambda^2}{4\sqrt{\lambda^2+\omega^2}} \sin{\left(2 \omega t - \tan^{-1}{\left(\frac{\lambda}{\omega}\right)}\right)}
+\end{align}
+
+\noindent where if we time-average over the oscillations (denoted by $\langle \cdot \rangle_t$), we obtain
+\begin{equation}
+\label{EX-VX-sin-timeaverage}
+\left\langle {\rm E}\{X_c\}\right\rangle_t = a_1\;,\quad \left\langle{\rm Var}\{X_c\}\right\rangle_t = \frac{1}{4}\lambda\left(2 \alpha_{\rm V}^2+\beta_{\rm V}^2\right)
+\end{equation}
+
+
+
+Because dietary isotope ratios are incorporated into the consumer's tissue at a rate determined by $\lambda$, we would expect that the isotopic realization of such a behavioral shift in diet to be lagged in time.
+This offset as a function of $\lambda$ appears directly in Eq \ref{EX-sin} as $\theta = \tan^{-1}{(\omega/\lambda)}$.
+If we scale this quantity by XX, we can depict the lag in the consumer's isotope value in proportion to the frequency of the dietary shift, as depicted in Fig. \ref{figoffset}.
+
+
 
 %%Static results (primary)
 % \emph{
@@ -501,5 +537,28 @@ Right panel: Calculated maximum consumer niche width values as a function of spe
   \label{figottervar}
 \end{figure}
 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{fig_AvgDiff.pdf}
+\caption{
+}
+  \label{figavgdiff}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{fig_Offset.pdf}
+\caption{
+}
+  \label{figoffset}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{fig_EVarTemp.pdf}
+\caption{
+}
+  \label{figevart}
+\end{figure}
 
 \end{document}
