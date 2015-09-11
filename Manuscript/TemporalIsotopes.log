@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 SEP 2015 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  11 SEP 2015 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -773,7 +773,11 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-[8] <fig_var.pdf, id=114, 301.125pt x 176.66pt>
+[8]
+
+LaTeX Warning: Reference `figoffset' on page 9 undefined on input line 452.
+
+<fig_var.pdf, id=113, 301.125pt x 176.66pt>
 File: fig_var.pdf Graphic file (type pdf)
  <use fig_var.pdf>
 Package pdftex.def Info: fig_var.pdf used on input line 506.
@@ -782,7 +786,7 @@ Package pdftex.def Info: fig_var.pdf used on input line 506.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig_specvar.pdf, id=115, 592.2125pt x 197.73875pt>
+<fig_specvar.pdf, id=114, 592.2125pt x 197.73875pt>
 File: fig_specvar.pdf Graphic file (type pdf)
  <use fig_specvar.pdf>
 Package pdftex.def Info: fig_specvar.pdf used on input line 517.
@@ -791,7 +795,7 @@ Package pdftex.def Info: fig_specvar.pdf used on input line 517.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig_ottervar.pdf, id=116, 540.0175pt x 145.54375pt>
+<fig_ottervar.pdf, id=115, 540.0175pt x 145.54375pt>
 File: fig_ottervar.pdf Graphic file (type pdf)
  <use fig_ottervar.pdf>
 Package pdftex.def Info: fig_ottervar.pdf used on input line 532.
@@ -800,29 +804,20 @@ Package pdftex.def Info: fig_ottervar.pdf used on input line 532.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig_AvgDiff.pdf, id=117, 357.335pt x 154.5775pt>
-File: fig_AvgDiff.pdf Graphic file (type pdf)
- <use fig_AvgDiff.pdf>
-Package pdftex.def Info: fig_AvgDiff.pdf used on input line 542.
-(pdftex.def)             Requested size: 352.79846pt x 152.62413pt.
+<fig_varZt.pdf, id=116, 216.81pt x 306.14375pt>
+File: fig_varZt.pdf Graphic file (type pdf)
+ <use fig_varZt.pdf>
+Package pdftex.def Info: fig_varZt.pdf used on input line 542.
+(pdftex.def)             Requested size: 201.59692pt x 284.67802pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig_Offset.pdf, id=118, 361.35pt x 229.85875pt>
-File: fig_Offset.pdf Graphic file (type pdf)
- <use fig_Offset.pdf>
-Package pdftex.def Info: fig_Offset.pdf used on input line 550.
-(pdftex.def)             Requested size: 252.0pt x 160.30025pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fig_EVarTemp.pdf, id=119, 480.79625pt x 280.04625pt>
-File: fig_EVarTemp.pdf Graphic file (type pdf)
- <use fig_EVarTemp.pdf>
-Package pdftex.def Info: fig_EVarTemp.pdf used on input line 558.
-(pdftex.def)             Requested size: 352.79846pt x 205.49606pt.
+<fig_varzContour.pdf, id=117, 273.02pt x 222.8325pt>
+File: fig_varzContour.pdf Graphic file (type pdf)
+ <use fig_varzContour.pdf>
+Package pdftex.def Info: fig_varzContour.pdf used on input line 550.
+(pdftex.def)             Requested size: 201.59692pt x 164.53984pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -843,14 +838,10 @@ pdfTeX warning: pdflatex (file ./fig_specvar.pdf): PDF inclusion: multiple pdfs
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-[11 <./fig_ottervar.pdf> <./fig_AvgDiff.pdf
+[11 <./fig_ottervar.pdf> <./fig_varZt.pdf
 
-pdfTeX warning: pdflatex (file ./fig_AvgDiff.pdf): PDF inclusion: multiple pdfs
- with page group included in a single page
-> <./fig_Offset.pdf
-
-pdfTeX warning: pdflatex (file ./fig_Offset.pdf): PDF inclusion: multiple pdfs 
-with page group included in a single page
+pdfTeX warning: pdflatex (file ./fig_varZt.pdf): PDF inclusion: multiple pdfs w
+ith page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -858,12 +849,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-[12 <./fig_EVarTemp.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 564.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 564.
+[12 <./fig_varzContour.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 556.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 556.
  (./TemporalIsotopes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 564.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 564.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 556.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 556.
 Package rerunfilecheck Info: File `TemporalIsotopes.out' has not changed.
 (rerunfilecheck)             Checksum: 6FD386622B729775F7B7E7EECF4F2110;190.
 
@@ -872,10 +863,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 12079 strings out of 493117
- 179609 string characters out of 6135433
- 326100 words of memory out of 5000000
- 15067 multiletter control sequences out of 15000+600000
+ 12073 strings out of 493117
+ 179509 string characters out of 6135433
+ 326021 words of memory out of 5000000
+ 15063 multiletter control sequences out of 15000+600000
  58235 words of font info for 159 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  49i,15n,38p,1042b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -898,10 +889,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2014/texmf-dist
 urw/helvetic/uhvro8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/ti
 mes/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb>
-Output written on TemporalIsotopes.pdf (12 pages, 1233857 bytes).
+Output written on TemporalIsotopes.pdf (12 pages, 1199500 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
- 304 compressed objects within 4 object streams
- 44 named destinations out of 1000 (max. 500000)
- 27204 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 382 PDF objects out of 1000 (max. 8388607)
+ 287 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 27199 words of extra memory for PDF output out of 29859 (max. 10000000)
 
