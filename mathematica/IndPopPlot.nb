@@ -1,0 +1,21 @@
+VarMix = ParallelTable[
+	   Var = Table[
+	     n = 100;
+     mu = RandomVariate[NormalDistribution[-15, 0.5], n];
+     sig = 
+      Table[x, {n}]; (1/n^2)*(Sum[
+	        n*sig[[i]]^2 + (n - 1)*mu[[i]]^2 - 
+         Sum[mu[[i]]*mu[[j]] Boole[i != j], {j, 1, n}], {i, 1, n}]),
+     {rep, 1, 10000}],
+   (*{x,Mean[Var]},*)
+   {x, 0.1, 2, 0.05}];
+
+IndPopVarPlot = 
+ BoxWhiskerChart[VarMix, ChartStyle -> ColorData[97, 1], 
+  ChartLabels -> 
+   Table[If[Mod[x + 1, IntegerPart[x] + 1] == 0, IntegerPart[x], 
+     ""], {x, 0.1, 2, 0.05}],
+  FrameLabel -> {"Individual isotopic variance", 
+	    "Population isotopic variance"}];
+Export["/Users/justinyeakel/Dropbox/PostDoc/2015_DynamicIsotopes/Manuscript/fig_indpopvar.pdf", IndPopVarPlot]
+Exit[]

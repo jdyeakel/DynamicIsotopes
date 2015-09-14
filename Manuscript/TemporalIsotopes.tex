@@ -265,7 +265,8 @@ In multiple compartment frameworks, it is assumed that incorporation occurs over
 Though an assumption of multi-compartmental incorporation often does provide better statistical fit with experimental data (REFS), the physiological processes that drive incorporation of isotope ratios from one compartment to the other are not well understood (REF), and such fits are only marginally better than a single-compartment approach.
 
 In this next section, we assume that the ingested isotope ratios are incorporated into consumer body tissues directly, moderated by the rate of incorporation $\lambda$, which is treated as a free parameter.
-Here we assume that the consumer is incorporating prey of smaller size than itself, such that $ 0 < \lambda < 1$.
+For simplicity, we assume that time is scaled such that a single time step corresponds to a single foraging bout.
+Moreover, we assume that the consumer is incorporating prey of smaller size than itself, such that $ 0 < \lambda < 1$.
 Thus, we aim to determine the isotopic composition of the consumer $X_c$ as a function of the consumer diet, the isotopic distribution of its prey (or mixing space), and $\lambda$.
 % The carbon and nitrogen isotope composition of a consumer's tissues are a product of its diet.
 % If this diet incorporates multiple prey in different quantities, as is the case for most consumers, the resulting consumer isotopic distribution must take into account:
@@ -448,24 +449,32 @@ For the case of sinusoidally varying diet, we can solve for $X_c(t)$ directly, s
 \begin{align}
   \label{eqXsin}
   \begin{split}
-    {\rm Var}\{X_c(t \to \infty)\} = &\alpha_{\rm V}\frac{\lambda}{2} + \beta_{\rm V}\frac{\lambda^2(2\lambda\sin(\omega t )-\omega \cos(\omega t))}{4\lambda^2 + \omega^2} \\
-    &+ \gamma_{\rm V}\frac{\lambda^2(\lambda \cos(2\omega t )+\omega \sin(2\omega t))}{2(
-    \lambda^2 + \omega^2)}.
+    {\rm Var}\{X_c(t \to \infty)\} = &\alpha_{\rm V}\frac{\lambda}{2} + \beta_{\rm V}\frac{\lambda^2}{\sqrt{(2\lambda)^2 + \omega^2}}\sin\left(\omega t -\theta_1\right) \\
+    &+ \gamma_{\rm V}\frac{\lambda^2}{2\sqrt{\lambda^2 + \omega^2}}\sin\left(2\omega t + \theta_2\right).
   \end{split}
 \end{align}
 
-\noindent As in the static case (where diet was not varying over long periods of time), the time-averaged variance is $\alpha_{\rm V}\lambda/2$.
+\noindent where the offsets $\theta_1$ and $\theta_2$ are $ \tan^{-1}(\omega/2\lambda)$ and $ \tan^{-1}(\lambda/\omega)$, respectively.
+As in the static case (where diet was not varying over long periods of time), the time-averaged variance is $\alpha_{\rm V}\lambda/2$.
 Moreover, we observed that the consumer's isotope composition lags behind changes in diet, such that an isotopic shift in the consumer's tissues is observed after the actual foraging shift.
-We can quantify the timing of this shift from Eq. \ref{eqXsin}, and observe that it is XXXX.
+This lag involves both $\theta_1$ and $\theta_2$, however these offsets play different roles in contributing to the lag for different mixing space geometries.
+When the isotopic means of the seasonal diets are similar, the lag is mostly due to $\theta_1$; when the means are different and the variances are similar, the lag is mostly due to $\theta_2$; when both the isotopic means and variances of the seasonal diets are different, both contribute significantly to the lag.
+%We can quantify the timing of this shift from Eq. \ref{eqXsin}, and observe that it is XXXX.
 
 
-Increasing $\omega/\lambda$ (such that the timescale of ecological swwitching relative to that of incorporation decreases), we observe that as the frequency of the dietary shift increases relative to the rate of incorporation,
-1) the lag between the transition and the peak variance of the consumer increases, and
-2) the amplitude in the variance of $X_c$ decreases.
-Accordingly, we observe that as a consumer adopts a more frequently shifting diet, changes in its variance will become more damped and difficult to measure, while as the rate of incorporation decreases, the lag between shifts in diet and the isotopic value of the consumer will increase.
+Increasing $\omega/\lambda$, such that the timescale of ecological switching relative to that of isotopic incorporation decreases, we observe that
+%we observe that as the frequency of the dietary shift increases relative to the rate of incorporation,
+1) the lag between the transition and the peak variance of the consumer increases with decreasing $\lambda$, and
+2) the amplitude of the variance of $X_c(t)$ decreases with increasing $\omega$.
+The first result is not surprising, as it mirrors the role of $\lambda$ in the static diet example. %when diet did not change over long periods of time.
+The second result is less intuitive: in words, as the consumer shifts its diet more frequently, there is still a peak variance during dietary transitions, though with diminishing amplitude, and this would make it more difficult to measure.
+This is due to the consumer slowly integrating isotope ratios from both diets, thus averaging across diet-switching events.
+Accordingly, the decrease in the amplitude of isotopic variance of the consumer's tissue is an averaging effect, where the timescale of incorporation is much larger than the timescale of dietary switching.
+%Accordingly, we observe that as a consumer adopts a more frequently shifting diet, changes in its variance will become more damped and difficult to measure, while as the rate of incorporation decreases, the lag between shifts in diet and the isotopic value of the consumer will increase.
 
-%
-%
+
+
+
 % However, if the consumer's diet is itself variable, we do not expect the isotopic distribution of the consumer to equilibrate as it would in a controlled feeding study.
 % A common example of such a temporally dynamic diet is one that varies from one season to another; for example, we might assume that if the consumer exhibits one dietary strategy in the dry season, and another in the wet season, the expectation of the proportional contribution of prey to the consumer's diet would oscillate sinusoidally.
 %
@@ -517,53 +526,106 @@ Accordingly, we observe that as a consumer adopts a more frequently shifting die
 \section{Discussion}
 
 %General - Emphasize the importance of peak variance (this should echo the discussion)
+The use of stable isotope ratios in ecology has increased exponentially in the last twenty years.
+Recent development of tools designed to increase the utility of using stable isotope ratios to infer diet have focused almost entirely on Bayesian mixing models.
+Bayesian isotope mixing models are extremely useful for backwards-estimating the probability distribution the described the proportional contribution of each species to the consumer's diet, where both the isotopic composition of the consumer and potential prey are known.
+However, there are many cases where these tools cannot be used, and this may be due to
+1) incomplete knowledge of the mixing space (REFS),
+2) an isotopically confounded mixing space (REFS), or
+3) under-sampling of the consumer and/or its potential prey.
+
+We assert that it is useful to establish a forward-integration approach towards understanding how the isotopic distribution of a consumer individual changes due to both ecological, physiological, and isotopic variables.
+Our goal is to provide a framework that introduces mechanistic links between the ecological foraging dynamics of a consumer, the physiological constraints that dictates incorporation, and the more abstract effects of mixing space geometry.
+This approach does not replace the utility of isotope mixing models, but instead offers an opposing framework by which the isotopic composition of a consumer can be understood.
+Where isotope mixing models are aimed on answering the question: `what was the most likely dietary behavior that produced the observed isotope ratios of a consumer given some mixing space geometry', we explore how different ecological scenarios can alter the isotopic composition of a consumer individual.
+We focus our efforts on building an analytical framework to understand how the isotopic variance of an individual (i.e. its isotopic niche width) changes as a function of different foraging strategies that are both probabilistic and dynamic over time.
 
 
+In constructing an analytical approach towards understanding isotopic variance at the individual consumer level, we have found some non-intuitive results (though intuitive in hindsight) that will be important to consider when one is interpreting the isotopic variation of consumers over different timescales.
+We consider two different general foraging strategies for an individual consumer:
+1) {\it static strategy}: probabilistic consumption of multiple prey, the proportions of which are - on average - constant over time, and 
+2) {\it dynamic strategy}: probabilistic consumption of multiple prey that varies over long periods of time.
+The former example is most relevant for consumers inhabiting relatively constant environments, whereas the latter is more appropriate for consumers with a shifting diet between years, season, or even for shorter timescales.
+
+Our primary findings concern whether and to what extent the peak isotopic variance of the consumer is realized under different, but definable, conditions with respect to static and dynamic foraging strategies.
+When the consumer exhibits a static foraging strategy, this peak variance can occur if it is an intermediate specialist, and whether or not peak variance is realized for intermediate specialization is a product of mixing space geometry, and the isotopic variance of the prey that it is preferentially targeting.
+When the consumer exhibits a dynamic, yet smoothly varying, foraging strategy, the peak variance occurs during the transition from one diet to another, and is offset by a lag that is a function of its incorporation rate, and therefore dependent on the tissue being analyzed.
+Below we attempt to gain additional understanding for why variance peaks are expected to occur under different ecological circumstances and mixing space geometries.
 
 
 %Static
 \subsection{The isotopic niche over specialization}
+
+The nonlinear nature of the consumer's isotopic niche width as a function of its specialization on certain prey (or combinations of prey) is driven almost entirely by the geometry of the prey isotope mixing space.
 One can gain some intuitive understanding of this nonlinearity by considering the following example, illustrated in Fig. \ref{figvar}.
-In a 3-prey system, where all prey have equal isotope means and variance, a consumer that ranges from generalizing on all three prey to specializing on a single prey will have equivalent dietary isotope distributions.
-As the mean value for the isotopic distribution of the targeted prey is moved away from the others, such that its offset from the centroid is increased, the variance function displays nonlinearity.
+In a three-prey system, where all prey have equal isotopic means and variance, a consumer that ranges from generalization on all three prey to specialization on a single prey will have isotopically equivalent diets.
+As the mean isotopic value of the targeted prey is moved away from the others, such that its offset from the mixing space centroid is increased, the variance function displays nonlinearity.
 This can be understood by considering two prey with the same mean value, and the targeted prey with a very different mean value.
 As the consumer incorporates isotopic ratios from all three prey in equal proportions, it will have increased isotopic variance due to the large spread of the prey.
-As the consumer integrates this isotopically atypical prey in greater proportions, the heterogeneity of incorporated isotope ratios will increase, serving to increase its own isotopic variability.
+As the consumer integrates this isotopically atypical prey in greater proportions, the heterogeneity of incorporated isotope ratios will increase, serving to increase the consumer's isotopic variability.
 The isotopic variability will then decline as it begins specializing on the atypical prey, and if it is consuming this prey exclusively, the isotopic variability of its diet will reflect the isotopic variability of its prey exactly.
-The concave parabolic nature of consumer isotopic variability can thus be explained by heterogeneous incorporation of isotope ratios over an asymmetric mixing space.
+The concave parabolic nature of the isotopic variability of the consumer's diet can thus be explained by heterogeneous incorporation of isotope ratios over an asymmetric mixing space.
 
 
 %3: Inversion point location
-Understanding what dietary strategy or mixing space geometry can maximize the isotopic niche width of the consumer will serve to help ecologists determine what mechanisms - ecological or statistical - may be driving isotopic data.
-Our analytical solution for this peak variance over dietary specialization ($\hat s$) reveals that maximum isotopic niche width can, but doesn't always, fall in $s \in [1/n,1]$.
+Understanding what dietary strategy or mixing space geometry can maximize the isotopic niche width of the consumer's diet, ${\rm Var}\{Z\}$, will serve to help ecologists determine what mechanisms - ecological or statistical - may be driving isotope data.
+Our analytical solution for this peak variance over dietary specialization ($\hat s$) reveals that maximum isotopic niche width can, but doesn't always, fall in $s \in [1/n,1]$, with bounds denoting exclusive prey generalization or specialization, respectively.
 If the peak lies outside of this region, changes in isotopic variance as specialization on a targeted prey is increased will appear monotonic or even linear.
 
-Although the specific nature of $\hat s$ will depend strongly on mixing space geometry, we can elucidate certain key ingredients that will determine the general nature of where this value falls.
-For mixing space geometries where the targeted prey has higher than average variance, $\hat s$ will tend to lie towards specialization ($s>0.5$), however the offset of the mean value for the targeted prey from the mixing space centroid will push $\hat s$ to $s \to 0.5$ (Fig. \ref{figspecvar}A,B).
-In contrast, if the targeted prey has lower than average variance, $\hat s$ will tend to lie towards generalization (Fig. \ref{figspecvar}B,C).
+Although the specific nature of $\hat s$ will depend strongly on mixing space geometry, we can elucidate certain key attributes that will determine the general nature of where this value falls.
+For mixing space geometries where the targeted prey has higher than average variance, $\hat s$ will tend to lie towards prey specialization ($s>0.5$), however the offset of the mean value of the targeted prey from the mixing space centroid will quickly push $\hat s$ to $s \to 0.5$ (Fig. \ref{figspecvar}A,B).
+In contrast, if the targeted prey has lower than average variance, $\hat s$ will tend to lie towards prey generalization ($s < 0.5$; Fig. \ref{figspecvar}B,C).
 As before, if the offset of the targeted prey's mean value increases, $\hat s \to 0.5$.
 In both cases, if the mean value for the targeted prey is close to the mixing space centroid, the maximum isotopic variance for the consumer could lie in any region.
 
 %Otter example
-To demonstrate the empirical relevance of the nonlinear nature of ${\rm Var}\{Z\}$, we examine a prey-rich sea otter system from xx.
-In this system, there are 12 potential prey resources with varying isotopic means and variances (FIGURE?), including sea urchins, multiple species of crab, abalone, mussels, and snails.
-By altering the underlaying Dirichlet distribution for the sea otter consumer, we can investigate how alternatively targeting each prey alters its isotopic variance across different degrees of specialization.
-We determined the existence of strong nonlinear effects on the isotopic variance of the consumer for 5 out of the 12 potential prey, due to both the relative magnitudes of each prey's means and variance relative to that of the mixing space (Fig. \ref{figottervar}).
-For targeted prey that resulted in nonlinear variance (including mussels, snails, purple sea urchins, kelp crabs, and seastars), the maximum isotopic variance was found in the region $s \leq 0.5$.
+To demonstrate the empirical relevance of the nonlinear nature of ${\rm Var}\{Z\}$, we examine a prey-rich marine system composed of twelve species commonly consumed by sea otters ({\it Enhydra lutris}).
+In this system, all potential prey resources have unique isotopic means and variances (Fig. XX), including multiple species of sea urchins and crab, worms, clams, abalone, mussels, sea stars, and snails.
+By altering the underlaying Dirichlet distribution for the sea otter consumer, we can investigate how alternatively targeting each prey species alters its the isotopic variance of its diet across different degrees of specialization (Fig. \ref{figottervar}A).
+We determined the existence of strong nonlinear effects in the isotopic variance of the consumer's diet for 5 out of the 12 potential prey, due to both the relative magnitudes of each prey's means and variances relative to that of the mixing space (Fig. \ref{figottervar}B).
+For targeted prey that resulted in nonlinear variance (including mussels, snails, purple sea urchins, kelp crabs, and sea stars), the maximum isotopic variance was found in the region $s \leq 0.5$.
+
+The message that we take from the sea otter example is relatively straightforward: for a given prey mixing space, a consumer's dietary variability -- where the consumer's tissues scale in proportion to its diet by a factor of $\lambda/2$ -- will be a function of both mixing space geometry, as well as its dietary strategy, and these effects can be confounding.
+Despite this, we are able to establish certain predictions for the consumer's isotopic niche width as a function of diet: as it targets prey with isotopic values farther from the mixing space centroid, the variance will be expected to increase.
+In a sense, such an application could serve as a null model to explain isotopic variance as opposed to an explanation based purely on consuming a greater variety of prey.
+
 
 
 
 %Temporal dynamics discussion
 \subsection{The isotopic niche over time}
 
+We gain additional insights into the factors influencing consumer isotopic variability by considering dynamic diets, where the consumer oscillates between different foraging strategies over time.
+We considered a simple sinusoidal oscillation, $\mathcal{U}(t)$, that controlled the proportional contribution of two sub-diets, which we referred to as `seasonal diets' to the composite diet over time $\mathbb{Z}(t)$.
+Our analytical results showed that the peak variance of the composite diet occurred during the transition between seasonal diets.
+Importantly, this is not due to any particular mixing space geometry, but a general result that will always occur, as long as the diets are isotopically distinct (each with a unique mean and variance), and the transition is smooth.
+
+Although the peak variance of $\mathbb{Z}(t)$ is entirely due to ecological diet shifts irrespective of that actual isotopic composition of the diets that the consumer is shifting between, the isotope mixing space does play a role in determining the magnitude of ${\rm Var}\{\mathbb{Z}(t)\}$, as averaged over time.
+This effect of mixing space geometry on the time-averaged variance of the composite diet is determined by $\alpha_{\rm V}$, which is a function of
+1) the average variance of the sub-diets from which $\mathbb{Z}$ is composed, and 
+2) the mean difference between the two sub-diets.
+As either of these factors increase, the average variance of the composite diet increases, setting the baseline from which the peak variance fluctuates.
+
 
 %Continuous vs. discontinuous switch
+An interesting observation that we gain from exploring a sinusoidal diet shift is that spike in variance at the dietary transition point is dependent on the transition being smooth.
+In fact, it is the mid-point of the transition, $\mathcal{U}(t) = 0.5$, where the composite diet is pulled equally from each seasonal diet, and this serves to maximize the isotopic heterogeneity of the mix.
+Analogous to the factors that cause peak variance for specialization on prey resources with different isotopic offsets from the prey centroid in the static diet example, when foraging strategies are dynamic, it is the point of maximum isotopic heterogeneity that maximizes dietary variance.
+An extreme alternative to smooth dietary transitions would be one that is discontinuous, and we could simulate this with a step-function.
+Such an instantaneous dietary shift is not unknown, and is realized in some systems by the sudden appearance of an alternative dietary resource.
+For example, grizzly bears shift their diet abruptly to salmon during certain times of the year, while [SECOND EXAMPLE].
+
+
 
 
 %%Why the individual is important...
 %Individuals vs. populations
 %KEY: High variance of individuals will lead to high variance at the population level
-
+We note up front that the analyses we present focus entirely on the individual, in particular how the isotopic variance of an individual changes in response to different ecological and isotopic factors.
+However, most ecological applications using stable isotope ratios operate at the population, though there has been many recent efforts to understand the sources of isotopic variation - at both the individual and population level.
+Indeed, one can extrapolate what we have learned about variance at an individual level to that of the population.
+For example, the variance of a population -- which is itself defined as a mixture of individuals, each with their own isotopic distribution -- is directly related to the variance of individuals within the population (fig. \ref{figindpopvar}).
+Thus, our determination of variance peaks at the individual level would certainly be `echoed' at the population level, though there are added complications, such as the heterogeneity of individual mean isotope values, that we do not explore here.
 
 %Introducing preferences and/or state dependence thought
 
@@ -636,5 +698,14 @@ Right panel: Calculated maximum consumer niche width values as a function of spe
 }
   \label{figxcsin}
 \end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{fig_indpopvar.pdf}
+\caption{
+}
+  \label{figindpopvar}
+\end{figure}
+
 
 \end{document}

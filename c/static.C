@@ -18,7 +18,7 @@ main()
 
 	const double r=0.01L,dt=1.L;
 	const int relaxtime=(int)(1.L/r);
-	const int iterations=100000;
+	const int iterations=1000000;
 	
 	for(int a2=1; a2<100; a2++)
 		{	
@@ -28,8 +28,7 @@ main()
 		for(int iterate=0; iterate<iterations; iterate++)
 			{
 			dirichlet(a,p,N);
-			for(int i=0; i<N; i++) n[i]=poisson(p[i]);
-
+			
 			Z=0.L;
 
 			for(int i=0; i<N; i++) for(int j=0; j<n[i]; j++) Z += gaussrand(EX[i], sqrt(VX[i]));
@@ -40,7 +39,9 @@ main()
 //			cout << (double)iterate*dt << '\t' << X << endl;
 			if(iterate>10*relaxtime){ sum += X; sum2 += X*X; m += 1.L; }
 			}
-		cout << (double)a[2]/(double)a0 << '\t' << sum2/m - (sum/m)*(sum/m) << endl;
+		double variance=0.L;
+		for(int i=0; i<n
+		cout << (double)a[2]/(double)a0 << '\t' << sum2/m - (sum/m)*(sum/m) << '\t' <<  endl;
 		}
 	
 	

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  13 SEP 2015 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  14 SEP 2015 11:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -774,59 +774,62 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-[9] <fig_var.pdf, id=134, 301.125pt x 176.66pt>
+[9] <fig_var.pdf, id=132, 301.125pt x 176.66pt>
 File: fig_var.pdf Graphic file (type pdf)
  <use fig_var.pdf>
-Package pdftex.def Info: fig_var.pdf used on input line 577.
+Package pdftex.def Info: fig_var.pdf used on input line 589.
 (pdftex.def)             Requested size: 252.0pt x 147.84616pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig_specvar.pdf, id=135, 592.2125pt x 197.73875pt>
+<fig_specvar.pdf, id=133, 592.2125pt x 197.73875pt>
 File: fig_specvar.pdf Graphic file (type pdf)
  <use fig_specvar.pdf>
-Package pdftex.def Info: fig_specvar.pdf used on input line 588.
+Package pdftex.def Info: fig_specvar.pdf used on input line 600.
 (pdftex.def)             Requested size: 504.0pt x 168.28993pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig_ottervar.pdf, id=136, 540.0175pt x 145.54375pt>
+<fig_ottervar.pdf, id=134, 540.0175pt x 145.54375pt>
 File: fig_ottervar.pdf Graphic file (type pdf)
  <use fig_ottervar.pdf>
-Package pdftex.def Info: fig_ottervar.pdf used on input line 603.
+Package pdftex.def Info: fig_ottervar.pdf used on input line 615.
 (pdftex.def)             Requested size: 504.0pt x 135.83841pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig_varZt.pdf, id=137, 216.81pt x 310.15875pt>
+<fig_varZt.pdf, id=135, 216.81pt x 310.15875pt>
 File: fig_varZt.pdf Graphic file (type pdf)
  <use fig_varZt.pdf>
-Package pdftex.def Info: fig_varZt.pdf used on input line 613.
+Package pdftex.def Info: fig_varZt.pdf used on input line 625.
 (pdftex.def)             Requested size: 201.59692pt x 288.41153pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig_varzContour.pdf, id=138, 269.005pt x 222.8325pt>
+<fig_varzContour.pdf, id=136, 269.005pt x 222.8325pt>
 File: fig_varzContour.pdf Graphic file (type pdf)
 
 <use fig_varzContour.pdf>
-Package pdftex.def Info: fig_varzContour.pdf used on input line 621.
+Package pdftex.def Info: fig_varzContour.pdf used on input line 633.
 (pdftex.def)             Requested size: 201.59692pt x 166.99475pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig_xcsin.pdf, id=139, 271.0125pt x 186.6975pt>
+<fig_xcsin.pdf, id=137, 271.0125pt x 186.6975pt>
 File: fig_xcsin.pdf Graphic file (type pdf)
  <use fig_xcsin.pdf>
-Package pdftex.def Info: fig_xcsin.pdf used on input line 630.
+Package pdftex.def Info: fig_xcsin.pdf used on input line 642.
 (pdftex.def)             Requested size: 252.0pt x 173.60693pt.
 
 
@@ -861,13 +864,13 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 pdfTeX warning: pdflatex (file ./fig_xcsin.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
 >]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 636.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 636.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 648.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 648.
  (./TemporalIsotopes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 636.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 636.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 648.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 648.
 Package rerunfilecheck Info: File `TemporalIsotopes.out' has not changed.
-(rerunfilecheck)             Checksum: 549B6BCEFAA6A6FB34EAC88F2680C907;372.
+(rerunfilecheck)             Checksum: 850FB038B3A652E0A0D1F81DAD85AC00;354.
 
 
 LaTeX Warning: There were undefined references.
@@ -876,7 +879,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  12096 strings out of 493117
  179768 string characters out of 6135433
- 326968 words of memory out of 5000000
+ 329056 words of memory out of 5000000
  15069 multiletter control sequences out of 15000+600000
  58755 words of font info for 167 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
@@ -901,10 +904,10 @@ onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb>
-Output written on TemporalIsotopes.pdf (13 pages, 1289187 bytes).
+Output written on TemporalIsotopes.pdf (13 pages, 1282558 bytes).
 PDF statistics:
- 478 PDF objects out of 1000 (max. 8388607)
- 357 compressed objects within 4 object streams
+ 464 PDF objects out of 1000 (max. 8388607)
+ 347 compressed objects within 4 object streams
  47 named destinations out of 1000 (max. 500000)
  27220 words of extra memory for PDF output out of 29859 (max. 10000000)
 

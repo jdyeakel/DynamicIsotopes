@@ -112,5 +112,19 @@ Until this point, we have discussed the forward problem, i.e., given the paramet
 We can write the
 
 
+\section{Step function}
+
+\begin{align}
+\mathrm{E}\{X_c^{(1)}\} = \left(\frac{1-e^{-\lambda T/2}}{1-e^{-\lambda T}}\right)\left(\mathrm{E}\{Z_1\} + \mathrm{E}\{Z_2\} e^{-\lambda T/2}\right) \\
+\mathrm{E}\{X_c^{(2)}\} = \left(\frac{1-e^{-\lambda T/2}}{1-e^{-\lambda T}}\right)\left(\mathrm{E}\{Z_2\} + \mathrm{E}\{Z_1\} e^{-\lambda T/2}\right) \\
+\mathrm{Var}\{X_c^{(1)}\} = \left(\frac{1-e^{-\lambda T}}{1-e^{-2 \lambda T}}\right)\left(\mathrm{Var}\{Z_1\} + \mathrm{Var}\{Z_2\} e^{-\lambda T}\right)\\
+\mathrm{Var}\{X_c^{(2)}\} = \left(\frac{1-e^{-\lambda T}}{1-e^{-2 \lambda T}}\right)\left(\mathrm{Var}\{Z_2\} + \mathrm{Var}\{Z_1\} e^{-\lambda T}\right)\\
+\alpha_E = \left(\frac{\mathrm{E}\{Z_1\}+\mathrm{E}\{Z_1\}}{2}\right)\\
+\beta_E =  \left\vert\frac{\mathrm{E}\{Z_1\}-\mathrm{E}\{Z_1\}}{2}\right\vert\left(\frac{1+e^{-\lambda T}-2 e^{-\lambda T/2}}{1-e^{-\lambda T}}\right)\\
+\alpha_V = \frac{\lambda}{2}\left(\frac{\mathrm{Var}\{Z_1\}+\mathrm{Var}\{Z_1\}}{2}\right)\\
+\beta_V = \frac{\lambda}{2}\left\vert\frac{\mathrm{Var}\{Z_1\}-\mathrm{Var}\{Z_1\}}{2}\right\vert\left(\frac{1+e^{-2\lambda T}-2 e^{-\lambda T}}{1-e^{-2\lambda T}}\right)\\
+\end{align}
+
+
 
 \end{document}
