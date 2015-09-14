@@ -117,7 +117,7 @@ For a given mixing space, a consumer with a large isotopic niche width may be in
 
 \section{Methods \& Analysis}
 We begin by establishing a forward-integration approach for modeling the incorporation of stable isotopes from multiple resources into a consumer's tissues.
-This new methodology provides an analytical link between the mechanistic drivers of foraging and the distribution of stable isotope values that describes a consumer's tissues over time.
+This new methodology provides an analytical link between the mechanistic drivers of foraging and the distribution of stable isotope values describing a consumer's tissues over time.
 %This framework aims to provide a flexible platform for introducing additional ecological complexities, such as time-dependent foraging behaviors and dietary specialization both among and within individuals.
 Using this framework, we aim to
 1) examine how certain dietary behaviors, such as prey specialization and different modes of dietary variation, impact the isotopic variance of consumer tissues thus aiding ecological interpretation of the `isotopic niche', and
@@ -125,24 +125,25 @@ Using this framework, we aim to
 
 \subsection*{Deriving the within-individual isotopic niche width}
 %The dynamics of diet ~ heuristic description of the process
-There are many ways to statistically summarize the integration of prey by a consumer species, however in order to establish a mechanistic link between foraging and the consumer's isotopic distribution, we follow the proceeding heuristic foraging mechanic.
+There are many ways to statistically summarize the integration of prey by a consumer species, however in order to establish a mechanistic link between foraging and the consumer's isotopic composition, we follow the proceeding heuristic foraging mechanic.
 
 We assume that a consumer encounters and consumes resources in proportion to the encounter rate of each prey; prey that are encountered more frequently are assumed to be consumed more frequently.
 An alternative approach could incorporate preferences (REFS) or even state-dependence (REFS), and we will briefly address these considerations in the Discussion.
 As prey are encountered and consumed, the prey's isotope values are incorporated into the consumer's tissues weighted by the prey-specific proportional contribution to diet.
 The resulting distribution that descibes the dietary input of multiple prey (each with an independent Gaussian density that describes the distribution of their isotopic values) is a mixed Gaussian distribution with weights determined by the prey's proportional contribution to diet.
 This proportional contribution is itself a random variable drawn from a Dirichlet density (a multivariate Beta distribution) that serves as a probabilistic description of the consumer's dietary input.
-The following section details our probabilistic description of the consumer dietary strategy, and focus our attention on the variability of the consumer isotopic distribution, which is equivalent to its isotopic niche width - a statistic of certain interest to ecologists using stable isotopes as a tool to understand diet.
+The following section details our probabilistic determination of the consumer's isotopic composition.
+We focus our attention on the variability of the consumer isotopic distribution, which is equivalent to its isotopic niche width - a statistic of certain interest to ecologists using stable isotopes as a tool to understand diet.
 %, as well as an analysis of the properties of the final consumer isotopic distribution.
 
 
 %Derivation of the Dirichlet controlling diet
 %If we  that the proportional contribution of prey to a consumer's diet scales to the rate at which it encounters its prey.
 %, such that we must first describe how the Dirichlet distribution describing consumer diet at a given point in time changes as a function of prey densities.
-A consumer encounters each prey at a frequency determined by a Poisson process with parameter $\psi_i$, which determines the number of encounters $M_i(t)=m$ between time 0 and time $t$,
+A consumer encounters each prey at a frequency determined by a Poisson process with parameter $\psi_i$, which determines the number of encounters $M_i(t)=m_i$ between time 0 and time $t$,
 
 \begin{equation}
-f_M (m_i|\psi_i) = {\rm e}^{-\psi_i t}\frac{(\psi_i t)^m}{m!}.
+f_M (m_i|\psi_i) = {\rm e}^{-\psi_i t}\frac{(\psi_i t)^m_i}{m_i!}.
 \end{equation}
 
 \noindent Here and henceforth, we use the general function $f(\cdot)$ to denote different frequency distributions, as well as uppercase notation to describe stochastic variables, and lowercase notation to describe specific values of stochastic variables.
@@ -152,7 +153,7 @@ If we assume that encounter rates are variable, such that some prey are more pat
 f_\Psi (\psi_i | c, a_i) = \frac{c^{a_i}}{\Gamma (a_i)}{\rm e}^{-c \psi_i}\psi_i^{a_i - 1}.
 \end{equation}
 
-\noindent Here, $a_i$ is the dispersion parameter, and $c$ scales with the time between encounters.
+\noindent Here, $a_i$ is the dispersion parameter, which is proportional to the encounter rate, and $c$ scales with the time between encounters.
 If we integrate across all possible values of $\psi_i$, we obtain the Negative Binomial density with mean encounter rate $a_i/c$ and coefficient of variation $1/\sqrt{a_i}$ (REF Mangel).
 Following the derivation described by Ainsworth (REF), if we define the proportional contribution of prey to a consumer's diet to scale with the encounter rate, such that
 
@@ -237,7 +238,7 @@ The peak variance can be solved analytically by setting the derivative of Eq. \r
 	\hat s_k = \frac{A(1-n)+B (n-1)^2+2 C (C-D n+D)}{2 (C-D n+D)^2},
 \end{equation}
 
-\noindent where $A = \sum_{i \neq k}^n \left(\sigma_i^2 + \mu_i^2\right)$, $B = \left(\sigma_k^2 + \mu_k^2\right)$, $C = \sum_{i \neq k}^n \mu_i$, $D = \mu_k$.
+\noindent where $A = \sum_{i \neq k}^n \left(\sigma_i^2 + \mu_i^2\right)$, $B = \left(\sigma_k^2 + \mu_k^2\right)$, $C = \sum_{i \neq k}^n \mu_i$, and $D = \mu_k$.
 
 Determination of the peak variance allows us to predict where the consumer's isotopic niche is expected to be maximized as a function of specialization on different prey.
 Although here we have focused on the special case where a consumer targets a single prey, one can rewrite the equation for the consumer's isotopic niche width with respect to increasing specialization on any number or combination of prey in the mixing space.
@@ -325,7 +326,7 @@ Variance decreases as the rate of incorporation decreases due to the consumer av
 
 
 
-\subsection*{Temporal dietary dynamics}
+%\subsection*{Temporal dietary dynamics}
 An implicit assumption of the static model is that the consumer's diet varies instantaneously over a given parameterization of $f_Z(Z)$.
 This is relevant for organisms that have a consistently varying diet over time, however most organisms have diets that undergo large changes over longer periods time.
 In such cases, the Dirichlet distribution that characterizes diet during one small temporal interval will be different than the Dirichlet distribution characterizing diet during another interval far apart in time.
@@ -411,6 +412,7 @@ If we do not specify the type of oscillation that drives changes in diet over ti
 In the wet/dry season example, the consumer could either shift gradually from its wet season diet to its dry season diet if $\mathcal{U}(t)$ is smooth, or shift abruptly if $\mathcal{U}(t)$ is a step function.
 An example of the latter scenario would be a grizzly bear consumer system, where its diet shift abruptly with the arrival of salmon during spawning season (REF).
 
+
 Most dietary transitions between seasons tend to be gradual, even if the end/start of a given season is abrupt (REF).
 To understand how a temporally oscillating diet affects the isotopic variance of the composite diet, we consider the smooth oscillation $\mathcal{U}(t) = 1/2 + 1/2\sin(\omega t)$, which determines the proporitonal contribution of diet 1.
 Here, $\mathcal{U}(t)$ varies between 0 and 1, with a frequency $\omega$ (Fig. \ref{figvarZt}A).
@@ -426,18 +428,41 @@ Substituting $\mathcal{U}(t)$ into Eq. \ref{eqZtgen} provides the solution to a 
 
 \noindent where we have combined the non-oscillating components into three parameters $\alpha_{\rm V}$, $\beta_{\rm V}$, and $\gamma_{\rm V}$ for notational efficiency.
 
-We elucidate three important insights from Eq. \ref{eqZtsin}.
+We gain two key insights from the solution for the variance of the composite diet.
 1) The time-averaged variance (denoted by $\langle \cdot
-\rangle_t$) is simply $\langle {\rm Var}\{\mathbb{Z}(t)\} \rangle_t = \alpha_{\rm V}$, which is
-2) only impacted by the average variance between the seasonal diets, and the difference in the mean isotope values between the seasonal diets (Fig. \ref{figvarcont}), and
-3) the oscillating component includes doubling of frequency and a $\pi/2$ offset, meaning that the maximal variance of the consumer's composite diet will occur during the shifts from one diet to the other (Fig. \ref{figvarZt}B).
+\rangle_t$) is simply $\langle {\rm Var}\{\mathbb{Z}(t)\} \rangle_t = \alpha_{\rm V}$, which is only impacted by the average variance between the seasonal diets and the difference in the mean isotope values between the seasonal diets (Fig. \ref{figvarcont}), and
+2) the oscillating component shows that the composite dietary variance has twice the frequency of the diet shift $\mathcal{U}(t)$, as well as a $\pi/2$ offset, meaning that the maximal variance of the consumer's composite diet will occur during the transition from one diet to the other (Fig. \ref{figvarZt}B).
+Together, these results reveal that if the consumer's diet is varying continuously over time between two seasonal diets, both the mean variance, as well as the difference in the mean isotope values of the seasonal diets -- directly reflecting the heterogeneity of prey mixing space geometry -- will serve to increase the time-averaged variance of the consumer's diet, and by extention the isotopic variance of the consumer itself.
+
+Less intuitively, we observe that the consumer's peak variance, or niche width, as measured by the variance of its composite diet, occurs not during the exclusive adoption of its wet/dry season diets, but during the transition between the two, and this peak variance is driven exclusively by the difference in means between seasonal diets.
+As the seasonal diets become more heterogeneous in isotopic space, the greater the consumer's peak variance during the transtion, and this occurs because it is sampling between two dietary strategies that are isotopically distinct.
+We can directly observe this by considering a transition between two diets with  a) different means and the same variances, and b) the same means and different variances.
+In the former case, the peak variance of the composite diet occurs during the transition (Fig \ref{figvarZt}B); in the latter case, because the diets have the same mean isotope value, the peak occurs not during the transition, but when the consumer adopts the diet with the greater variance, which in our example would occur at the height of the season (Fig \ref{figvarZt}C).
+
+%Consumer diet X_c(t)
+The isotopic composition of a consumer $X_c(t)$ during a single dietary shift is governed by a single timescale of physiological origin: the rate of incorporation $\lambda$.
+However, a seasonally shifting diet that is driven by oscillating foraging strategies introduces an additional ecological timescale that will affect $X_c(t)$, determined by the frequency of diet switching $\omega$.
+Depending on the turnover rate of the tissue of interest and how often the consumer shifts its diet, the ratio of these timescales $\omega/\lambda$ will impact how the isotopic mean and variance of the consumer changes over time.
+For the case of sinusoidally varying diet, we can solve for $X_c(t)$ directly, such that
+
+\begin{align}
+  \label{eqXsin}
+  \begin{split}
+    {\rm Var}\{X_c(t \to \infty)\} = &\alpha_{\rm V}\frac{\lambda}{2} + \beta_{\rm V}\frac{\lambda^2(2\lambda\sin(\omega t )-\omega \cos(\omega t))}{4\lambda^2 + \omega^2} \\
+    &+ \gamma_{\rm V}\frac{\lambda^2(\lambda \cos(2\omega t )+\omega \sin(2\omega t))}{2(
+    \lambda^2 + \omega^2)}.
+  \end{split}
+\end{align}
+
+\noindent As in the static case (where diet was not varying over long periods of time), the time-averaged variance is $\alpha_{\rm V}\lambda/2$.
+Moreover, we observed that the consumer's isotope composition lags behind changes in diet, such that an isotopic shift in the consumer's tissues is observed after the actual foraging shift.
+We can quantify the timing of this shift from Eq. \ref{eqXsin}, and observe that it is XXXX.
 
 
-
-
-
-
-
+Increasing $\omega/\lambda$ (such that the timescale of ecological swwitching relative to that of incorporation decreases), we observe that as the frequency of the dietary shift increases relative to the rate of incorporation,
+1) the lag between the transition and the peak variance of the consumer increases, and
+2) the amplitude in the variance of $X_c$ decreases.
+Accordingly, we observe that as a consumer adopts a more frequently shifting diet, changes in its variance will become more damped and difficult to measure, while as the rate of incorporation decreases, the lag between shifts in diet and the isotopic value of the consumer will increase.
 
 %
 %
@@ -491,11 +516,13 @@ We elucidate three important insights from Eq. \ref{eqZtsin}.
 
 \section{Discussion}
 
+%General - Emphasize the importance of peak variance (this should echo the discussion)
+
+
+
 
 %Static
-
-
-\subsection{The isotopic niche from generalization to specialization}
+\subsection{The isotopic niche over specialization}
 One can gain some intuitive understanding of this nonlinearity by considering the following example, illustrated in Fig. \ref{figvar}.
 In a 3-prey system, where all prey have equal isotope means and variance, a consumer that ranges from generalizing on all three prey to specializing on a single prey will have equivalent dietary isotope distributions.
 As the mean value for the isotopic distribution of the targeted prey is moved away from the others, such that its offset from the centroid is increased, the variance function displays nonlinearity.
@@ -530,9 +557,12 @@ For targeted prey that resulted in nonlinear variance (including mussels, snails
 \subsection{The isotopic niche over time}
 
 
+%Continuous vs. discontinuous switch
 
 
-
+%%Why the individual is important...
+%Individuals vs. populations
+%KEY: High variance of individuals will lead to high variance at the population level
 
 
 %Introducing preferences and/or state dependence thought
