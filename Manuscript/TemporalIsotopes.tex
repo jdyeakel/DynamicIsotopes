@@ -608,24 +608,19 @@ As either of these factors increase, the average variance of the composite diet 
 
 
 %Continuous vs. discontinuous switch
-An interesting observation that we gain from exploring a sinusoidal diet shift is that spike in variance at the dietary transition point is dependent on the transition being smooth.
-In fact, it is the mid-point of the transition, $\mathcal{U}(t) = 0.5$, where the composite diet is pulled equally from each seasonal diet, and this serves to maximize the isotopic heterogeneity of the mix.
-Analogous to the factors that cause peak variance for specialization on prey resources with different isotopic offsets from the prey centroid in the static diet example, when foraging strategies are dynamic, it is the point of maximum isotopic heterogeneity that maximizes dietary variance.
-An extreme alternative to smooth dietary transitions would be one that is discontinuous, and we could simulate this with a step-function.
-Such an instantaneous dietary shift is not unknown, and is realized in some systems by the sudden appearance of an alternative dietary resource.
-For example, grizzly bears shift their diet abruptly to salmon during certain times of the year, while [SECOND EXAMPLE].
+An interesting observation that we gain from exploring a sinusoidal dietary shift is that the variance peak observed during the dietary transition is dependent on such a transition being smooth.
+In fact, it is the mid-point of this transition, at $\mathcal{U}(t) = 0.5$, where the composite diet is pulled equally from each seasonal diet, and this serves to maximize the isotopic heterogeneity of the mix.
+Thus, when foraging strategies are dynamic, it is the point of maximum isotopic heterogeneity that maximizes dietary variance, and this is analogous to the cause of peak dietary variance in the static example, where specialization on prey resources with greater isotopic offsets from the mixing space centroid maximizes isotopic heterogeneity, thus resulting in a variance peak. 
 
+An extreme alternative to a smooth dietary transition would be one that is discontinuous, as depicted by a step-function.
+Such an instantaneous dietary shift is not ecologically unrealistic; such a scenario could be realized by the sudden appearance of an alternative dietary resource.
+For example, grizzly bears shift their diet abruptly to salmon during salmon runs (REFS), while wolves have been know to show an abrupt dietary switch from elk to bison as elk populations decline (Garrot et al).
+Because there is no point during a sharp, discontinuous transition that serves to mix sub-diets, the variance of the composite diet does not peak in response.
+Instead, both the expectation and the variance of the composite diet incorporates this step function behavior, transitioning to reflect the shifts between sub-diets.
+Because the isotope ratios associated with diet are incorporated gradually into the consumer's tissues, both the mean and the variance of the consumer will adopt a sawtooth-like dynamic (Fig. \ref{figsawtooth}), where they begin to asymptote to the expectation and variance of the sub-diets, but are reverted abruptly with the switch in diet.
+We note that, as in the static example, the isotopic variance of the consumer approaches the variance of its diet twice as fast as its expectation (cf. Eq. \ref{eqEVar}).
 
-
-
-%%Why the individual is important...
-%Individuals vs. populations
-%KEY: High variance of individuals will lead to high variance at the population level
-We note up front that the analyses we present focus entirely on the individual, in particular how the isotopic variance of an individual changes in response to different ecological and isotopic factors.
-However, most ecological applications using stable isotope ratios operate at the population, though there has been many recent efforts to understand the sources of isotopic variation - at both the individual and population level.
-Indeed, one can extrapolate what we have learned about variance at an individual level to that of the population.
-For example, the variance of a population -- which is itself defined as a mixture of individuals, each with their own isotopic distribution -- is directly related to the variance of individuals within the population (fig. \ref{figindpopvar}).
-Thus, our determination of variance peaks at the individual level would certainly be `echoed' at the population level, though there are added complications, such as the heterogeneity of individual mean isotope values, that we do not explore here.
+\subsection*{Future directions and extensions}
 
 %Introducing preferences and/or state dependence thought
 
@@ -633,6 +628,20 @@ Thus, our determination of variance peaks at the individual level would certainl
 
 
 %Linking our approach to population dynamics
+%U(t) is the solution to a population-dynamic equation
+
+
+
+%%Why the individual is important...
+%Individuals vs. populations
+%KEY: High variance of individuals will lead to high variance at the population level
+Throughout this report, we have focused entirely on the individual, in particular on how the isotopic variance of an individual consumer changes in response to different ecological and isotopic factors.
+However, most ecological applications using stable isotope ratios operate at the population, though there has been many recent efforts to understand the sources of isotopic variation - at both the individual and population level.
+Indeed, one can extrapolate what we have learned about variance at an individual level to that of the population.
+For example, the variance of a population -- which is itself defined as a mixture of individuals, each with their own isotopic distribution -- is directly related to the variance of individuals within the population (fig. \ref{figindpopvar}).
+Thus, our determination of variance peaks at the individual level would certainly be `echoed' at the population level, though there are added complications, such as the heterogeneity of individual mean isotope values, that we do not explore here.
+
+
 
 
 %Final statement
@@ -701,11 +710,21 @@ Right panel: Calculated maximum consumer niche width values as a function of spe
 
 \begin{figure}[h!]
 \centering
+\includegraphics[width=0.5\textwidth]{fig_sawtooth.pdf}
+\caption{
+}
+  \label{figsawtooth}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
 \includegraphics[width=0.5\textwidth]{fig_indpopvar.pdf}
 \caption{
 }
   \label{figindpopvar}
 \end{figure}
+
 
 
 \end{document}
