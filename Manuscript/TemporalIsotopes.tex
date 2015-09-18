@@ -90,11 +90,24 @@ For full guidelines regarding your manuscript please refer to \href{http://www.f
 
 \section{Introduction}
 
-Consumer foraging behaviors are dynamic, resulting in diets that change over time as a function of environmental conditions, the densities of consumer and resource populations, and even the physiological states of individual foragers.
+Consumer foraging behaviors are dynamic, often resulting in variable diets that change over time as a function of environmental conditions, the densities of consumer and resource populations, and even the physiological states of individual foragers.
 Understanding how diets change, and to what extent different conditions promote or inhibit specific changes, is both a challenging theoretical and empirical problem in ecology.
 
-Analysis of carbon and nitrogen stable isotopes of a consumer with respect to a suite of potential prey is a commonly used tool for determining diet.
-As a consumer incorporates the isotopic values of its consumed resources into its tissues, it becomes a unique `blend' of its prey.
+The analysis of carbon and nitrogen stable isotope ratios of a consumer with respect to its potential prey is a commonly used tool to explore and quantify diet.
+As a consumer incorporates the isotopic values of its resources into its tissues, it becomes a blend of these resources.
+The isotopic composition of a consumer thus reflects
+1) the proportional contribution of different prey to the consumer's diet, and
+2) the isotopic composition of its prey, which we will call the prey mixing space (REF).
+Both the consumer's dietary strategy as well as the prey mixing space contribute different sources of variability that are reflected in the isotopic composition of the consumer.
+For example, a consumer could be an obligate specialist on a single prey, such that its dietary variability is extremely low, in which case the isotopic mean and variability of the consumer's tissues will reflect that of its targeted prey.
+In contrast, the consumer could be a generalist, or intermediate specialist on certain prey such that the variability in its diet as well as the isotopic variability of the different prey in its diet contributes to its own isotopic composition.
+It is the isotopic variability of a consumer, with respect to the mixing space of its prey, that ecologists have termed `the isotopic niche' (REFS).
+
+
+
+
+
+
 Determining the most likely proportional contribution of prey that determines a given consumer's diet has thus been the focus of intense interest (REFS).
 
 Of additional interest are the factors that control the consumer's isotopic niche width, which is defined by the isotopic variance of the consumer at either the individual or population level.
@@ -158,6 +171,7 @@ If we integrate across all possible values of $\psi_i$, we obtain the Negative B
 Following the derivation described by Ainsworth (REF), if we define the proportional contribution of prey to a consumer's diet to scale with the encounter rate, such that
 
 \begin{equation}
+\label{eqp}
   p_i = \frac{\psi_i}{\sum_{j=1}^n \psi_j},
 \end{equation}
 
@@ -620,12 +634,29 @@ Instead, both the expectation and the variance of the composite diet incorporate
 Because the isotope ratios associated with diet are incorporated gradually into the consumer's tissues, both the mean and the variance of the consumer will adopt a sawtooth-like dynamic (Fig. \ref{figsawtooth}), where they begin to asymptote to the expectation and variance of the sub-diets, but are reverted abruptly with the switch in diet.
 We note that, as in the static example, the isotopic variance of the consumer approaches the variance of its diet twice as fast as its expectation (cf. Eq. \ref{eqEVar}).
 
-\subsection*{Future directions and extensions}
-
+\subsection*{Population dynamics and state-dependent foraging}
 %Introducing preferences and/or state dependence thought
+We presented a simple dynamic-switching framework, where a consumer oscillates between two different diets over time to explore its effect on the its isotopic niche.
+In reality, a consumer's dietary strategy might be shifting constantly over time, in response to a constantly changing environment.
+One potentially important extension of our framework could incoroporate a population dynamic underlying the availability of potential resources (and by extension the consumer's diet) in a continuous, more complex, and ecologically justified manner.
+Our original formulation of the Dirichlet distribution that describes the consumer's diet was established on the relationship between the random variables describing the proportional contribution of prey to diet ($P_i = p_i$) and its encounter rate ($\Psi_i = \psi_i$), where $p_i = \psi_i/\sum_j \psi_j$, and this was assumed to have a static distribution over time.
+However, if the prey are fluctuating in accordance to an underlying population dynamic (for example, determined by a system of differential equations), the encounter rate of each prey would itself be a function of time.
+By relating the expectation and/or variance of $\Psi_i$ to the density of prey, the parameterization of the Dirichlet can be directly coupled to changes in population densities, thus mechanistically incorporating population dynamics into predictions of a consumer's isotopic composition.
+%This would enable one to build a hypothesis-testing framework based on the effect of cert
+%, allow us to build predictions of a consumer's isotopic composition as a function of these dynamics.
 
 
+Furthermore, the relationship between $p_i$ and $\psi_i$ explicitly assumes passive foraging between the consumer and its potential prey, and this holds for our original static (single diet) example, our shifting diet example, and would hold for the example above where the Dirichlet changes in response to an underlying population dynamic.
+Although this is not a bad place to start, and may be a perfectly reasonable assumption for a filter feeder that consumes resources indiscriminately, it is not a reliable assumption for most organisms.
+Instead, a more complex relationship between $p_i$ and the attributes of the consumer's prey, and perhaps attributes of the consumer itself, could be used to determine the parameterization of the Dirichlet distribution defining the consumer's diet over time.
 
+
+For example, our framework implicitly assumes that there is a steady state influx of prey biomass to match the metabolic expenses of the consumer.
+In other words, prey are chosen in accordance to the Dirichlet distribution, but it is assumed that each foraging bout contributes equally to the consumer's diet, and that the consumer always finds a meal.
+In reality, the success of a given foraging bout is not certain, and there is some risk of not finding any prey at all; in such a case, the consumer would resort to metabolizing its own tissues.
+Such a dynamic would directly impact the rate of incorporation by altering the proportional contribution of newly consumed isotope ratios to the turnover of the consumer's body tissues.
+Moreover, the foraging decisions that a consumer makes are often a function of its energetic state, which changes as it successfully or unsuccessfully finds and acquires its prey.
+Such state-dependent foraging may be difficult to treat analytically, but could be explored numerically, and this approach would be useful for hypothesis testing, particularly when one is interested in comparing the effects of different foraging strategies on the statistical properties of the consumer's isotopic composition.
 
 %Linking our approach to population dynamics
 %U(t) is the solution to a population-dynamic equation
@@ -635,16 +666,51 @@ We note that, as in the static example, the isotopic variance of the consumer ap
 %%Why the individual is important...
 %Individuals vs. populations
 %KEY: High variance of individuals will lead to high variance at the population level
-Throughout this report, we have focused entirely on the individual, in particular on how the isotopic variance of an individual consumer changes in response to different ecological and isotopic factors.
-However, most ecological applications using stable isotope ratios operate at the population, though there has been many recent efforts to understand the sources of isotopic variation - at both the individual and population level.
-Indeed, one can extrapolate what we have learned about variance at an individual level to that of the population.
-For example, the variance of a population -- which is itself defined as a mixture of individuals, each with their own isotopic distribution -- is directly related to the variance of individuals within the population (fig. \ref{figindpopvar}).
-Thus, our determination of variance peaks at the individual level would certainly be `echoed' at the population level, though there are added complications, such as the heterogeneity of individual mean isotope values, that we do not explore here.
+\subsection*{From individuals to populations}
+Finally, the framework that we have presented has focused entirely on the individual, in particular on how the isotopic variance of an individual consumer changes in response to different ecological and isotope-related factors.
+Most ecological applications using stable isotope ratios operate at the level of the population, though there have been many recent efforts to understand different sources of isotopic variation across multiple ecological scales.
 
+Understanding how variance percolates from prey to the individual consumer is a necessary first step to understand the source of isotopic variation at the level of the population.
+Such considerations quickly become complex, as there are scenarios when the isotopic variance of an individual is closely coupled to the variance of the population, and scenarios when it is not.
+For example, if individuals within a population have similar means and - for simplicity - equal variances, then the variance of the population will increase quadratically with the variance of the individuals (Fig. \ref{figindpopvar}A).
+However, if the individuals within a population have very different means and relatively small variances, then there will not be a significant relationship between population and individual-level variation (Fig. \ref{figindpopvar}B).
+Accordingly, we expect that our determination of peak variances due to both mixing space and ecological interactions at the individual level to also be true at the population level, as long as the individuals within the population are isotopically similar.
+
+We can imagine different individual-population relationships occurring within a 2-D state-space defined by individuality on one axis and specialization on the other.
+At the extremes, a population could consist of 
+1) obligate specialists with low individuality (where all individuals specialize on the same resource),
+2) obligate specialists with high individuality (where all individuals specialize on different resources), and
+3) obligate generalists with low individuality (where all individuals are generalists; an obligate generalist with high individuality cannot exist in this context). %such that the individuality-specialization state-space is a triangle.
+How these different behaviors might shape individual and population-level isotopic distributions is an important question, though the answers will likely be complex.
+For example, isotopically similar individuals with low variances imply that all individuals are consuming similar things, in similar quantities, such that individuality is low, though our results show that low isotopic variance need not indicate specialization or generalization \emph{per se} (cf. Figs \ref{figvar},\ref{figottervar}).
+
+Of greater potential interest, and relevant to the framework that we have presented, is the scenario in which individuals have different diets that are themselves shifting in time (or not).
+Our approach could be used to hypothesis-test potential ecological/population/behavioral mechanisms that might contribute to the observed isotopic distributions at both the individual and population level, and this would be particularly powerful if one had access to tissues that integrate over time such as hair, whiskers, claws, or even laminar teeth.
+
+
+
+
+%Indeed, one can extrapolate what we have learned about variance at an individual level to that of the population.
+%For example, the variance of a population -- which is itself defined as a mixture of individuals, each with their own isotopic distribution -- is directly related to the variance of individuals within the population (fig. \ref{figindpopvar}).
+%Thus, our determination of variance peaks at the individual level would certainly be `echoed' at the population level, though there are added complications, such as the heterogeneity of individual mean isotope values, that we do not explore here.
+%
 
 
 
 %Final statement
+There are many sources of variation that contribute to the consumer isotopic composition.
+These sources include the geometry of the prey mixing space, the foraging behaviors of the consumers, as well as temporal changes in the environment that might alter the ability of the consumer to find, acquire, and consume its prey.
+Of recent interest among ecologists using stable isotopes to quantify trophic interactions is the width of a consumer's isotopic niche, which we have interpreted to be its isotopic variance.
+By coupling this variance to mechanistic relationships between a consumer and its diet, as well as the isotopic mixing space of the system, we have presented a systematic exploration of the factors that cause this isotopic niche to both expand and contract.
+Incorporating the effects of population dynamics and/or different foraging strategies will enable hypothesis testing of different ecological mechanisms to generate the isotopic distributions that are observed in nature.
+We hope that such a forward-integrating approach, alongside the use of tools such as mixing models to back-calculate dietary incorporation, will serve to expand and enhance the ecological interpretation of isotopic data.
+
+
+
+
+
+
+\newpage
 
 
 \begin{figure}[h!]
@@ -719,7 +785,7 @@ Right panel: Calculated maximum consumer niche width values as a function of spe
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.5\textwidth]{fig_indpopvar.pdf}
+\includegraphics[width=0.5\textwidth]{fig_indpopvar2.pdf}
 \caption{
 }
   \label{figindpopvar}
