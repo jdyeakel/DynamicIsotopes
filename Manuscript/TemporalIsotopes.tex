@@ -84,7 +84,7 @@ For full guidelines regarding your manuscript please refer to \href{http://www.f
 
 
 \tiny
- \keyFont{ \section{Keywords:} Text Text Text Text Text Text Text Text } %All article types: you may provide up to 8 keywords; at least 5 are mandatory.
+ \keyFont{ \section{Keywords:} Isotopic niche; Trophic niche width; Mixing space; Dietary variation; Specialization; Dirichlet distribution} %All article types: you may provide up to 8 keywords; at least 5 are mandatory.
 \end{abstract}
 
 
@@ -93,26 +93,64 @@ For full guidelines regarding your manuscript please refer to \href{http://www.f
 Consumer foraging behaviors are dynamic, often resulting in variable diets that change over time as a function of environmental conditions, the densities of consumer and resource populations, and even the physiological states of individual foragers.
 Understanding how diets change, and to what extent different conditions promote or inhibit specific changes, is both a challenging theoretical and empirical problem in ecology.
 
-The analysis of carbon and nitrogen stable isotope ratios of a consumer with respect to its potential prey is a commonly used tool to explore and quantify diet.
+The analysis of carbon and nitrogen stable isotope ratios of a consumer with respect to its potential prey is a commonly used approach towards exploring and quantifying diet.
 As a consumer incorporates the isotopic values of its resources into its tissues, it becomes a blend of these resources.
 The isotopic composition of a consumer thus reflects
-1) the proportional contribution of different prey to the consumer's diet, and
-2) the isotopic composition of its prey, which we will call the prey mixing space (REF).
-Both the consumer's dietary strategy as well as the prey mixing space contribute different sources of variability that are reflected in the isotopic composition of the consumer.
+1) the proportional contribution of different prey to the consumer's diet \citep{Moore:2008kg,Parnell:2010ub}, and
+2) the isotopic composition of its prey, collectively described as the isotopic, or prey, mixing space \citep{Phillips:2001ws,Phillips:2002tu,Newsome:2007tz}.
+
+Both the consumer's dietary strategy as well as the isotopic mixing space contribute different sources of variability that are reflected in the isotopic composition of the consumer.
 For example, a consumer could be an obligate specialist on a single prey, such that its dietary variability is extremely low, in which case the isotopic mean and variability of the consumer's tissues will reflect that of its targeted prey.
-In contrast, the consumer could be a generalist, or intermediate specialist on certain prey such that the variability in its diet as well as the isotopic variability of the different prey in its diet contributes to its own isotopic composition.
-It is the isotopic variability of a consumer, with respect to the mixing space of its prey, that ecologists have termed `the isotopic niche' (REFS).
+In contrast, the consumer could be a generalist, or intermediate specialist on certain prey such that the variability in its diet as well as the isotopic variability of its prey contributes to its own isotopic composition.
+The isotopic variability of a consumer thus contains important information regarding the foraging ecology of the consumer, but is also determined by the mixing space over which it integrates isotope ratios.
+It is this variability that ecologists have coined `the isotopic niche' \citep{Bearhop:2004im,Newsome:2007tz,Newsome:WhhVfocb,Jackson:2011kd,delRio:2011p2553}. %and there has been much focus on the importance of understanding the breadth of this isotopic niche with respect to the  mixing space of a consumer's prey (REFS).
+
+The isotopic niche of a consumer is a low-dimensional specification of the `Hutchinsonian niche' \citep{Hutchinson:1957tg}, an n-dimensional hypervolume that consists of all biotic and abiotic requirements needed for a species to function.
+In contrast to this large and ultimately immeasurable construct, the isotopic niche is also generally derived from both biotic and abiotic processes, yet can be defined exactly as a consumer's isotopic variance with a dimension determined by the number of isotope systems employed \citep{Newsome:2007tz}.
+It is the width, or spread of this distribution that correlates to the breadth of the isotopic niche.
+Although the isotopic niche can be the result of many ecological and environmental factors that influence the flow of stable isotope ratios through biological systems \citep{Araujo:2007iua}, when it is primarily a function of flow through consumer-resource interactions, the isotopic niche is synonymous with the trophic niche as defined by \citet{Bearhop:2004im}.
+Changes in the size of the isotopic niche have been shown to relate to ecosystem fragmentation \citep{Layman:2007ky}, changes in food availability \citep{Lehmann:2015db}, and even individual responses to seasonal environments \citep{delRio:2011p2553}, however a systematic understanding of how different sources of variability influence the isotopic niche is lacking.
+
+%Individual vs. population	
+The isotopic niche is generally defined with respect to the isotopic variance of a population \citep{Araujo:2007iua,Araujo:2009p2286,Fink:2012eg}, however population-level variance is itself an artifact of the individual-level distributions from which the population is composed \citep{Bolnick:2007p1253,Araujo:2011gm}.
+An important step in understanding how the isotopic niche changes in response to different consumer foraging strategies is to examine how individual-level variation contributions to observed isotopic variability.
+Individual-level variability - in particular that variability resulting from temporal changes in diet - has large implications for the population \citep{Bolnick:2011gj}, and is frequently measured with ratios of stable isotopes via analysis of temporally-integrating tissues such as hair, whiskers, claws, or even laminar teeth \citep{Koch:1995vj,Matthews:2004hw,Sponheimer:2006fj,Post:2008ki,Newsome:2009tn,Yeakel:2009hz,Hopkins:2015ip}.
+
+
+%Bayesian (backwards) vs. simulation (forwards)
+Once physiological fractionations in stable isotope ratios have been accounted for, the isotopic niche is a direct reflection of the proportional contribution of different prey resources to the consumer's diet.
+Isotope mixing models, which originally used a bootstrapping framework \citep{Phillips:2003kq,Phillips:2005p1007} and now employ Bayesian methods \citep{Moore:2008kg,Parnell:2010ub,Hopkins:2012dza,Parnell:2012wv}, are used to reconstruct the probability distribution that describes the contribution of different prey; mixing models can only be solved exactly if the number of potential prey resources are less than or equal to the number of isotope systems used plus one.
+These tools are forensic in nature, and have been used to back-calculate consumer diets across ranges of stoichiometrically unique prey \citep{Hopkins:2015ip}, for hierarchically organized populations across complex landscapes \citep{Semmens:2009uq}, for reconstructing diets of extinct taxa \citep{Yeakel:2012uc}, and even combined with process-based models that function to constrain estimates based on known mechanistic relationships between higher-order parameters \citep{Ogle:2014jg}.
+
+
+%Forward iteration framework... mention Araujo and Fink
+A conceptually divergent, yet parallel, strategy is to consider the inter-related effects of ecological interactions and the concomitant integration of stable isotope ratios, and how these factors combine to result in the isotopic composition of a consumer.
+In this way, the consumer's isotopic distribution can be forward-integrated through time based on the mechanistic linkages between its foraging strategy, its ability to find and acquire prey, and the isotopic landscape over which its diet is composed.
+This general perspective has been applied to investigate properties of the isotopic niche for cases of fixed (non-varying) diets \citep{Araujo:2007iua,Araujo:2009p2286}, and with respect to experimental systems with switching between unique prey \citep{Fink:2012eg}.
+However, such a process-based framework has not been directly linked to consumer foraging behaviors, prey availability, or other ecological considerations such that the combined impacts of ecologically-mediated dietary variation and mixing space geometry on the isotopic niche can be assessed.
 
 
 
+%our measure of specialization different than Araujo... similar to fink???
+
+Here we build a mechanistic framework that links the ecological processes of  an individual consumer to the isotopic distribution that describes its diet, and ultimately to the isotopic composition of its own body tissues.
+By coupling these processes, we are able to systematically investigate under what conditions the isotopic niche of a consumer changes as a function of both geometric properties of its mixing space, and alternative foraging strategies.
+We show that the isotopic variance of a consumer's diet (and by extension the width of its isotopic niche) is expected to be a concave parabolic function with respect to prey specialization, such that it possesses a peak variance, though the appearance of measurable nonlinearity is contingent on mixing space geometry.
+We demonstrate the potential importance of these findings by examining a prey mixing space for sea otter consumers, which are known to possess high dietary individuality \citep{Tinker:2008tp,Newsome:2015gy}.
+
+We then extend our framework to explore how a consumer's isotopic niche responds to temporally dynamic diets.
+We examine an example of a switch between two probabilistic diets that oscillates between, for example, wet and dry seasons, and show analytically that the maximum expected isotopic niche width occurs during the transitions between diets.
+Determining how different sources of variability emerge from ecological, behavioral, and geometric drivers is important for interpreting the meaning of concepts such as the isotopic niche.
+Moreover, integrating these different sources of variation into a statistical process-based framework lends itself particularly well to hypothesis-testing aimed at uncovering the root causes of observed isotopic data.
+We hope that our approach is a step towards assessing how the isotopic niche may change due to more complex foraging behaviors and even population dynamics, and we expand on these ideas in the Discussion.
 
 
 
-Determining the most likely proportional contribution of prey that determines a given consumer's diet has thus been the focus of intense interest (REFS).
-
-Of additional interest are the factors that control the consumer's isotopic niche width, which is defined by the isotopic variance of the consumer at either the individual or population level.
-A consumer's isotopic niche width, by definition, is a function of the isotopic values of its potential prey (the prey mixing space), as well as its dietary predilections.
-For a given mixing space, a consumer with a large isotopic niche width may be incorporating many isotopically distinct prey into its diet, while a consumer with a small isotopic niche width may be specializing on a single resource.
+%Determining the most likely proportional contribution of prey that determines a given consumer's diet has thus been the focus of intense interest (REFS).
+%
+%Of additional interest are the factors that control the consumer's isotopic niche width, which is defined by the isotopic variance of the consumer at either the individual or population level.
+%A consumer's isotopic niche width, by definition, is a function of the isotopic values of its potential prey (the prey mixing space), as well as its dietary predilections.
+%For a given mixing space, a consumer with a large isotopic niche width may be incorporating many isotopically distinct prey into its diet, while a consumer with a small isotopic niche width may be specializing on a single resource.
 
 
 %Difference between the isotopic diet view vs. other diet views
@@ -139,69 +177,70 @@ Using this framework, we aim to
 \subsection*{Deriving the within-individual isotopic niche width}
 %The dynamics of diet ~ heuristic description of the process
 There are many ways to statistically summarize the integration of prey by a consumer species, however in order to establish a mechanistic link between foraging and the consumer's isotopic composition, we follow the proceeding heuristic foraging mechanic.
-
 We assume that a consumer encounters and consumes resources in proportion to the encounter rate of each prey; prey that are encountered more frequently are assumed to be consumed more frequently.
-An alternative approach could incorporate preferences (REFS) or even state-dependence (REFS), and we will briefly address these considerations in the Discussion.
+An alternative approach could incorporate preferences \citep{Chesson:1983bt} or even state-dependence \citep{Mangel:1988uaa,Clark:2000tra,Mangel:2014kz}, and we will briefly address these considerations in the Discussion.
 As prey are encountered and consumed, the prey's isotope values are incorporated into the consumer's tissues weighted by the prey-specific proportional contribution to diet.
-The resulting distribution that descibes the dietary input of multiple prey (each with an independent Gaussian density that describes the distribution of their isotopic values) is a mixed Gaussian distribution with weights determined by the prey's proportional contribution to diet.
-This proportional contribution is itself a random variable drawn from a Dirichlet density (a multivariate Beta distribution) that serves as a probabilistic description of the consumer's dietary input.
+The resulting distribution that describes the dietary input of multiple prey (each with an independent Normal density that describes the distribution of their isotopic values) is a mixed Normal distribution with weights determined by the prey's proportional contribution to diet.
+This proportional contribution is itself a random variable drawn from a Dirichlet density (a multivariate Beta distribution) that serves as a probabilistic description of the consumer's dietary input \citep{Ainsworth:2010uo}.
 The following section details our probabilistic determination of the consumer's isotopic composition.
-We focus our attention on the variability of the consumer isotopic distribution, which is equivalent to its isotopic niche width - a statistic of certain interest to ecologists using stable isotopes as a tool to understand diet.
+We focus our attention on the variability of the consumer isotopic distribution, which is equivalent to its isotopic niche width \citep{Newsome:2007tz}, and because we assume that the isotope ratios under consideration follow dietary pathways, is synonymous with the trophic niche width \citep{Bearhop:2004im}.
+% a statistic of certain interest to ecologists using stable isotopes as a tool to understand diet.
 %, as well as an analysis of the properties of the final consumer isotopic distribution.
 
 
 %Derivation of the Dirichlet controlling diet
 %If we  that the proportional contribution of prey to a consumer's diet scales to the rate at which it encounters its prey.
 %, such that we must first describe how the Dirichlet distribution describing consumer diet at a given point in time changes as a function of prey densities.
-A consumer encounters each prey at a frequency determined by a Poisson process with parameter $\psi_i$, which determines the number of encounters $M_i(t)=m_i$ between time 0 and time $t$,
+A consumer encounters each prey at a frequency determined by a Poisson process with parameter $\psi_i$, which determines the number of encounters $M_i=m_i$ between time 0 and time $t$, with the frequency distribution
 
 \begin{equation}
-f_M (m_i|\psi_i) = {\rm e}^{-\psi_i t}\frac{(\psi_i t)^m_i}{m_i!}.
+f_{M_i} (m_i|\psi_i) = {\rm e}^{-\psi_i t}\frac{(\psi_i t)^m_i}{m_i!}.
 \end{equation}
 
 \noindent Here and henceforth, we use the general function $f(\cdot)$ to denote different frequency distributions, as well as uppercase notation to describe stochastic variables, and lowercase notation to describe specific values of stochastic variables.
-If we assume that encounter rates are variable, such that some prey are more patchily distributed than others, we can treat $\Psi_i = \psi_i$ as a random variable with a Gamma density
+If we assume that encounter rates are variable, such that some prey are more patchily distributed than others, we can treat $\Psi_i = \psi_i$ as a random variable with a Gamma density 
 
 \begin{equation}
-f_\Psi (\psi_i | c, a_i) = \frac{c^{a_i}}{\Gamma (a_i)}{\rm e}^{-c \psi_i}\psi_i^{a_i - 1}.
+f_{\Psi_i} (\psi_i | c, a_i) = \frac{c^{a_i}}{\Gamma (a_i)}{\rm e}^{-c \psi_i}\psi_i^{a_i - 1}.
 \end{equation}
 
-\noindent Here, $a_i$ is the dispersion parameter, which is proportional to the encounter rate, and $c$ scales with the time between encounters.
-If we integrate across all possible values of $\psi_i$, we obtain the Negative Binomial density with mean encounter rate $a_i/c$ and coefficient of variation $1/\sqrt{a_i}$ (REF Mangel).
-Following the derivation described by Ainsworth (REF), if we define the proportional contribution of prey to a consumer's diet to scale with the encounter rate, such that
+\noindent Here, $a_i$ is the dispersion parameter, which is proportional to the encounter rate, and $c$ scales with the time between encounters \citep{Mangel:2006wa,Ainsworth:2010uo,Yeakel:2013hi}.
+If we integrate across all possible values of $\psi_i$, we obtain the Negative Binomial density with mean encounter rate $a_i/c$ and coefficient of variation $1/\sqrt{a_i}$ \citep{Hilborn:1997ds}.
+Following the derivation described by \citet{Ainsworth:2010uo}, if we define the proportional contribution of prey to a consumer's diet to scale with the encounter rate, such that
 
 \begin{equation}
 \label{eqp}
   p_i = \frac{\psi_i}{\sum_{j=1}^n \psi_j},
 \end{equation}
 
-\noindent then the random variable $P_i \in {\bm P} = p_i \in {\bm p}$, where $\sum_i p_i = 1$, has a Dirichlet distribution with density
+\noindent then the random variable $P_i = p_i$ where $P_i \in {\bm P}$ and $p_i \in {\bm p}$ (we allow boldface type to denote vectors of variables), and $\sum_i p_i = 1$.
+From Eq. \ref{eqp}, it follows that vector of proportional contributions $\bm P$ follows a Dirichlet distribution \citep{Johnson:1960gu} with density
 
 \begin{equation}
   f_{\bm P}(p_1,...,p_n|a_1,...,a_n) = \frac{\Gamma(\sum_{i=1}^n a_i)}{\sum_{i=1}^n\Gamma(a_i)}\prod_{i=1}^n p_i^{a_i - 1},
 \end{equation}
 
-\noindent where $\Gamma(\cdot)$ is the gamma function (REF Mangel).
-We note that bold-face fonts denote vectors of variables.
-As such, the expected proportional contribution of a prey $i$ to the consumer's diet has the expectation ${\rm E}\{p_i\}=a_i/a_0$ where $a_0 = \sum_i a_i$, and variance
+\noindent where $\Gamma(\cdot)$ is the gamma function \citep[cf.][]{Mangel:2006wa}.
+%We note that bold-face fonts denote vectors of variables.
+As such, the expected proportional contribution of a prey $i$ to the consumer's diet has the expectation ${\rm E}\{P_i\}=a_i/a_0$ where $a_0 = \sum_i a_i$, and variance
 
 \begin{equation}
   \label{eqDirVar}
-  {\rm Var}\{p_i\} = \frac{a_i(a_0 - a_i)}{a_0^2(a_0 + 1)}.
+  {\rm Var}\{P_i\} = \frac{a_i(a_0 - a_i)}{a_0^2(a_0 + 1)}.
 \end{equation}
 
 \noindent Accordingly, we assume each time interval represents a single foraging bout, where we draw a single prey $i$ with probability $p_i$ for inclusion to the consumer's diet.
 
 Describing the dietary behavior of a consumer as a Dirichlet distribution provides a flexible and powerful framework to investigate how different foraging strategies influence a consumer's isotopic niche.
-For example, a pure generalist consumer would have a Dirchlet distribution with parameters $a_i = 1$ for all prey $i=1,...,n$, such that the marginal distribution for $P_i = p_i$ is close to uniform with expectation ${\rm E}\{p_i\} = 1/n$.
+For example, a pure generalist consumer would have a Dirichlet distribution with parameters $a_i = 1$ for all prey $i=1,...,n$, such that the marginal distribution for $P_i$ is close to uniform with expectation ${\rm E}\{P_i\} = 1/n$.
 Because we have assumed that the proportional contribution of a prey to the consumer's diet scales with the prey's encounter rate, this would be analogous to a system where a consumer is equally likely to encounter the same number of any prey.
 In contrast, an obligate specialist would have a Dirichlet density that is spiked for a given prey $k$, such that the single parameter $a_k \gg 1$, while $a_{i \neq k} = 1$.
-The use of a Dirichlet distribution is also at the heart of Bayesian isotope mixing models (REFS), which assume a Dirichlet prior and enable the input of alternative dietary information to inform isotopic data.
+The use of a Dirichlet distribution is also at the heart of Bayesian isotope mixing models \citep{Moore:2008kg,Parnell:2010ub,Hopkins:2012dza,Parnell:2012wv}, which assume a Dirichlet prior and enable the input of alternative dietary information to inform isotopic data.
 
 
 
 %Describing Z
-If the isotopic distributions for the set of potential prey follow independent Gaussian distributions, and the dietary behavior of the consumer has a Dirichlet density, the resultant density that describes the isotopic distribution of a consumer's diet $f_Z(Z=z)$ is a mixed Gaussian distribution, with weights given by $\bm p$ drawn from the Dirichlet distribution.
+If the stable isotope ratios for each of the potential prey follow independent Normal distributions, and the dietary behavior of the consumer has a Dirichlet density, the resultant density that describes the isotopic distribution of a consumer's diet $f_Z(Z=z)$ is a mixed Normal distribution, with weights given by $\bm p$ drawn from the Dirichlet.
 This density can be written as
 
 \begin{equation}
@@ -216,10 +255,10 @@ f_Z(z|{\bm p},{\bm \mu},{\bm \sigma}) = \sum_{i=1}^n p_i\frac{1}{\sqrt{2 \pi \si
   {\rm E}\{Z\} = \sum_{i=1}^n \frac{a_i}{a_0} \mu_i,
 \end{equation}
 
-\noindent where $\mu_i$ is the mean isotopic value for prey $i$.
-This is simply the weighted average of the isotopic values for the prey community, where weights are determined by the mean proportional contribution of prey to the consumer's diet.
+\noindent where $\mu_i$ is the mean isotope value for prey $i$.
+This is simply the weighted average of the isotope values for the prey community, where weights are determined by the mean proportional contribution of prey to the consumer's diet.
 
-Of more interest to us here is the variance of $Z$, which will allow us to analytically determine the isotopic niche width of the consumer as a function of its dietary behavior and the isotopic distributions (or mixing space) of its prey.
+Of more interest to us here is the variance of $Z$, which will allow us to analytically determine the isotopic niche width of the consumer as a function of its dietary behavior and the mixing space of its prey.
 We find that
 
 \begin{equation}
@@ -231,9 +270,12 @@ We find that
 
 The isotopic variance of the consumer's diet ${\rm Var}\{Z\}$ can be simplified by considering a specific set of dietary behaviors.
 Here we examine how ${\rm Var}\{Z\}$ is influenced by generalist vs. specialist consumer diets, as well as the role of general mixing space geometries, in determining consumer isotopic niche width.
+It is important to note that specialism, as discussed here defines the degree to which a consumer's diet is dependent on a single prey resource, ranging from $s=1/n$ (obligate generalization) to $s=1$ (obligate specialization).
+It is thus conceptually different than `individual specialization' defined as the proportional variance of an individual relative to that of its population \citep[Within-Individual Component / Total Niche Width, or WIC/TNW;][]{J:1979wc}, and often the variable of interest in other studies examining properties of the isotopic niche \citep{Araujo:2007iua,Araujo:2009p2286,Araujo:2011gm,Layman:2011cm}.
+
 If a generalist consumer alters its diet to include more of a certain prey $k$ relative to the others, the Dirichlet distribution that defines its dietary behavior goes from $a_i=1$ for all $i=1,...,n$ to $a_{i \neq k}=1$ for $i=1,...,n$, with $a_k>1$.
 As specialization increases, the Dirichlet parameter corresponding to the targeted prey $k$, increases to a value much higher than one (pure specialization is obtained only at the limit $a_k \to \infty$).
-Thus, we can assume that $a_i=1$ for all $i \neq k$, and $a_k = (n-1)s_k/(1-s_k)$, where $s_k$ denotes specialization on prey $k$, ranging from $1/n$ (generalization) to $1$ (specialization).
+Thus, we can assume that $a_i=1$ for all $i \neq k$, and $a_k = (n-1)s_k/(1-s_k)$, where $s_k$ denotes specialization on prey $k$. %ranging from $1/n$ (generalization) to $1$ (specialization).
 We can thus substitute $a_0 = (n-1)/(1-s_k)$ and $p_i = a_i/a_0 = (1-s_k)/(n-1)$ for all $i \neq k$, and $a_k/a_0 = s_k$.
 We can then rewrite Eq. \ref{eqVarZ} as
 
@@ -245,7 +287,7 @@ We can then rewrite Eq. \ref{eqVarZ} as
 \noindent and note that, independent of the prey mixing space (a function of $\mu_i$ and $\sigma_i^2$ for prey $i=1,...,n$), the isotopic variance of the consumer's diet will always be a concave parabolic function over $s_k$.
 With respect to the size of the consumer's isotopic niche width, this means that there can be a peak variance for a value of $s_k$ intermediate to pure generalization ($s_k=1/n$) and pure specialization ($s_k=1$).
 
-The peak $\hat s_k$, that describes the maximum isotopic variance of the consumer may or may not fall between $s_k=1/n$ and $s=1$, and is only of ecological interest if it does.
+The peak variance $\hat s_k$, which describes the maximum isotopic variance of the consumer, may or may not fall between $s_k=1/n$ and $s=1$, and is only of ecological interest if it does.
 The peak variance can be solved analytically by setting the derivative of Eq. \ref{eqVarZs} with respect to $s_k$ equal to zero, and solving for $s_k$, which results in
 
 \begin{equation}
@@ -267,21 +309,22 @@ Because specializing on multiple prey does not introduce anything conceptually u
 We have established a framework for analytically calculating the distribution of isotope values that characterizes a consumer's diet, composed of multiple, isotopically distinct prey.
 The dietary behavior of the consumer is a function of a single Dirichlet distribution, which is assumed not to change over time, although we will relax this assumption in the next section.
 By the central limit theorem, over long timescales the dietary distribution of the consumer is static, with a fixed mean and variance.
-However, over short timescales, the diet of the consumer varies as Eq. \ref{eqDirVar}, while its isotopic values vary by the combined effects of the Dirichlet and the mixed Gaussian framework, described by Eq. \ref{eqVarZ}.
+However, over short timescales, the diet of the consumer varies as Eq. \ref{eqDirVar}, while its isotopic distribution has a variability that results from the combined effects of the Dirichlet and the mixed Normal distribution that emerges from the prey mixing space (Eq. \ref{eqVarZ}).
 
 %Not sure, but this might be more appropriate in the discussion
-As the consumer incorporates prey into its diet, the isotopic distribution of its diet is incorporated into its tissues.
-The timescale of physiological isotopic incorporation is based on the turnover rate of consumer tissues, which on the fast end can occur within days to weeks (e.g. blood plasma), and on the slow end occur over years (e.g. bone).
-Incorporation rates are well known to isotope ecologists and have been observed in both controlled feeding studies (REFS), and occasionally in the wild (REFS?).
-Although the physiological details are not well understood, isotopic incorporation can be modeled using either single- or multi-compartmental approaches (REFS).
+As the consumer acquires and consumes prey, the isotopic composition of its diet is incorporated into its tissues.
+The timescale of physiological isotopic incorporation is based on the turnover rate of consumer tissues, which on the fast end can occur within days to weeks (e.g. blood plasma), and on the slow end occur over years (e.g. bone) \citep{Tieszen:1983ij}.
+Incorporation rates are well known to isotope ecologists and have been observed in both controlled feeding studies \citep{Kurle:2009ch,Kim:2012kc}, and occasionally in the wild (REFS?).
+Although the physiological details are not well understood, isotopic incorporation can be modeled using either single- or multi-compartmental approaches \citep{Cerling:2006kv,delRio:2008bs}.
 In a single compartment framework, isotope ratios are ingested with food, and directly incorporated into consumer tissues at a tissue-specific rate.
-In multiple compartment frameworks, it is assumed that incorporation occurs over multiple body pools, the turnover of each occuring at different rates.
-Though an assumption of multi-compartmental incorporation often does provide better statistical fit with experimental data (REFS), the physiological processes that drive incorporation of isotope ratios from one compartment to the other are not well understood (REF), and such fits are only marginally better than a single-compartment approach.
+In multiple compartment frameworks, it is assumed that incorporation occurs over multiple body pools, the turnover of each potentially occurring at different rates.
+Though an assumption of multi-compartmental incorporation can provide better statistical fit with experimental data \citep{Cerling:2006kv,Kurle:2009ch,Carleton:2008cq}, the physiological processes that drive incorporation of isotope ratios from one compartment to the other are not well understood \citep{delRio:2008bs}, and for many tissues single-compartment models fit as well or better than multi-compartment models \citep{Kurle:2009ch}.
 
 In this next section, we assume that the ingested isotope ratios are incorporated into consumer body tissues directly, moderated by the rate of incorporation $\lambda$, which is treated as a free parameter.
+Here we consider only a single compartment model, such that isotope ratios are directly shuttled to consumer tissues at rate $\lambda$; we note, however, that functions for multi-compartment models could be used instead, though we do not expect large qualitative differences in results \citep[cf. Fig. 1 in][]{delRio:2008bs}.
 For simplicity, we assume that time is scaled such that a single time step corresponds to a single foraging bout.
 Moreover, we assume that the consumer is incorporating prey of smaller size than itself, such that $ 0 < \lambda < 1$.
-Thus, we aim to determine the isotopic composition of the consumer $X_c$ as a function of the consumer diet, the isotopic distribution of its prey (or mixing space), and $\lambda$.
+Thus, we aim to determine the isotopic composition of the consumer $X_c$ as a function of its diet, the isotopic mixing space, and $\lambda$.
 % The carbon and nitrogen isotope composition of a consumer's tissues are a product of its diet.
 % If this diet incorporates multiple prey in different quantities, as is the case for most consumers, the resulting consumer isotopic distribution must take into account:
 % \emph{i}) the initial isotopic signature of the consumer's tissues at a point in time $X_c(t)$ (we will assume for simplicity that the isotopic value in question is the ratio of heavy to light carbon isotope relative to a known standard $\delta^{13}{\rm C}$, though are methods are equivalent for any isotope that is integrated through diet),
@@ -297,11 +340,9 @@ In a completely deterministic framework, the isotopic composition of the consume
 \dot X_c = (1-\lambda)X_c + \lambda \sum_{i=1}^N p_i \mu_i - X_c
 \end{equation}
 
-\noindent where the overdot denotes the derivative with respect to time $t$, and $p_i$ and $\mu_i$ are the proportional contribution of prey $i$ to the diet of the consumer, and the mean isotopic value of prey $i$, respectively.
+\noindent where the overdot denotes the derivative with respect to time $t$, and $p_i$ and $\mu_i$ are the proportional contribution of prey $i$ to the diet of the consumer, and the mean isotope value of prey $i$, respectively.
 
-However, we must also take into account the stochastic effects described in the previous section, inluding the variation associated with the consumer's diet, as well as the isotopic variation of each potential prey.
-% First, each potential resource $i$ is composed of individuals with isotopic values varying according to independent Gaussian distributions with expecation ${\rm E}\{X_i\}=\mu_i$, and variance ${\rm Var}\{X_i\}=\sigma^2_i$.
-% Secondly, in this section we consider a consumer diet is variable, yet static (such that it can be described by a time-invariant probability distribution), there is variation in the consumption of prey across short periods of time.
+However, we must also take into account the stochastic effects described in the previous section, including the variation associated with the consumer's diet and the isotopic variation associated with each prey.
 We account for these stochastic effects by describing changes in the consumer's isotopic distribution with the stochastic differential equation
 
 \begin{equation}
@@ -309,9 +350,9 @@ We account for these stochastic effects by describing changes in the consumer's 
 {\rm d}X_c = (1-\lambda)X_c{\rm dt} + \lambda\left({\rm E}\{Z\}{\rm dt} + \sqrt{{\rm Var}\{Z\}}{\rm dW}\right) - X_c{\rm dt}.
 \end{equation}
 
-\noindent where ${\rm dW}$ is the increment of Brownian motion (REF MANGEL).
-This stochastic differential equation describes a process known as an Orstein-Uhlenbeck process, which describes a stochastic process that has a steady state variance around the mean.
-Because the time interval ${\rm dt}$ is infinitely short at the continuous limit, the consumer's isotopic distribution will have a Gaussian density (REF).
+\noindent where ${\rm dW}$ is the increment of Brownian motion.
+This stochastic differential equation describes a process known as an Ornstein-Uhlenbeck process, which is a stochastic process that has a steady state variance around the mean \citep{Mangel:2006wa}.
+Because the time interval ${\rm dt}$ is infinitely short at the continuous limit, the consumer's isotopic distribution will have a Normal distribution.
 In this case, if the initial isotopic values of the consumer at time $t=0$ is $X_c(0)$, the expectation and variability of $X_c$ at time $t$ are
 
 \begin{align}
@@ -354,10 +395,10 @@ Solving for $X(t)$, we find
 \begin{align}
   \label{eqEVarZt}
 {\rm E}\{X(t)\} = X(0){\rm e}^{-\lambda t} + \lambda{\rm e}^{-\lambda t} \int_{s=0}^t {\rm e}^{\lambda s} {\rm E}\{Z(s)\}{\rm d}s, \nonumber \\
-{\rm Var}\{X(t)\} = \lambda^2 {\rm e}^{-2\lambda t} \int_{s=0}^t {\rm e}^{2\lambda s} {\rm Var}\{Z(s)\} {\rm d}s.
+{\rm Var}\{X(t)\} = \lambda^2 {\rm e}^{-2\lambda t} \int_{s=0}^t {\rm e}^{2\lambda s} {\rm Var}\{Z(s)\} {\rm d}s,
 \end{align}
 
-
+\noindent and this is conceptually analogous to the formulation of consumer isotopic variance as derived by \citet{Fink:2012eg}.
 
 % Incorporating different classes of prey-switching dynamics permits an understanding of how the isotopic composition of a consumer reflects changes in its behavior over time as a function of the incorporation rate $\lambda$.
 % To gain an intuitive understanding of how ecological dynamics are portrayed by consumer isotope values, we consider two types of prey-switching behavior: {\it i}) an instantaneous shift from one dietary strategy to another (such as those used in feeding experiments), and {\it ii}) a sinusoidally varying dietary strategy.
@@ -367,7 +408,7 @@ Solving for $X(t)$, we find
 
 \section{Results}
 
-As a consumer samples from multiple prey with stable isotopes values following independent Gaussian distributions, its tissues become a mixture of these distributions.
+As a consumer samples from multiple prey with stable isotopes values following independent Normal distributions, its tissues become a mixture of these distributions.
 The weights that control the contributions of each prey to the consumer mix are determined by the dietary behavior of the consumer, which we have shown follows a Dirichlet distribution.
 The use of the Dirichlet distribution in this context follows previous ecological models by Ref(Ainsworth, others?), and is also used as a prior in Bayesian isotope mixing models.
 We note that Bayesian mixing models are essentially models that explore the opposite question that we are investigating: they are used to estimate the dietary behavior of the consumer (the posterior probability distribution for the proportional contribution vector $\bm p$) given the isotopic distributions of both consumer and prey, whereas we are investigating factors that impact the isotopic distribution of the consumer as a function of different prey mixing spaces and consumer dietary behaviors.
@@ -397,7 +438,8 @@ Moreover, we observe that as the consumer transitions from some initial isotopic
 %Dynamic diet results
 If the consumer's diet is itself variable over time, we do not expect its isotopic composition to equilibrate as it would in a controlled feeding study.
 For example, the consumer might adopt one diet during the wet season, and another during the dry season, such that it oscillates between the two throughout the year.
-We consider a composite diet with an isotopic distribution $\mathbb Z ~ f_{\mathbb Z}$ that dynamically oscillates between two subdiets, which we will refer to as `seasonal diets'.
+We consider a composite diet with an isotopic distribution $\mathbb Z ~ f_{\mathbb Z}$ that dynamically oscillates between two subdiets, which we will refer to as `seasonal diets' with frequency $\omega$.
+We note that $1/\omega$ in this context in synonymous with the `dietary correlation time' of \citet{Fink:2012eg}.
 The seasonal diets have random variables $Z_1$ and $Z_2$, distributed according to Eq. \ref{eqfZ}, where each has a different underlying Dirichlet -- encoding which prey the consumer targets during each season with frequency distributions $f_{\bm P_1}$ and $f_{\bm P_2}$ -- while the isotopic distributions of prey are assumed to be constant through time.
 We can thus describe the composite diet as a mix of the seasonal diets, where the mix is characterized by weights that oscillate over time, $\mathcal{U}(t)$, and this determines the contribution of each seasonal dietary strategy to the whole.
 The frequency distribution for the composite diet is thus
@@ -447,7 +489,7 @@ We gain two key insights from the solution for the variance of the composite die
 1) The time-averaged variance (denoted by $\langle \cdot
 \rangle_t$) is simply $\langle {\rm Var}\{\mathbb{Z}(t)\} \rangle_t = \alpha_{\rm V}$, which is only impacted by the average variance between the seasonal diets and the difference in the mean isotope values between the seasonal diets (Fig. \ref{figvarcont}), and
 2) the oscillating component shows that the composite dietary variance has twice the frequency of the diet shift $\mathcal{U}(t)$, as well as a $\pi/2$ offset, meaning that the maximal variance of the consumer's composite diet will occur during the transition from one diet to the other (Fig. \ref{figvarZt}B).
-Together, these results reveal that if the consumer's diet is varying continuously over time between two seasonal diets, both the mean variance, as well as the difference in the mean isotope values of the seasonal diets -- directly reflecting the heterogeneity of prey mixing space geometry -- will serve to increase the time-averaged variance of the consumer's diet, and by extention the isotopic variance of the consumer itself.
+Together, these results reveal that if the consumer's diet is varying continuously over time between two seasonal diets, both the mean variance, as well as the difference in the mean isotope values of the seasonal diets -- directly reflecting the heterogeneity of prey mixing space geometry -- will serve to increase the time-averaged variance of the consumer's diet, and by extension the isotopic variance of the consumer itself.
 
 Less intuitively, we observe that the consumer's peak variance, or niche width, as measured by the variance of its composite diet, occurs not during the exclusive adoption of its wet/dry season diets, but during the transition between the two, and this peak variance is driven exclusively by the difference in means between seasonal diets.
 As the seasonal diets become more heterogeneous in isotopic space, the greater the consumer's peak variance during the transtion, and this occurs because it is sampling between two dietary strategies that are isotopically distinct.
@@ -620,6 +662,11 @@ This effect of mixing space geometry on the time-averaged variance of the compos
 2) the mean difference between the two sub-diets.
 As either of these factors increase, the average variance of the composite diet increases, setting the baseline from which the peak variance fluctuates.
 
+We also observed that as the frequency of dietary transitions increased relative to the rate at which the consumer integrates dietary isotope ratios into its tissues, the consumer's isotopic variance exhibited lower amplitude as it fluctuated between the different variances of its diet.
+This occurs because the greater transition frequencies serve to average variance of the two diets within its tissues.
+\citet{Fink:2012eg} found a similar dynamic when they derived an analytical solution for the variance of a consumer population transitioning between two prey.
+As the frequency of dietary transitions increased, the variance of the consumer population became small, effectively because the individual consumer diets increased the averaging effects of the two prey; as the frequency decreased, the variance of the population approached that of the prey.
+
 
 %Continuous vs. discontinuous switch
 An interesting observation that we gain from exploring a sinusoidal dietary shift is that the variance peak observed during the dietary transition is dependent on such a transition being smooth.
@@ -683,6 +730,7 @@ At the extremes, a population could consist of
 3) obligate generalists with low individuality (where all individuals are generalists; an obligate generalist with high individuality cannot exist in this context). %such that the individuality-specialization state-space is a triangle.
 How these different behaviors might shape individual and population-level isotopic distributions is an important question, though the answers will likely be complex.
 For example, isotopically similar individuals with low variances imply that all individuals are consuming similar things, in similar quantities, such that individuality is low, though our results show that low isotopic variance need not indicate specialization or generalization \emph{per se} (cf. Figs \ref{figvar},\ref{figottervar}).
+See \citet{Bearhop:2004im} and \citet{Fink:2012eg} for an overview and quantitative analysis of these issues, respectively.
 
 Of greater potential interest, and relevant to the framework that we have presented, is the scenario in which individuals have different diets that are themselves shifting in time (or not).
 Our approach could be used to hypothesis-test potential ecological/population/behavioral mechanisms that might contribute to the observed isotopic distributions at both the individual and population level, and this would be particularly powerful if one had access to tissues that integrate over time such as hair, whiskers, claws, or even laminar teeth.
@@ -705,8 +753,40 @@ By coupling this variance to mechanistic relationships between a consumer and it
 Incorporating the effects of population dynamics and/or different foraging strategies will enable hypothesis testing of different ecological mechanisms to generate the isotopic distributions that are observed in nature.
 We hope that such a forward-integrating approach, alongside the use of tools such as mixing models to back-calculate dietary incorporation, will serve to expand and enhance the ecological interpretation of isotopic data.
 
+\section*{Disclosure/Conflict-of-Interest Statement}
+%Frontiers follows the recommendations by the International Committee of Medical Journal Editors (http://www.icmje.org/ethical_4conflicts.html) which require that all financial, commercial or other relationships that might be perceived by the academic community as representing a potential conflict of interest must be disclosed. If no such relationship exists, authors will be asked to declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest. When disclosing the potential conflict of interest, the authors need to address the following points:
+%•	Did you or your institution at any time receive payment or services from a third party for any aspect of the submitted work?
+%•	Please declare financial relationships with entities that could be perceived to influence, or that give the appearance of potentially influencing, what you wrote in the submitted work.
+%•	Please declare patents and copyrights, whether pending, issued, licensed and/or receiving royalties relevant to the work.
+%•	Please state other relationships or activities that readers could perceive to have influenced, or that give the appearance of potentially influencing, what you wrote in the submitted work.
+
+The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
+
+\section*{Author Contributions}
+%When determining authorship the following criteria should be observed:
+%•	Substantial contributions to the conception or design of the work; or the acquisition, analysis, or interpretation of data for the work; AND
+%•	Drafting the work or revising it critically for important intellectual content; AND
+%•	Final approval of the version to be published ; AND
+%•	Agreement to be accountable for all aspects of the work in ensuring that questions related to the accuracy or integrity of any part of the work are appropriately investigated and resolved.
+%Contributors who meet fewer than all 4 of the above criteria for authorship should not be listed as authors, but they should be acknowledged. (http://www.icmje.org/roles_a.html)
+
+The statement about the authors and contributors can be up to several sentences long, describing the tasks of individual authors referred to by their initials and should be included at the end of the manuscript before the References section.
 
 
+\section*{Acknowledgments}
+Text Text Text Text Text Text  Text Text Text Text Text Text Text Text  Text Text Text Text Text Text Text Text Text  Text Text Text. Text Text Text Text Text Text  Text Text Text Text Text Text Text Text  Text Text Text Text Text Text Text Text Text  Text Text Text. 
+
+
+\textit{Funding\textcolon} Text Text Text Text Text Text  Text Text.
+
+\section*{Supplemental Data}
+Supplementary Material should be uploaded separately on submission, if there are Supplementary Figures, please include the caption in the same file as the figure. LaTeX Supplementary Material templates can be found in the Frontiers LaTeX folder
+
+\newpage
+\section*{References}
+\bibliographystyle{frontiersinSCNS_ENG_HUMS} % for Science, Engineering and Humanities and Social Sciences articles, for Humanities and Social Sciences articles please include page numbers in the in-text citations
+%\bibliographystyle{frontiersinHLTH&FPHY} % for Health and Physics articles
+\bibliography{aa_dyniso}
 
 
 
