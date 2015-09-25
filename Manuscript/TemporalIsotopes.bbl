@@ -1,0 +1,403 @@
+\begin{thebibliography}{51}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+
+\bibitem[{Ainsworth et~al.(2010)Ainsworth, Kaplan, Levin, and
+  Mangel}]{Ainsworth:2010uo}
+Ainsworth, C.~H., Kaplan, I.~C., Levin, P.~S., and Mangel, M. (2010).
+\newblock {A statistical approach for estimating fish diet compositions from
+  multiple data sources: Gulf of California case study}.
+\newblock \emph{Ecol. Appl.} 20, 2188--2202
+\bibAnnoteFile{Ainsworth:2010uo}
+
+\bibitem[{Ara{\'u}jo et~al.(2011)Ara{\'u}jo, Bolnick, and
+  Layman}]{Araujo:2011gm}
+Ara{\'u}jo, M.~S., Bolnick, D.~I., and Layman, C.~A. (2011).
+\newblock {The ecological causes of individual specialisation}.
+\newblock \emph{Ecol. Lett.} 14, 948--958
+\bibAnnoteFile{Araujo:2011gm}
+
+\bibitem[{Ara{\'u}jo et~al.(2007)Ara{\'u}jo, Bolnick, Machado, Giaretta, and
+  dos Reis}]{Araujo:2007iua}
+Ara{\'u}jo, M.~S., Bolnick, D.~I., Machado, G., Giaretta, A.~A., and dos Reis,
+  S.~F. (2007).
+\newblock {Using $\delta$$^{13}$C stable isotopes to quantify individual-level
+  diet variation}.
+\newblock \emph{Oecologia} 152, 643--654
+\bibAnnoteFile{Araujo:2007iua}
+
+\bibitem[{Ara{\'u}jo et~al.(2009)Ara{\'u}jo, Bolnick, Martinelli, Giaretta, and
+  dos Reis}]{Araujo:2009p2286}
+Ara{\'u}jo, M.~S., Bolnick, D.~I., Martinelli, L.~A., Giaretta, A.~A., and dos
+  Reis, S.~F. (2009).
+\newblock {Individual-level diet variation in four species of Brazilian frogs}.
+\newblock \emph{J. Anim. Ecol.} 78, 848--856
+\bibAnnoteFile{Araujo:2009p2286}
+
+\bibitem[{Bearhop et~al.(2004)Bearhop, Adams, Waldron, Fuller, and
+  Macleod}]{Bearhop:2004im}
+Bearhop, S., Adams, C.~E., Waldron, S., Fuller, R.~A., and Macleod, H. (2004).
+\newblock {Determining trophic niche width:~a novel approach using stable
+  isotope analysis}.
+\newblock \emph{J. Anim. Ecol.} 73, 1007--1012
+\bibAnnoteFile{Bearhop:2004im}
+
+\bibitem[{Bolnick et~al.(2007)Bolnick, Svanback, Ara{\'u}jo, and
+  Persson}]{Bolnick:2007p1253}
+Bolnick, D., Svanback, R., Ara{\'u}jo, M., and Persson, L. (2007).
+\newblock {Comparative support for the niche variation hypothesis that more
+  generalized populations also are more heterogeneous}.
+\newblock \emph{Proc. Natl. Acad. Sci. USA} 104, 10075
+\bibAnnoteFile{Bolnick:2007p1253}
+
+\bibitem[{Bolnick et~al.(2011)Bolnick, Amarasekare, Ara{\'u}jo, B{\"u}rger,
+  Levine, Novak et~al.}]{Bolnick:2011gj}
+Bolnick, D.~I., Amarasekare, P., Ara{\'u}jo, M.~S., B{\"u}rger, R., Levine,
+  J.~M., Novak, M., et~al. (2011).
+\newblock {Why intraspecific trait variation matters in community ecology}.
+\newblock \emph{Trends Ecol. Evol.} 26, 183--192
+\bibAnnoteFile{Bolnick:2011gj}
+
+\bibitem[{Carleton et~al.(2008)Carleton, Kelly, Anderson-Sprecher, and
+  Mart{\'\i}nez~del Rio}]{Carleton:2008cq}
+Carleton, S.~A., Kelly, L., Anderson-Sprecher, R., and Mart{\'\i}nez~del Rio,
+  C. (2008).
+\newblock {Should we use one-, or multi-compartment models to describe $^{13}$C
+  incorporation into animal tissues?}
+\newblock \emph{Rapid Commun. Mass Sp.} 22, 3008--3014
+\bibAnnoteFile{Carleton:2008cq}
+
+\bibitem[{Cerling et~al.(2006)Cerling, Ayliffe, Dearing, Ehleringer, Passey,
+  Podlesak et~al.}]{Cerling:2006kv}
+Cerling, T.~E., Ayliffe, L.~K., Dearing, M.~D., Ehleringer, J.~R., Passey,
+  B.~H., Podlesak, D.~W., et~al. (2006).
+\newblock {Determining biological tissue turnover using stable isotopes: the
+  reaction progress variable}.
+\newblock \emph{Oecologia} 151, 175--189
+\bibAnnoteFile{Cerling:2006kv}
+
+\bibitem[{Chesson(1983)}]{Chesson:1983bt}
+Chesson, J. (1983).
+\newblock {The Estimation and Analysis of Preference and Its Relatioship to
+  Foraging Models}.
+\newblock \emph{Ecology} 64, 1297
+\bibAnnoteFile{Chesson:1983bt}
+
+\bibitem[{Clark and Mangel(2000)}]{Clark:2000tra}
+Clark, C.~W. and Mangel, M. (2000).
+\newblock \emph{{Dynamic state variable models in ecology: methods and
+  applications}} (Oxford University Press, USA)
+\bibAnnoteFile{Clark:2000tra}
+
+\bibitem[{Fink et~al.(2012)Fink, Reichwaldt, Harrod, and
+  Rossberg}]{Fink:2012eg}
+Fink, P., Reichwaldt, E.~S., Harrod, C., and Rossberg, A.~G. (2012).
+\newblock {Determining trophic niche width: an experimental test of the stable
+  isotope approach}.
+\newblock \emph{Oikos} 121, 1985--1994
+\bibAnnoteFile{Fink:2012eg}
+
+\bibitem[{Hilborn and Mangel(1997)}]{Hilborn:1997ds}
+Hilborn, R. and Mangel, M. (1997).
+\newblock \emph{{The ecological detective: Confronting models with data}}
+  (Princeton: Princeton University Press)
+\bibAnnoteFile{Hilborn:1997ds}
+
+\bibitem[{Hopkins and Ferguson(2012)}]{Hopkins:2012dza}
+Hopkins, J.~B. and Ferguson, J.~M. (2012).
+\newblock {Estimating the diets of animals using stable isotopes and a
+  comprehensive bayesian mixing model.}
+\newblock \emph{PLoS ONE} 7, e28478
+\bibAnnoteFile{Hopkins:2012dza}
+
+\bibitem[{Hopkins~III and Kurle(2015)}]{Hopkins:2015ip}
+Hopkins~III, J.~B. and Kurle, C.~M. (2015).
+\newblock {Measuring the realized niches of animals using stable isotopes: from
+  rats to bears}.
+\newblock \emph{Methods Ecol Evol} , 1--12
+\bibAnnoteFile{Hopkins:2015ip}
+
+\bibitem[{Hutchinson(1957)}]{Hutchinson:1957tg}
+Hutchinson, G.~E. (1957).
+\newblock {Concluding remarks}.
+\newblock In \emph{Cold spring harbor symposium on quantitative biology}
+  (Concluding remarks)
+\bibAnnoteFile{Hutchinson:1957tg}
+
+\bibitem[{Jackson et~al.(2011)Jackson, Inger, Parnell, and
+  Bearhop}]{Jackson:2011kd}
+Jackson, A.~L., Inger, R., Parnell, A.~C., and Bearhop, S. (2011).
+\newblock {Comparing isotopic niche widths among and within communities: SIBER
+  - Stable Isotope Bayesian Ellipses in R}.
+\newblock \emph{J. Anim. Ecol.} 80, 595--602
+\bibAnnoteFile{Jackson:2011kd}
+
+\bibitem[{Johnson(1960)}]{Johnson:1960gu}
+Johnson, N.~L. (1960).
+\newblock {An Approximation to the Multinomial Distribution: Some Properties
+  and Applications}.
+\newblock \emph{Biometrika} 47, 93
+\bibAnnoteFile{Johnson:1960gu}
+
+\bibitem[{Kim et~al.(2012)Kim, Mart{\'\i}nez~del Rio, Casper, and
+  Koch}]{Kim:2012kc}
+Kim, S.~L., Mart{\'\i}nez~del Rio, C., Casper, D., and Koch, P.~L. (2012).
+\newblock {Isotopic incorporation rates for shark tissues from a long-term
+  captive feeding study.}
+\newblock \emph{J. Exp. Biol.} 215, 2495--2500
+\bibAnnoteFile{Kim:2012kc}
+
+\bibitem[{Koch et~al.(1995)Koch, Heisinger, Moss, Carlson, Fogel, and
+  Behrensmeyer}]{Koch:1995vj}
+Koch, P., Heisinger, J., Moss, C., Carlson, R., Fogel, M., and Behrensmeyer, A.
+  (1995).
+\newblock {Isotopic tracking of change in diet and habitat use in African
+  elephants}.
+\newblock \emph{Science} 267, 1340
+\bibAnnoteFile{Koch:1995vj}
+
+\bibitem[{Kurle(2009)}]{Kurle:2009ch}
+Kurle, C.~M. (2009).
+\newblock {Interpreting temporal variation in omnivore foraging ecology via
+  stable isotope modelling}.
+\newblock \emph{Functional Ecology} 23, 733--744
+\bibAnnoteFile{Kurle:2009ch}
+
+\bibitem[{Layman et~al.(2011)Layman, Ara{\'u}jo, Boucek, Hammerschlag-Peyer,
+  Harrison, Jud et~al.}]{Layman:2011cm}
+Layman, C.~A., Ara{\'u}jo, M.~S., Boucek, R., Hammerschlag-Peyer, C.~M.,
+  Harrison, E., Jud, Z.~R., et~al. (2011).
+\newblock {Applying stable isotopes to examine food-web structure: an overview
+  of analytical tools}.
+\newblock \emph{Biological Reviews} , no--no
+\bibAnnoteFile{Layman:2011cm}
+
+\bibitem[{Layman et~al.(2007)Layman, Quattrochi, Peyer, and
+  Allgeier}]{Layman:2007ky}
+Layman, C.~A., Quattrochi, J.~P., Peyer, C.~M., and Allgeier, J.~E. (2007).
+\newblock {Niche width collapse in a resilient top predator following ecosystem
+  fragmentation}.
+\newblock \emph{Ecol. Lett.} 10, 937--944
+\bibAnnoteFile{Layman:2007ky}
+
+\bibitem[{Lehmann et~al.(2015)Lehmann, Mfune, Gewers, Brain, and
+  Voigt}]{Lehmann:2015db}
+Lehmann, D., Mfune, J. K.~E., Gewers, E., Brain, C., and Voigt, C.~C. (2015).
+\newblock {Individual variation of isotopic niches in grazing and browsing
+  desert ungulates}.
+\newblock \emph{Oecologia} , 1--14
+\bibAnnoteFile{Lehmann:2015db}
+
+\bibitem[{Mangel(2006)}]{Mangel:2006wa}
+Mangel, M. (2006).
+\newblock \emph{{The theoretical biologist's toolbox: Quantitative methods for
+  ecology and evolutionary biology}} (Cambridge: Cambridge University Press)
+\bibAnnoteFile{Mangel:2006wa}
+
+\bibitem[{Mangel(2014)}]{Mangel:2014kz}
+Mangel, M. (2014).
+\newblock {Stochastic dynamic programming illuminates the link between
+  environment, physiology, and evolution}.
+\newblock \emph{B. Math. Biol.} 77, 857--877
+\bibAnnoteFile{Mangel:2014kz}
+
+\bibitem[{Mangel and Clark(1988)}]{Mangel:1988uaa}
+Mangel, M. and Clark, C.~W. (1988).
+\newblock \emph{{Dynamic modeling in behavioral ecology}} (Princeton: Princeton
+  University Press)
+\bibAnnoteFile{Mangel:1988uaa}
+
+\bibitem[{Mart{\'\i}nez~del Rio and Anderson-Sprecher(2008)}]{delRio:2008bs}
+Mart{\'\i}nez~del Rio, C. and Anderson-Sprecher, R. (2008).
+\newblock {Beyond the reaction progress variable: the meaning and significance
+  of isotopic incorporation data}.
+\newblock \emph{Oecologia} 156, 765--772
+\bibAnnoteFile{delRio:2008bs}
+
+\bibitem[{Mart{\'\i}nez~del Rio et~al.(2009)Mart{\'\i}nez~del Rio, Sabat,
+  Anderson-Sprecher, and Gonzalez}]{delRio:2011p2553}
+Mart{\'\i}nez~del Rio, C., Sabat, P., Anderson-Sprecher, R., and Gonzalez,
+  S.~P. (2009).
+\newblock {Dietary and isotopic specialization: the isotopic niche of three
+  Cinclodes ovenbirds.}
+\newblock \emph{Oecologia} 161, 149--159
+\bibAnnoteFile{delRio:2011p2553}
+
+\bibitem[{Matthews and Mazumder(2004)}]{Matthews:2004hw}
+Matthews, B. and Mazumder, A. (2004).
+\newblock {A critical evaluation of intrapopulation variation of
+  $\delta$$^{13}$C and isotopic evidence of individual specialization}.
+\newblock \emph{Oecologia} 140, 361--371
+\bibAnnoteFile{Matthews:2004hw}
+
+\bibitem[{Moore and Semmens(2008)}]{Moore:2008kg}
+Moore, J.~W. and Semmens, B.~X. (2008).
+\newblock {Incorporating uncertainty and prior information into stable isotope
+  mixing models}.
+\newblock \emph{Ecol. Lett.} 11, 470--480
+\bibAnnoteFile{Moore:2008kg}
+
+\bibitem[{Newsome et~al.(2012)Newsome, Yeakel, Wheatley, and
+  Tinker}]{Newsome:WhhVfocb}
+Newsome, S., Yeakel, J.~D., Wheatley, P.~V., and Tinker, M.~T. (2012).
+\newblock {Tools for quantifying isotopic niche space and dietary variation at
+  the individual and population level}.
+\newblock \emph{J. Mammal.} 93, 329--341
+\bibAnnoteFile{Newsome:WhhVfocb}
+
+\bibitem[{Newsome et~al.(2007)Newsome, Martinez~del Rio, Bearhop, and
+  Phillips}]{Newsome:2007tz}
+Newsome, S.~D., Martinez~del Rio, C., Bearhop, S., and Phillips, D.~L. (2007).
+\newblock {A niche for isotopic ecology}.
+\newblock \emph{Front. Ecol. Environ.} 5, 429--436
+\bibAnnoteFile{Newsome:2007tz}
+
+\bibitem[{Newsome et~al.(2009)Newsome, Tinker, Monson, Oftedal, Ralls, Staedler
+  et~al.}]{Newsome:2009tn}
+Newsome, S.~D., Tinker, M., Monson, D., Oftedal, O., Ralls, K., Staedler, M.,
+  et~al. (2009).
+\newblock {Using stable isotopes to investigate individual diet specialization
+  in California sea otters (\emph{Enhydra lutris nereis})}.
+\newblock \emph{Ecology} 90, 961--974
+\bibAnnoteFile{Newsome:2009tn}
+
+\bibitem[{Newsome et~al.(2015)Newsome, Tinker, Gill, Hoyt, Doroff, Nichol
+  et~al.}]{Newsome:2015gy}
+Newsome, S.~D., Tinker, M.~T., Gill, V.~A., Hoyt, Z.~N., Doroff, A., Nichol,
+  L., et~al. (2015).
+\newblock {The interaction of intraspecific competition and habitat on
+  individual diet specialization: a near range-wide examination of sea otters}.
+\newblock \emph{Oecologia} , 1--15
+\bibAnnoteFile{Newsome:2015gy}
+
+\bibitem[{Ogle et~al.(2014)Ogle, Tucker, and Cable}]{Ogle:2014jg}
+Ogle, K., Tucker, C., and Cable, J.~M. (2014).
+\newblock {Beyond simple linear mixing models: process-based isotope
+  partitioning of ecological processes}.
+\newblock \emph{Ecol. Appl.} 24, 181--195
+\bibAnnoteFile{Ogle:2014jg}
+
+\bibitem[{Parnell et~al.(2010)Parnell, Inger, Bearhop, and
+  Jackson}]{Parnell:2010ub}
+Parnell, A.~C., Inger, R., Bearhop, S., and Jackson, A.~L. (2010).
+\newblock {Source partitioning using stable isotopes: coping with too much
+  variation}.
+\newblock \emph{PLoS ONE} 5, e9672
+\bibAnnoteFile{Parnell:2010ub}
+
+\bibitem[{Parnell et~al.(2013)Parnell, Phillips, Bearhop, Semmens, Ward, Moore
+  et~al.}]{Parnell:2012wv}
+Parnell, A.~C., Phillips, D.~L., Bearhop, S., Semmens, B.~X., Ward, E.~J.,
+  Moore, J.~W., et~al. (2013).
+\newblock {Bayesian stable isotope mixing models}.
+\newblock \emph{Environmetrics} 24, 387--399
+\bibAnnoteFile{Parnell:2012wv}
+
+\bibitem[{Phillips(2001)}]{Phillips:2001ws}
+Phillips, D.~L. (2001).
+\newblock {Mixing models in analyses of diet using multiple stable isotopes: a
+  critique}.
+\newblock \emph{Oecologia} 127, 166--170
+\bibAnnoteFile{Phillips:2001ws}
+
+\bibitem[{Phillips and Gregg(2003)}]{Phillips:2003kq}
+Phillips, D.~L. and Gregg, J.~W. (2003).
+\newblock {Source partitioning using stable isotopes: coping with too many
+  sources}.
+\newblock \emph{Oecologia} 136, 261--269
+\bibAnnoteFile{Phillips:2003kq}
+
+\bibitem[{Phillips and Koch(2002)}]{Phillips:2002tu}
+Phillips, D.~L. and Koch, P. (2002).
+\newblock {Incorporating concentration dependence in stable isotope mixing
+  models}.
+\newblock \emph{Oecologia} 130, 114--125
+\bibAnnoteFile{Phillips:2002tu}
+
+\bibitem[{Phillips et~al.(2005)Phillips, Newsome, and
+  Gregg}]{Phillips:2005p1007}
+Phillips, D.~L., Newsome, S.~D., and Gregg, J.~W. (2005).
+\newblock {Combining sources in stable isotope mixing models: alternative
+  methods}.
+\newblock \emph{Oecologia} 144, 520--527
+\bibAnnoteFile{Phillips:2005p1007}
+
+\bibitem[{Post(2008)}]{Post:2008ki}
+Post, D.~M. (2008).
+\newblock {Individual variation in the timing of ontogenetic niche shifts in
+  largemouth bass}.
+\newblock \emph{Ecology} 84, 1298--1310
+\bibAnnoteFile{Post:2008ki}
+
+\bibitem[{Roughgarden(1979)}]{J:1979wc}
+Roughgarden, J. (1979).
+\newblock \emph{{Theory of population genetics and evolutionary ecology: an
+  introduction.}} (New York: Macmillan)
+\bibAnnoteFile{J:1979wc}
+
+\bibitem[{Semmens et~al.(2009)Semmens, Ward, Moore, and
+  Darimont}]{Semmens:2009uq}
+Semmens, B.~X., Ward, E.~J., Moore, J.~W., and Darimont, C.~T. (2009).
+\newblock {Quantifying inter-and intra-population niche variability using
+  hierarchical Bayesian stable isotope mixing models}.
+\newblock \emph{PLoS ONE} 4, e6187
+\bibAnnoteFile{Semmens:2009uq}
+
+\bibitem[{Sponheimer et~al.(2006)Sponheimer, Passey, de~Ruiter,
+  Guatelli-Steinberg, Cerling, and Lee-Thorp}]{Sponheimer:2006fj}
+Sponheimer, M., Passey, B.~H., de~Ruiter, D.~J., Guatelli-Steinberg, D.,
+  Cerling, T.~E., and Lee-Thorp, J.~A. (2006).
+\newblock {Isotopic evidence for dietary variability in the early hominin
+  \emph{Paranthropus robustus}}.
+\newblock \emph{Science} 314, 980--982
+\bibAnnoteFile{Sponheimer:2006fj}
+
+\bibitem[{Tieszen et~al.(1983)Tieszen, Boutton, Tesdahl, and
+  Slade}]{Tieszen:1983ij}
+Tieszen, L.~L., Boutton, T.~W., Tesdahl, K.~G., and Slade, N.~A. (1983).
+\newblock {Fractionation and turnover of stable carbon isotopes in animal
+  tissues: Implications for $\delta$$^{13}$C analysis of diet}.
+\newblock \emph{Oecologia} 57, 32--37
+\bibAnnoteFile{Tieszen:1983ij}
+
+\bibitem[{Tinker et~al.(2008)Tinker, Bentall, and Estes}]{Tinker:2008tp}
+Tinker, M.~T., Bentall, G., and Estes, J.~A. (2008).
+\newblock {Food limitation leads to behavioral diversification and dietary
+  specialization in sea otters}.
+\newblock \emph{Proc. Natl. Acad. Sci. USA} 105, 560{\textendash}565
+\bibAnnoteFile{Tinker:2008tp}
+
+\bibitem[{Yeakel et~al.(2014)Yeakel, Dominy, Koch, and Mangel}]{Yeakel:2013hi}
+Yeakel, J.~D., Dominy, N.~J., Koch, P.~L., and Mangel, M. (2014).
+\newblock {Functional morphology, stable isotopes, and human evolution: a model
+  of consilience}.
+\newblock \emph{Evolution} 68, 190--203
+\bibAnnoteFile{Yeakel:2013hi}
+
+\bibitem[{Yeakel et~al.(2013)Yeakel, Guimar{\~a}es~Jr, Bocherens, and
+  Koch}]{Yeakel:2012uc}
+Yeakel, J.~D., Guimar{\~a}es~Jr, P.~R., Bocherens, H., and Koch, P.~L. (2013).
+\newblock {The impact of climate change on the structure of Pleistocene food
+  webs across the mammoth steppe}.
+\newblock \emph{Proc. Roy. Soc. B} 280, 20130239--20130239
+\bibAnnoteFile{Yeakel:2012uc}
+
+\bibitem[{Yeakel et~al.(2009)Yeakel, Patterson, Fox-Dobbs, Okumura, Cerling,
+  Moore et~al.}]{Yeakel:2009hz}
+Yeakel, J.~D., Patterson, B.~D., Fox-Dobbs, K., Okumura, M., Cerling, T.,
+  Moore, J., et~al. (2009).
+\newblock {Cooperation and individuality among man-eating lions}.
+\newblock \emph{Proc. Natl. Acad. Sci. USA} 106, 19040{\textendash}19043
+\bibAnnoteFile{Yeakel:2009hz}
+
+\end{thebibliography}

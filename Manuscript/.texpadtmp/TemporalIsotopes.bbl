@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{73}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -44,13 +44,37 @@ Ara{\'u}jo, M.~S., Bolnick, D.~I., Martinelli, L.~A., Giaretta, A.~A., and dos
 \newblock \emph{J. Anim. Ecol.} 78, 848--856
 \bibAnnoteFile{Araujo:2009p2286}
 
-\bibitem[{Bearhop et~al.(2004)Bearhop, ADAMS, WALDRON, FULLER, and
-  MACLEOD}]{Bearhop:2004im}
-Bearhop, S., ADAMS, C.~E., WALDRON, S., FULLER, R.~A., and MACLEOD, H. (2004).
+\bibitem[{Atkinson et~al.(2014)Atkinson, Hill, Barange, Pakhomov, Raubenheimer,
+  Schmidt et~al.}]{Atkinson:2014jm}
+Atkinson, A., Hill, S.~L., Barange, M., Pakhomov, E.~A., Raubenheimer, D.,
+  Schmidt, K., et~al. (2014).
+\newblock {Sardine cycles, krill declines, and locust plagues: revisiting
+  {\textquoteleft}wasp-waist{\textquoteright} food webs}.
+\newblock \emph{Trends Ecol. Evol.} 29, 309--316
+\bibAnnoteFile{Atkinson:2014jm}
+
+\bibitem[{Barnett et~al.(2007)Barnett, Bateson, and Rowe}]{Barnett:2007er}
+Barnett, C.~A., Bateson, M., and Rowe, C. (2007).
+\newblock {State-dependent decision making: educated predators strategically
+  trade off the costs and benefits of consuming aposematic prey}.
+\newblock \emph{Behavioral Ecology} 18, 645--651
+\bibAnnoteFile{Barnett:2007er}
+
+\bibitem[{Bearhop et~al.(2004)Bearhop, Adams, Waldron, Fuller, and
+  Macleod}]{Bearhop:2004im}
+Bearhop, S., Adams, C.~E., Waldron, S., Fuller, R.~A., and Macleod, H. (2004).
 \newblock {Determining trophic niche width:~a novel approach using stable
   isotope analysis}.
 \newblock \emph{J. Anim. Ecol.} 73, 1007--1012
 \bibAnnoteFile{Bearhop:2004im}
+
+\bibitem[{Bearhop et~al.(2010)Bearhop, Waldron, Votier, and
+  Furness}]{Bearhop:2010db}
+Bearhop, S., Waldron, S., Votier, S.~C., and Furness, R.~W. (2010).
+\newblock {Factors That Influence Assimilation Rates and Fractionation of
+  Nitrogen and Carbon Stable Isotopes in Avian Blood and Feathers}.
+\newblock \emph{Physiol. Biochem. Zool.} 75, 451--458
+\bibAnnoteFile{Bearhop:2010db}
 
 \bibitem[{Bolnick et~al.(2007)Bolnick, Svanback, Ara{\'u}jo, and
   Persson}]{Bolnick:2007p1253}
@@ -72,9 +96,9 @@ Bolnick, D.~I., Amarasekare, P., Ara{\'u}jo, M.~S., B{\"u}rger, R., Levine,
   Mart{\'\i}nez~del Rio}]{Carleton:2008cq}
 Carleton, S.~A., Kelly, L., Anderson-Sprecher, R., and Mart{\'\i}nez~del Rio,
   C. (2008).
-\newblock {Should we use one-, or multi-compartment models to describe 13C
+\newblock {Should we use one-, or multi-compartment models to describe $^{13}$C
   incorporation into animal tissues?}
-\newblock \emph{Rapid Communications in Mass Spectrometry} 22, 3008--3014
+\newblock \emph{Rapid Commun. Mass Sp.} 22, 3008--3014
 \bibAnnoteFile{Carleton:2008cq}
 
 \bibitem[{Cerling et~al.(2006)Cerling, Ayliffe, Dearing, Ehleringer, Passey,
@@ -99,6 +123,59 @@ Clark, C.~W. and Mangel, M. (2000).
   applications}} (Oxford University Press, USA)
 \bibAnnoteFile{Clark:2000tra}
 
+\bibitem[{Codron and Lee-Thorp(2007)}]{CodronSAJWR2007}
+Codron, D. and Lee-Thorp, J.~A. (2007).
+\newblock {Stable carbon isotope reconstruction of ungulate diet changes
+  through the seasonal cycle}.
+\newblock \emph{S. Afr. J. Wildl. Res.}
+\bibAnnoteFile{CodronSAJWR2007}
+
+\bibitem[{Creel and Christianson(2008)}]{Creel:2008p838}
+Creel, S. and Christianson, D. (2008).
+\newblock {Relationships between direct predation and risk effects}.
+\newblock \emph{Trends Ecol. Evol.} 23, 194--201
+\bibAnnoteFile{Creel:2008p838}
+
+\bibitem[{Darimont and Reimchen(2002)}]{Darimont:2002ex}
+Darimont, C.~T. and Reimchen, T.~E. (2002).
+\newblock {Intra-hair stable isotope analysis implies seasonal shift to salmon
+  in gray wolf diet}.
+\newblock \emph{Can. J. Zool.} 80, 1638--1642
+\bibAnnoteFile{Darimont:2002ex}
+
+\bibitem[{Dawson and Hamner(2008)}]{Dawson:2008hj}
+Dawson, M.~N. and Hamner, W.~M. (2008).
+\newblock {A character-based analysis of the evolution of jellyfish blooms:
+  adaptation and exaptation}.
+\newblock \emph{Hydrobiologia} 616, 193--215
+\bibAnnoteFile{Dawson:2008hj}
+
+\bibitem[{Doucett et~al.(1999)Doucett, Booth, Power, and
+  McKinley}]{Doucett:1999bz}
+Doucett, R.~R., Booth, R.~K., Power, G., and McKinley, R.~S. (1999).
+\newblock {Effects of the spawning migration on the nutritional status of
+  anadromous Atlantic salmon (\emph{Salmo salar}): insights from stable-isotope
+  analysis}.
+\newblock \emph{Can. J. Fish. Aquat. Sci.} 56, 2172--2180
+\bibAnnoteFile{Doucett:1999bz}
+
+\bibitem[{Estes et~al.(2003)Estes, Riedman, Staedler, Tinker, and
+  Lyon}]{Estes:2003uc}
+Estes, J.~A., Riedman, M.~L., Staedler, M.~M., Tinker, M.~T., and Lyon, B.~E.
+  (2003).
+\newblock {Individual variation in prey selection by sea otters: patterns,
+  causes and implications}.
+\newblock \emph{J. Anim. Ecol.} 72, 144--155
+\bibAnnoteFile{Estes:2003uc}
+
+\bibitem[{Fedosov et~al.(2014)Fedosov, Tiunov, Kiyashko, and
+  Kantor}]{Fedosov:2014hm}
+Fedosov, A.~E., Tiunov, A.~V., Kiyashko, S.~I., and Kantor, Y.~I. (2014).
+\newblock {Trophic diversification in the evolution of predatory marine
+  gastropods of the family Terebridae as inferred from stable isotope data}.
+\newblock \emph{Mar. Ecol.-Prog. Ser.} 497, 143--156
+\bibAnnoteFile{Fedosov:2014hm}
+
 \bibitem[{Fink et~al.(2012)Fink, Reichwaldt, Harrod, and
   Rossberg}]{Fink:2012eg}
 Fink, P., Reichwaldt, E.~S., Harrod, C., and Rossberg, A.~G. (2012).
@@ -107,11 +184,30 @@ Fink, P., Reichwaldt, E.~S., Harrod, C., and Rossberg, A.~G. (2012).
 \newblock \emph{Oikos} 121, 1985--1994
 \bibAnnoteFile{Fink:2012eg}
 
+\bibitem[{Fox-Dobbs et~al.(2007)Fox-Dobbs, Bump, Peterson, Fox, and
+  Koch}]{FoxDobbs:2007kx}
+Fox-Dobbs, K., Bump, J.~K., Peterson, R.~O., Fox, D.~L., and Koch, P.~L.
+  (2007).
+\newblock {Carnivore-specific stable isotope variables and variation in the
+  foraging ecology of modern and ancient wolf populations: case studies from
+  Isle Royale, Minnesota, and La Brea}.
+\newblock \emph{Can. J. Zool.} 85, 458--471
+\bibAnnoteFile{FoxDobbs:2007kx}
+
 \bibitem[{Hilborn and Mangel(1997)}]{Hilborn:1997ds}
 Hilborn, R. and Mangel, M. (1997).
 \newblock \emph{{The ecological detective: Confronting models with data}}
   (Princeton: Princeton University Press)
 \bibAnnoteFile{Hilborn:1997ds}
+
+\bibitem[{Hilderbrand et~al.(1999)Hilderbrand, Schwartz, Robbins, Jacoby,
+  Hanley, Arthur et~al.}]{Hilderbrand:1999kq}
+Hilderbrand, G.~V., Schwartz, C.~C., Robbins, C.~T., Jacoby, M.~E., Hanley,
+  T.~A., Arthur, S.~M., et~al. (1999).
+\newblock {The importance of meat, particularly salmon, to body size,
+  population productivity, and conservation of North American brown bears}.
+\newblock \emph{Can. J. Zool.} 77, 132--138
+\bibAnnoteFile{Hilderbrand:1999kq}
 
 \bibitem[{Hopkins and Ferguson(2012)}]{Hopkins:2012dza}
 Hopkins, J.~B. and Ferguson, J.~M. (2012).
@@ -120,11 +216,11 @@ Hopkins, J.~B. and Ferguson, J.~M. (2012).
 \newblock \emph{PLoS ONE} 7, e28478
 \bibAnnoteFile{Hopkins:2012dza}
 
-\bibitem[{Hopkins and Kurle(2015)}]{Hopkins:2015ip}
-Hopkins, J.~B. and Kurle, C.~M. (2015).
+\bibitem[{Hopkins~III and Kurle(2015)}]{Hopkins:2015ip}
+Hopkins~III, J.~B. and Kurle, C.~M. (2015).
 \newblock {Measuring the realized niches of animals using stable isotopes: from
   rats to bears}.
-\newblock \emph{Methods Ecol Evol} , n/a--n/a
+\newblock \emph{Methods Ecol Evol} , 1--12
 \bibAnnoteFile{Hopkins:2015ip}
 
 \bibitem[{Hutchinson(1957)}]{Hutchinson:1957tg}
@@ -166,6 +262,20 @@ Koch, P., Heisinger, J., Moss, C., Carlson, R., Fogel, M., and Behrensmeyer, A.
 \newblock \emph{Science} 267, 1340
 \bibAnnoteFile{Koch:1995vj}
 
+\bibitem[{Kondoh(2003)}]{Kondoh:2003p1625}
+Kondoh, M. (2003).
+\newblock {Foraging adaptation and the relationship between food-web complexity
+  and stability}.
+\newblock \emph{Science} 299, 1388--1391
+\bibAnnoteFile{Kondoh:2003p1625}
+
+\bibitem[{Kondoh(2006)}]{Kondoh:2006p1622}
+Kondoh, M. (2006).
+\newblock {Does foraging adaptation create the positive complexity-stability
+  relationship in realistic food-web structure?}
+\newblock \emph{J. Theor. Biol.} 238, 646--651
+\bibAnnoteFile{Kondoh:2006p1622}
+
 \bibitem[{Kurle(2009)}]{Kurle:2009ch}
 Kurle, C.~M. (2009).
 \newblock {Interpreting temporal variation in omnivore foraging ecology via
@@ -182,9 +292,19 @@ Layman, C.~A., Ara{\'u}jo, M.~S., Boucek, R., Hammerschlag-Peyer, C.~M.,
 \newblock \emph{Biological Reviews} , no--no
 \bibAnnoteFile{Layman:2011cm}
 
-\bibitem[{Layman et~al.(2007)Layman, Quattrochi, Peyer, and
+\bibitem[{Layman et~al.(2007{\natexlab{a}})Layman, Arrington, Monta{\~n}a, and
+  Post}]{Layman:2007vi}
+Layman, C.~A., Arrington, D.~A., Monta{\~n}a, C.~G., and Post, D.~M.
+  (2007{\natexlab{a}}).
+\newblock {Can stable isotope ratios provide for community-wide measures of
+  trophic structure?}
+\newblock \emph{Ecology} 88, 42--48
+\bibAnnoteFile{Layman:2007vi}
+
+\bibitem[{Layman et~al.(2007{\natexlab{b}})Layman, Quattrochi, Peyer, and
   Allgeier}]{Layman:2007ky}
-Layman, C.~A., Quattrochi, J.~P., Peyer, C.~M., and Allgeier, J.~E. (2007).
+Layman, C.~A., Quattrochi, J.~P., Peyer, C.~M., and Allgeier, J.~E.
+  (2007{\natexlab{b}}).
 \newblock {Niche width collapse in a resilient top predator following ecosystem
   fragmentation}.
 \newblock \emph{Ecol. Lett.} 10, 937--944
@@ -198,6 +318,14 @@ Lehmann, D., Mfune, J. K.~E., Gewers, E., Brain, C., and Voigt, C.~C. (2015).
 \newblock \emph{Oecologia} , 1--14
 \bibAnnoteFile{Lehmann:2015db}
 
+\bibitem[{Levi et~al.(2012)Levi, Darimont, MacDuffee, Mangel, Paquet, and
+  Wilmers}]{Levi:2012ir}
+Levi, T., Darimont, C.~T., MacDuffee, M., Mangel, M., Paquet, P., and Wilmers,
+  C.~C. (2012).
+\newblock {Using grizzly bears to assess harvest-ecosystem tradeoffs in salmon
+  fisheries} 10, e1001303
+\bibAnnoteFile{Levi:2012ir}
+
 \bibitem[{Mangel(2006)}]{Mangel:2006wa}
 Mangel, M. (2006).
 \newblock \emph{{The theoretical biologist's toolbox: Quantitative methods for
@@ -206,10 +334,16 @@ Mangel, M. (2006).
 
 \bibitem[{Mangel(2014)}]{Mangel:2014kz}
 Mangel, M. (2014).
-\newblock {Stochastic Dynamic Programming Illuminates the Link Between
-  Environment, Physiology, and Evolution}.
-\newblock \emph{Bulletin of Mathematical Biology} , 1--21--21
+\newblock {Stochastic dynamic programming illuminates the link between
+  environment, physiology, and evolution}.
+\newblock \emph{B. Math. Biol.} 77, 857--877
 \bibAnnoteFile{Mangel:2014kz}
+
+\bibitem[{Mangel and Clark(1986)}]{Mangel:1986um}
+Mangel, M. and Clark, C.~W. (1986).
+\newblock {Towards a unified foraging theory}.
+\newblock \emph{Ecology} 67, 1127--1138
+\bibAnnoteFile{Mangel:1986um}
 
 \bibitem[{Mangel and Clark(1988)}]{Mangel:1988uaa}
 Mangel, M. and Clark, C.~W. (1988).
@@ -235,8 +369,8 @@ Mart{\'\i}nez~del Rio, C., Sabat, P., Anderson-Sprecher, R., and Gonzalez,
 
 \bibitem[{Matthews and Mazumder(2004)}]{Matthews:2004hw}
 Matthews, B. and Mazumder, A. (2004).
-\newblock {A critical evaluation of intrapopulation variation of $\delta$13C
-  and isotopic evidence of individual specialization}.
+\newblock {A critical evaluation of intrapopulation variation of
+  $\delta$$^{13}$C and isotopic evidence of individual specialization}.
 \newblock \emph{Oecologia} 140, 361--371
 \bibAnnoteFile{Matthews:2004hw}
 
@@ -262,12 +396,22 @@ Newsome, S.~D., Martinez~del Rio, C., Bearhop, S., and Phillips, D.~L. (2007).
 \newblock \emph{Front. Ecol. Environ.} 5, 429--436
 \bibAnnoteFile{Newsome:2007tz}
 
+\bibitem[{Newsome et~al.(2004)Newsome, Phillips, Culleton, Guilderson, and
+  Koch}]{Newsome:2004p992}
+Newsome, S.~D., Phillips, D.~L., Culleton, B., Guilderson, T., and Koch, P.
+  (2004).
+\newblock {Dietary reconstruction of an early to middle Holocene human
+  population from the central California coast: insights from advanced stable
+  isotope mixing models}.
+\newblock \emph{J. Archaeol. Sci.} 31, 1101--1115
+\bibAnnoteFile{Newsome:2004p992}
+
 \bibitem[{Newsome et~al.(2009)Newsome, Tinker, Monson, Oftedal, Ralls, Staedler
   et~al.}]{Newsome:2009tn}
 Newsome, S.~D., Tinker, M., Monson, D., Oftedal, O., Ralls, K., Staedler, M.,
   et~al. (2009).
 \newblock {Using stable isotopes to investigate individual diet specialization
-  in California sea otters (Enhydra lutris nereis)}.
+  in California sea otters (\emph{Enhydra lutris nereis})}.
 \newblock \emph{Ecology} 90, 961--974
 \bibAnnoteFile{Newsome:2009tn}
 
@@ -277,7 +421,7 @@ Newsome, S.~D., Tinker, M.~T., Gill, V.~A., Hoyt, Z.~N., Doroff, A., Nichol,
   L., et~al. (2015).
 \newblock {The interaction of intraspecific competition and habitat on
   individual diet specialization: a near range-wide examination of sea otters}.
-\newblock \emph{Oecologia}
+\newblock \emph{Oecologia} , 1--15
 \bibAnnoteFile{Newsome:2015gy}
 
 \bibitem[{Ogle et~al.(2014)Ogle, Tucker, and Cable}]{Ogle:2014jg}
@@ -290,17 +434,17 @@ Ogle, K., Tucker, C., and Cable, J.~M. (2014).
 \bibitem[{Parnell et~al.(2010)Parnell, Inger, Bearhop, and
   Jackson}]{Parnell:2010ub}
 Parnell, A.~C., Inger, R., Bearhop, S., and Jackson, A.~L. (2010).
-\newblock {Source Partitioning Using Stable Isotopes: Coping with Too Much
-  Variation}.
+\newblock {Source partitioning using stable isotopes: coping with too much
+  variation}.
 \newblock \emph{PLoS ONE} 5, e9672
 \bibAnnoteFile{Parnell:2010ub}
 
-\bibitem[{Parnell et~al.(2012)Parnell, Phillips, Bearhop, Semmens, Ward, Moore
+\bibitem[{Parnell et~al.(2013)Parnell, Phillips, Bearhop, Semmens, Ward, Moore
   et~al.}]{Parnell:2012wv}
 Parnell, A.~C., Phillips, D.~L., Bearhop, S., Semmens, B.~X., Ward, E.~J.,
-  Moore, J.~W., et~al. (2012).
-\newblock {Bayesian Stable Isotope Mixing Models}.
-\newblock \emph{arXiv}
+  Moore, J.~W., et~al. (2013).
+\newblock {Bayesian stable isotope mixing models}.
+\newblock \emph{Environmetrics} 24, 387--399
 \bibAnnoteFile{Parnell:2012wv}
 
 \bibitem[{Phillips(2001)}]{Phillips:2001ws}
@@ -332,13 +476,18 @@ Phillips, D.~L., Newsome, S.~D., and Gregg, J.~W. (2005).
 \newblock \emph{Oecologia} 144, 520--527
 \bibAnnoteFile{Phillips:2005p1007}
 
+\bibitem[{Post(2002)}]{Post:2002wn}
+Post, D. (2002).
+\newblock {Using stable isotopes to estimate trophic position: Models, methods,
+  and assumptions}.
+\newblock \emph{Ecology} 83, 703--718
+\bibAnnoteFile{Post:2002wn}
+
 \bibitem[{Post(2008)}]{Post:2008ki}
 Post, D.~M. (2008).
 \newblock {Individual variation in the timing of ontogenetic niche shifts in
   largemouth bass}.
-\newblock
-  \emph{http://dx.doi.org.proxy.lib.sfu.ca/10.1890/0012-9658(2003)084[1298:IVITTO]2.0.CO;2}
-  84, 1298--1310
+\newblock \emph{Ecology} 84, 1298--1310
 \bibAnnoteFile{Post:2008ki}
 
 \bibitem[{Roughgarden(1979)}]{J:1979wc}
@@ -346,6 +495,14 @@ Roughgarden, J. (1979).
 \newblock \emph{{Theory of population genetics and evolutionary ecology: an
   introduction.}} (New York: Macmillan)
 \bibAnnoteFile{J:1979wc}
+
+\bibitem[{Schreiber et~al.(2011)Schreiber, B{\"u}rger, and
+  Bolnick}]{Schreiber:2011wx}
+Schreiber, S.~J., B{\"u}rger, R., and Bolnick, D.~I. (2011).
+\newblock {The community effects of phenotypic and genetic variation within a
+  predator population.}
+\newblock \emph{Ecology} 92, 1582--1593
+\bibAnnoteFile{Schreiber:2011wx}
 
 \bibitem[{Semmens et~al.(2009)Semmens, Ward, Moore, and
   Darimont}]{Semmens:2009uq}
@@ -360,9 +517,16 @@ Semmens, B.~X., Ward, E.~J., Moore, J.~W., and Darimont, C.~T. (2009).
 Sponheimer, M., Passey, B.~H., de~Ruiter, D.~J., Guatelli-Steinberg, D.,
   Cerling, T.~E., and Lee-Thorp, J.~A. (2006).
 \newblock {Isotopic evidence for dietary variability in the early hominin
-  Paranthropus robustus.}
+  \emph{Paranthropus robustus}}.
 \newblock \emph{Science} 314, 980--982
 \bibAnnoteFile{Sponheimer:2006fj}
+
+\bibitem[{Thompson and Furness(1995)}]{Thompson:1995co}
+Thompson, D.~R. and Furness, R.~W. (1995).
+\newblock {Stable-isotope ratios of carbon and nitrogen in feathers indicate
+  seasonal dietary shifts in northern fulmars}.
+\newblock \emph{The Auk} 112, 493--498
+\bibAnnoteFile{Thompson:1995co}
 
 \bibitem[{Tieszen et~al.(1983)Tieszen, Boutton, Tesdahl, and
   Slade}]{Tieszen:1983ij}
@@ -378,6 +542,13 @@ Tinker, M.~T., Bentall, G., and Estes, J.~A. (2008).
   specialization in sea otters}.
 \newblock \emph{Proc. Natl. Acad. Sci. USA} 105, 560{\textendash}565
 \bibAnnoteFile{Tinker:2008tp}
+
+\bibitem[{Vander~Zanden and Rasmussen(2001)}]{VanderZanden:2001p2449}
+Vander~Zanden, M.~J. and Rasmussen, J.~B. (2001).
+\newblock {Variation in $\delta$$^{15}$N and $\delta$$^{13}$C trophic
+  fractionation: implications for aquatic food web studies}.
+\newblock \emph{Limnology and Oceanography} 46, 2061--2066
+\bibAnnoteFile{VanderZanden:2001p2449}
 
 \bibitem[{Yeakel et~al.(2014)Yeakel, Dominy, Koch, and Mangel}]{Yeakel:2013hi}
 Yeakel, J.~D., Dominy, N.~J., Koch, P.~L., and Mangel, M. (2014).

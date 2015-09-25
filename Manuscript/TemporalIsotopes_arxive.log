@@ -1,0 +1,1132 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  25 SEP 2015 13:30
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**TemporalIsotopes_arxive.tex
+(./TemporalIsotopes_arxive.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen103
+\Hy@linkcounter=\count87
+\Hy@pagecounter=\count88
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count89
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count90
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen104
+\Fld@menulength=\count91
+\Field@Width=\dimen105
+\Fld@charsize=\dimen106
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count92
+\c@Item=\count93
+\c@Hfootnote=\count94
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count95
+\c@bookmark@seq@number=\count96
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip43
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count97
+\output=\toks15
+\linenoprevgraf=\count98
+\linenumbersep=\dimen107
+\linenumberwidth=\dimen108
+\c@linenumber=\count99
+\c@pagewiselinenumber=\count100
+\c@LN@truepage=\count101
+\c@internallinenumber=\count102
+\c@internallinenumbers=\count103
+\quotelinenumbersep=\dimen109
+\bframerule=\dimen110
+\bframesep=\dimen111
+\bframebox=\box26
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks16
+\MT@count=\count104
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen112
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count105
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip44
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen113
+\WF@size=\dimen114
+\c@WF@wrappedlines=\count106
+\WF@box=\box27
+\WF@everypar=\toks17
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen115
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen116
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count107
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count108
+\leftroot@=\count109
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count110
+\DOTSCASE@=\count111
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen117
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count112
+\c@MaxMatrixCols=\count113
+\dotsspace@=\muskip11
+\c@parentequation=\count114
+\dspbrk@lvl=\count115
+\tag@help=\toks19
+\row@=\count116
+\column@=\count117
+\maxfields@=\count118
+\andhelp@=\toks20
+\eqnshift@=\dimen118
+\alignsep@=\dimen119
+\tagshift@=\dimen120
+\tagwidth@=\dimen121
+\totwidth@=\dimen122
+\lineht@=\dimen123
+\@envbody=\toks21
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count119
+))
+\Gin@req@height=\dimen124
+\Gin@req@width=\dimen125
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
+LaTeX Info: Redefining \bm on input line 203.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen126
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip48
+\bibsep=\skip49
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count120
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip50
+\fb@frw=\dimen127
+\fb@frh=\dimen128
+\FrameRule=\dimen129
+\FrameSep=\dimen130
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen131
+\captionmargin@=\dimen132
+\captionwidth=\dimen133
+\caption@tempdima=\dimen134
+\caption@indent=\dimen135
+\caption@parindent=\dimen136
+\caption@hangindent=\dimen137
+)
+\c@ContinuedFloat=\count121
+Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip51
+\LTright=\skip52
+\LTpre=\skip53
+\LTpost=\skip54
+\LTchunksize=\count122
+\LTcapwidth=\dimen138
+\LT@head=\box30
+\LT@firsthead=\box31
+\LT@foot=\box32
+\LT@lastfoot=\box33
+\LT@cols=\count123
+\LT@rows=\count124
+\c@LT@tables=\count125
+\c@LT@chunks=\count126
+\LT@p@ftn=\toks23
+)
+(./TemporalIsotopes_arxive.aux)
+\openout1 = `TemporalIsotopes_arxive.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring OFF on input line 55.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count127
+)
+LaTeX Info: Redefining \ref on input line 55.
+LaTeX Info: Redefining \pageref on input line 55.
+LaTeX Info: Redefining \nameref on input line 55.
+
+(./TemporalIsotopes_arxive.out) (./TemporalIsotopes_arxive.out)
+\@outlinefile=\write3
+\openout3 = `TemporalIsotopes_arxive.out'.
+
+LaTeX Info: Redefining \microtypecontext on input line 55.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count128
+\scratchdimen=\dimen139
+\scratchbox=\box35
+\nofMPsegments=\count129
+\nofMParguments=\count130
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen140
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
+\everyMPtoPDFconversion=\toks25
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 70.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 70.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+wasy on input line 70.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+
+LaTeX Warning: No \author given.
+
+[1
+
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `VanderZanden:2001p2449' on page 2 undefined o
+n input line 112.
+
+
+Package natbib Warning: Citation `Post:2002wn' on page 2 undefined on input lin
+e 112.
+
+
+Package natbib Warning: Citation `FoxDobbs:2007kx' on page 2 undefined on input
+ line 112.
+
+
+Package natbib Warning: Citation `Bearhop:2010db' on page 2 undefined on input 
+line 112.
+
+
+Package natbib Warning: Citation `Moore:2008kg' on page 2 undefined on input li
+ne 115.
+
+
+Package natbib Warning: Citation `Parnell:2010ub' on page 2 undefined on input 
+line 115.
+
+
+Package natbib Warning: Citation `Phillips:2001ws' on page 2 undefined on input
+ line 116.
+
+
+Package natbib Warning: Citation `Phillips:2002tu' on page 2 undefined on input
+ line 116.
+
+
+Package natbib Warning: Citation `Newsome:2007tz' on page 2 undefined on input 
+line 116.
+
+
+Package natbib Warning: Citation `Hutchinson:1957tg' on page 2 undefined on inp
+ut line 118.
+
+
+Package natbib Warning: Citation `Bearhop:2004im' on page 2 undefined on input 
+line 119.
+
+
+Package natbib Warning: Citation `Newsome:2007tz' on page 2 undefined on input 
+line 119.
+
+
+Package natbib Warning: Citation `Newsome:WhhVfocb' on page 2 undefined on inpu
+t line 119.
+
+
+Package natbib Warning: Citation `delRio:2011p2553' on page 2 undefined on inpu
+t line 119.
+
+
+Package natbib Warning: Citation `Jackson:2011kd' on page 2 undefined on input 
+line 119.
+
+
+Package natbib Warning: Citation `Araujo:2007iua' on page 2 undefined on input 
+line 121.
+
+
+Package natbib Warning: Citation `Bearhop:2004im' on page 2 undefined on input 
+line 121.
+
+
+Package natbib Warning: Citation `Layman:2007ky' on page 2 undefined on input l
+ine 122.
+
+
+Package natbib Warning: Citation `Fedosov:2014hm' on page 2 undefined on input 
+line 122.
+
+
+Package natbib Warning: Citation `Lehmann:2015db' on page 2 undefined on input 
+line 122.
+
+
+Package natbib Warning: Citation `delRio:2011p2553' on page 2 undefined on inpu
+t line 122.
+
+[2]
+
+Package natbib Warning: Citation `Araujo:2007iua' on page 3 undefined on input 
+line 134.
+
+
+Package natbib Warning: Citation `Araujo:2009p2286' on page 3 undefined on inpu
+t line 134.
+
+
+Package natbib Warning: Citation `Fink:2012eg' on page 3 undefined on input lin
+e 134.
+
+
+Package natbib Warning: Citation `Bolnick:2007p1253' on page 3 undefined on inp
+ut line 134.
+
+
+Package natbib Warning: Citation `Araujo:2011gm' on page 3 undefined on input l
+ine 134.
+
+
+Package natbib Warning: Citation `Kondoh:2003p1625' on page 3 undefined on inpu
+t line 136.
+
+
+Package natbib Warning: Citation `Kondoh:2006p1622' on page 3 undefined on inpu
+t line 136.
+
+
+Package natbib Warning: Citation `Schreiber:2011wx' on page 3 undefined on inpu
+t line 136.
+
+
+Package natbib Warning: Citation `Bolnick:2011gj' on page 3 undefined on input 
+line 137.
+
+
+Package natbib Warning: Citation `Schreiber:2011wx' on page 3 undefined on inpu
+t line 137.
+
+
+Package natbib Warning: Citation `Koch:1995vj' on page 3 undefined on input lin
+e 138.
+
+
+Package natbib Warning: Citation `Matthews:2004hw' on page 3 undefined on input
+ line 138.
+
+
+Package natbib Warning: Citation `Sponheimer:2006fj' on page 3 undefined on inp
+ut line 138.
+
+
+Package natbib Warning: Citation `Post:2008ki' on page 3 undefined on input lin
+e 138.
+
+
+Package natbib Warning: Citation `Newsome:2009tn' on page 3 undefined on input 
+line 138.
+
+
+Package natbib Warning: Citation `Yeakel:2009hz' on page 3 undefined on input l
+ine 138.
+
+
+Package natbib Warning: Citation `Hopkins:2015ip' on page 3 undefined on input 
+line 138.
+
+
+Package natbib Warning: Citation `Phillips:2003kq' on page 3 undefined on input
+ line 143.
+
+
+Package natbib Warning: Citation `Phillips:2005p1007' on page 3 undefined on in
+put line 143.
+
+
+Package natbib Warning: Citation `Moore:2008kg' on page 3 undefined on input li
+ne 143.
+
+
+Package natbib Warning: Citation `Parnell:2010ub' on page 3 undefined on input 
+line 143.
+
+
+Package natbib Warning: Citation `Hopkins:2012dza' on page 3 undefined on input
+ line 143.
+
+
+Package natbib Warning: Citation `Parnell:2012wv' on page 3 undefined on input 
+line 143.
+
+
+Package natbib Warning: Citation `Hopkins:2015ip' on page 3 undefined on input 
+line 144.
+
+
+Package natbib Warning: Citation `Semmens:2009uq' on page 3 undefined on input 
+line 144.
+
+
+Package natbib Warning: Citation `Yeakel:2012uc' on page 3 undefined on input l
+ine 144.
+
+
+Package natbib Warning: Citation `Ogle:2014jg' on page 3 undefined on input lin
+e 144.
+
+[3]
+
+Package natbib Warning: Citation `Araujo:2007iua' on page 4 undefined on input 
+line 150.
+
+
+Package natbib Warning: Citation `Araujo:2009p2286' on page 4 undefined on inpu
+t line 150.
+
+
+Package natbib Warning: Citation `Fink:2012eg' on page 4 undefined on input lin
+e 150.
+
+
+Package natbib Warning: Citation `Estes:2003uc' on page 4 undefined on input li
+ne 160.
+
+
+Package natbib Warning: Citation `Tinker:2008tp' on page 4 undefined on input l
+ine 160.
+
+
+Package natbib Warning: Citation `Newsome:2009tn' on page 4 undefined on input 
+line 160.
+
+
+Package natbib Warning: Citation `Newsome:2015gy' on page 4 undefined on input 
+line 160.
+
+[4]
+
+Package natbib Warning: Citation `Chesson:1983bt' on page 5 undefined on input 
+line 204.
+
+
+Package natbib Warning: Citation `Mangel:1988uaa' on page 5 undefined on input 
+line 204.
+
+
+Package natbib Warning: Citation `Clark:2000tra' on page 5 undefined on input l
+ine 204.
+
+
+Package natbib Warning: Citation `Mangel:2014kz' on page 5 undefined on input l
+ine 204.
+
+
+Package natbib Warning: Citation `Ainsworth:2010uo' on page 5 undefined on inpu
+t line 207.
+
+
+Package natbib Warning: Citation `Bearhop:2004im' on page 5 undefined on input 
+line 209.
+
+
+Package natbib Warning: Citation `Newsome:2007tz' on page 5 undefined on input 
+line 209.
+
+
+Package natbib Warning: Citation `Bearhop:2004im' on page 5 undefined on input 
+line 210.
+
+[5]
+
+Package natbib Warning: Citation `Mangel:2006wa' on page 6 undefined on input l
+ine 231.
+
+
+Package natbib Warning: Citation `Ainsworth:2010uo' on page 6 undefined on inpu
+t line 231.
+
+
+Package natbib Warning: Citation `Yeakel:2013hi' on page 6 undefined on input l
+ine 231.
+
+
+Package natbib Warning: Citation `Hilborn:1997ds' on page 6 undefined on input 
+line 232.
+
+
+Package natbib Warning: Citation `Ainsworth:2010uo' on page 6 undefined on inpu
+t line 233.
+
+
+Package natbib Warning: Citation `Johnson:1960gu' on page 6 undefined on input 
+line 241.
+
+[6]
+
+Package natbib Warning: Citation `Mangel:2006wa' on page 7 undefined on input l
+ine 247.
+
+
+Package natbib Warning: Citation `Moore:2008kg' on page 7 undefined on input li
+ne 263.
+
+
+Package natbib Warning: Citation `Parnell:2010ub' on page 7 undefined on input 
+line 263.
+
+
+Package natbib Warning: Citation `Hopkins:2012dza' on page 7 undefined on input
+ line 263.
+
+
+Package natbib Warning: Citation `Parnell:2012wv' on page 7 undefined on input 
+line 263.
+
+[7]
+
+Package natbib Warning: Citation `J:1979wc' on page 8 undefined on input line 3
+05.
+
+
+Package natbib Warning: Citation `Araujo:2007iua' on page 8 undefined on input 
+line 305.
+
+
+Package natbib Warning: Citation `Araujo:2009p2286' on page 8 undefined on inpu
+t line 305.
+
+
+Package natbib Warning: Citation `Araujo:2011gm' on page 8 undefined on input l
+ine 305.
+
+
+Package natbib Warning: Citation `Layman:2011cm' on page 8 undefined on input l
+ine 305.
+
+[8] [9]
+
+Package natbib Warning: Citation `Tieszen:1983ij' on page 10 undefined on input
+ line 347.
+
+
+Package natbib Warning: Citation `Kurle:2009ch' on page 10 undefined on input l
+ine 347.
+
+
+Package natbib Warning: Citation `Bearhop:2010db' on page 10 undefined on input
+ line 347.
+
+
+Package natbib Warning: Citation `Kim:2012kc' on page 10 undefined on input lin
+e 347.
+
+
+Package natbib Warning: Citation `Cerling:2006kv' on page 10 undefined on input
+ line 348.
+
+
+Package natbib Warning: Citation `delRio:2008bs' on page 10 undefined on input 
+line 348.
+
+
+Package natbib Warning: Citation `Cerling:2006kv' on page 10 undefined on input
+ line 351.
+
+
+Package natbib Warning: Citation `Kurle:2009ch' on page 10 undefined on input l
+ine 351.
+
+
+Package natbib Warning: Citation `Carleton:2008cq' on page 10 undefined on inpu
+t line 351.
+
+
+Package natbib Warning: Citation `delRio:2008bs' on page 10 undefined on input 
+line 351.
+
+
+Package natbib Warning: Citation `Kurle:2009ch' on page 10 undefined on input l
+ine 351.
+
+
+Package natbib Warning: Citation `delRio:2008bs' on page 10 undefined on input 
+line 354.
+
+[10]
+
+Package natbib Warning: Citation `Mangel:2006wa' on page 11 undefined on input 
+line 385.
+
+[11] [12]
+
+Package natbib Warning: Citation `Layman:2007vi' on page 13 undefined on input 
+line 462.
+
+
+Package natbib Warning: Citation `Newsome:WhhVfocb' on page 13 undefined on inp
+ut line 462.
+
+
+Package natbib Warning: Citation `Newsome:2004p992' on page 13 undefined on inp
+ut line 464.
+
+[13]
+
+Package natbib Warning: Citation `Fink:2012eg' on page 14 undefined on input li
+ne 496.
+
+[14]
+
+Package natbib Warning: Citation `Thompson:1995co' on page 15 undefined on inpu
+t line 528.
+
+
+Package natbib Warning: Citation `CodronSAJWR2007' on page 15 undefined on inpu
+t line 528.
+
+[15] [16] [17] [18]
+
+Package natbib Warning: Citation `Tinker:2008tp' on page 19 undefined on input 
+line 626.
+
+[19]
+
+Package natbib Warning: Citation `Fink:2012eg' on page 20 undefined on input li
+ne 655.
+
+[20]
+
+Package natbib Warning: Citation `Hilderbrand:1999kq' on page 21 undefined on i
+nput line 666.
+
+
+Package natbib Warning: Citation `Darimont:2002ex' on page 21 undefined on inpu
+t line 666.
+
+
+Package natbib Warning: Citation `Levi:2012ir' on page 21 undefined on input li
+ne 666.
+
+
+Package natbib Warning: Citation `Dawson:2008hj' on page 21 undefined on input 
+line 666.
+
+
+Package natbib Warning: Citation `Atkinson:2014jm' on page 21 undefined on inpu
+t line 666.
+
+[21]
+
+Package natbib Warning: Citation `Creel:2008p838' on page 22 undefined on input
+ line 691.
+
+
+Package natbib Warning: Citation `Doucett:1999bz' on page 22 undefined on input
+ line 691.
+
+
+Package natbib Warning: Citation `VanderZanden:2001p2449' on page 22 undefined 
+on input line 691.
+
+
+Package natbib Warning: Citation `Barnett:2007er' on page 22 undefined on input
+ line 693.
+
+
+Package natbib Warning: Citation `Yeakel:2013hi' on page 22 undefined on input 
+line 693.
+
+
+Package natbib Warning: Citation `Mangel:1986um' on page 22 undefined on input 
+line 693.
+
+
+Package natbib Warning: Citation `Koch:1995vj' on page 22 undefined on input li
+ne 706.
+
+
+Package natbib Warning: Citation `Matthews:2004hw' on page 22 undefined on inpu
+t line 706.
+
+
+Package natbib Warning: Citation `Sponheimer:2006fj' on page 22 undefined on in
+put line 706.
+
+
+Package natbib Warning: Citation `Post:2008ki' on page 22 undefined on input li
+ne 706.
+
+
+Package natbib Warning: Citation `Newsome:2009tn' on page 22 undefined on input
+ line 706.
+
+
+Package natbib Warning: Citation `Yeakel:2009hz' on page 22 undefined on input 
+line 706.
+
+
+Package natbib Warning: Citation `Newsome:WhhVfocb' on page 22 undefined on inp
+ut line 706.
+
+
+Package natbib Warning: Citation `Hopkins:2015ip' on page 22 undefined on input
+ line 706.
+
+[22]
+
+Package natbib Warning: Citation `Bearhop:2004im' on page 23 undefined on input
+ line 720.
+
+
+Package natbib Warning: Citation `Fink:2012eg' on page 23 undefined on input li
+ne 720.
+
+[23] [24] [25]
+No file TemporalIsotopes_arxive.bbl.
+[26] <fig_var.jpg, id=238, 1254.6875pt x 735.74875pt>
+File: fig_var.jpg Graphic file (type jpg)
+ <use fig_var.jpg>
+Package pdftex.def Info: fig_var.jpg used on input line 1199.
+(pdftex.def)             Requested size: 172.5pt x 101.15173pt.
+
+<fig_specvar.jpg, id=239, 2467.2175pt x 832.10875pt>
+File: fig_specvar.jpg Graphic file (type jpg)
+ <use fig_specvar.jpg>
+Package pdftex.def Info: fig_specvar.jpg used on input line 1210.
+(pdftex.def)             Requested size: 345.0pt x 116.35475pt.
+
+<fig_varZt.jpg, id=240, 903.375pt x 1316.92pt>
+File: fig_varZt.jpg Graphic file (type jpg)
+ <use fig_varZt.jpg>
+Package pdftex.def Info: fig_varZt.jpg used on input line 1225.
+(pdftex.def)             Requested size: 137.9979pt x 201.1666pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig_varzContour.jpg, id=241, 1087.06125pt x 928.46875pt>
+File: fig_varzContour.jpg Graphic file (type jpg)
+
+<use fig_varzContour.jpg>
+Package pdftex.def Info: fig_varzContour.jpg used on input line 1236.
+(pdftex.def)             Requested size: 137.9979pt x 117.85754pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig_xcsin.jpg, id=242, 1129.21875pt x 777.90625pt>
+File: fig_xcsin.jpg Graphic file (type jpg)
+ <use fig_xcsin.jpg>
+Package pdftex.def Info: fig_xcsin.jpg used on input line 1248.
+(pdftex.def)             Requested size: 172.5pt x 118.82935pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig_SOmixing.jpg, id=243, 2409.0pt x 1656.1875pt>
+File: fig_SOmixing.jpg Graphic file (type jpg)
+ <use fig_SOmixing.jpg>
+Package pdftex.def Info: fig_SOmixing.jpg used on input line 1259.
+(pdftex.def)             Requested size: 224.2479pt x 154.15526pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig_ottervar.jpg, id=244, 2249.40375pt x 602.25pt>
+File: fig_ottervar.jpg Graphic file (type jpg)
+ <use fig_ottervar.jpg>
+Package pdftex.def Info: fig_ottervar.jpg used on input line 1269.
+(pdftex.def)             Requested size: 345.0pt x 92.36449pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig_sawtooth.jpg, id=245, 1129.21875pt x 1149.29375pt>
+File: fig_sawtooth.jpg Graphic file (type jpg)
+ <use fig_sawtooth.jpg>
+Package pdftex.def Info: fig_sawtooth.jpg used on input line 1281.
+(pdftex.def)             Requested size: 172.5pt x 175.56078pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig_indpopvar2.jpg, id=246, 1588.93625pt x 1179.40625pt>
+File: fig_indpopvar2.jpg Graphic file (type jpg)
+
+<use fig_indpopvar2.jpg>
+Package pdftex.def Info: fig_indpopvar2.jpg used on input line 1294.
+(pdftex.def)             Requested size: 258.75pt x 192.05615pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1305.
+[27 <./fig_var.jpg> <./fig_specvar.jpg>]
+
+LaTeX Warning: Text page 28 contains only floats.
+
+[28 <./fig_varZt.jpg> <./fig_varzContour.jpg>] [29 <./fig_xcsin.jpg> <./fig_SOm
+ixing.jpg>] [30 <./fig_ottervar.jpg> <./fig_sawtooth.jpg>] [31 <./fig_indpopvar
+2.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1305.
+ (./TemporalIsotopes_arxive.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1305.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1305.
+
+Package rerunfilecheck Info: File `TemporalIsotopes_arxive.out' has not changed
+.
+(rerunfilecheck)             Checksum: 6FD386622B729775F7B7E7EECF4F2110;190.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1305.
+ ) 
+Here is how much of TeX's memory you used:
+ 10149 strings out of 493117
+ 153570 string characters out of 6135433
+ 274118 words of memory out of 5000000
+ 13200 multiletter control sequences out of 15000+600000
+ 31351 words of font info for 156 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,23n,38p,679b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/wasy/wasy10.pfb>
+Output written on TemporalIsotopes_arxive.pdf (31 pages, 4417698 bytes).
+PDF statistics:
+ 377 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 21582 words of extra memory for PDF output out of 24883 (max. 10000000)
+

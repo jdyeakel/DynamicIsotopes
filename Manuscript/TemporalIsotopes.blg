@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: /Users/justinyeakel/Dropbox/PostDoc/2015_DynamicIsotopes/Manuscript/TemporalIsotopes.aux
+The style file: frontiersinSCNS_ENG_HUMS.bst
+Database file #1: aa_dyniso.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty pages in Hutchinson:1957tg
+You've used 51 entries,
+            3027 wiz_defined-function locations,
+            959 strings with 15380 characters,
+and the built_in function-call counts, 36151 in all, are:
+= -- 3015
+> -- 2028
+< -- 19
++ -- 990
+- -- 547
+* -- 2685
+:= -- 5302
+add.period$ -- 97
+call.type$ -- 51
+change.case$ -- 434
+chr.to.int$ -- 52
+cite$ -- 103
+duplicate$ -- 2255
+empty$ -- 2470
+format.name$ -- 701
+if$ -- 7297
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 536
+newline$ -- 315
+num.names$ -- 204
+pop$ -- 1151
+preamble$ -- 1
+purify$ -- 386
+quote$ -- 0
+skip$ -- 1283
+stack$ -- 0
+substring$ -- 1707
+swap$ -- 1128
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 444
+warning$ -- 1
+while$ -- 234
+width$ -- 0
+write$ -- 713
+(There was 1 warning)

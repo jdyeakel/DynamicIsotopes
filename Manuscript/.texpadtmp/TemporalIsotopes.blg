@@ -3,47 +3,52 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/justinyeakel/Dropbox/PostDoc/2015_DynamicIsotopes/Manuscript/.texpadtmp/TemporalIsotopes.aux
 The style file: ../frontiersinSCNS_ENG_HUMS.bst
 Database file #1: ../aa_dyniso.bib
+Repeated entry---line 1020 of file ../aa_dyniso.bib
+ : @article{Layman:2007vi
+ :                       ,
+I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty pages in Hutchinson:1957tg
-You've used 51 entries,
+Warning--empty journal in Levi:2012ir
+You've used 73 entries,
             3027 wiz_defined-function locations,
-            957 strings with 15451 characters,
-and the built_in function-call counts, 35996 in all, are:
-= -- 2997
-> -- 2028
-< -- 19
-+ -- 990
-- -- 547
-* -- 2672
-:= -- 5285
-add.period$ -- 97
-call.type$ -- 51
-change.case$ -- 434
-chr.to.int$ -- 52
-cite$ -- 103
-duplicate$ -- 2245
-empty$ -- 2454
-format.name$ -- 701
-if$ -- 7261
-int.to.chr$ -- 1
+            1097 strings with 20061 characters,
+and the built_in function-call counts, 51649 in all, are:
+= -- 4341
+> -- 2858
+< -- 29
++ -- 1391
+- -- 769
+* -- 3840
+:= -- 7564
+add.period$ -- 140
+call.type$ -- 73
+change.case$ -- 618
+chr.to.int$ -- 74
+cite$ -- 148
+duplicate$ -- 3227
+empty$ -- 3535
+format.name$ -- 997
+if$ -- 10426
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 532
-newline$ -- 315
-num.names$ -- 204
-pop$ -- 1153
+missing$ -- 762
+newline$ -- 446
+num.names$ -- 292
+pop$ -- 1635
 preamble$ -- 1
-purify$ -- 386
+purify$ -- 548
 quote$ -- 0
-skip$ -- 1285
+skip$ -- 1801
 stack$ -- 0
-substring$ -- 1679
-swap$ -- 1116
+substring$ -- 2509
+swap$ -- 1619
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 444
-warning$ -- 1
-while$ -- 231
+type$ -- 642
+warning$ -- 2
+while$ -- 341
 width$ -- 0
-write$ -- 711
-(There was 1 warning)
+write$ -- 1018
+(There was 1 error message)

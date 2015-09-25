@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    465616,       9450]
-NotebookOptionsPosition[    463936,       9389]
-NotebookOutlinePosition[    464293,       9405]
-CellTagsIndexPosition[    464250,       9402]
+NotebookDataLength[    468288,       9514]
+NotebookOptionsPosition[    466608,       9453]
+NotebookOutlinePosition[    466965,       9469]
+CellTagsIndexPosition[    466922,       9466]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1579,7 +1579,8 @@ vDQvzNX8g/1VvWcfVhGCvHLe2NQUjj++bReNJoT/AXiyTwo=
    3.6505590088979187`*^9}, 3.650559060143743*^9, {3.650559103637645*^9, 
    3.6505592645855618`*^9}, {3.65055933450636*^9, 3.650559387052292*^9}, {
    3.650561666974222*^9, 3.6505616905519543`*^9}, {3.65056398944882*^9, 
-   3.65056400116378*^9}, {3.650564060603414*^9, 3.650564080915358*^9}}]
+   3.65056400116378*^9}, {3.650564060603414*^9, 3.650564080915358*^9}, 
+   3.652031146824154*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1760,7 +1761,11 @@ Cell[BoxData[{
              RowBox[{"ImageSize", "\[Rule]", "250"}], ",", 
              RowBox[{"FrameLabel", "\[Rule]", 
               RowBox[{"{", 
-               RowBox[{"\"\<\>\"", ",", "\"\<Offset\>\""}], "}"}]}], ",", 
+               RowBox[{"\"\<\>\"", ",", 
+                RowBox[{"Style", "[", 
+                 RowBox[{"\"\<Offset\>\"", ",", 
+                  RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}], "}"}]}], 
+             ",", 
              RowBox[{"AspectRatio", "\[Rule]", "1"}], ",", 
              RowBox[{
              "PlotLabel", "\[Rule]", 
@@ -1768,9 +1773,14 @@ Cell[BoxData[{
            "\[IndentingNewLine]", 
            RowBox[{"Graphics", "[", 
             RowBox[{"Text", "[", 
-             RowBox[{"\"\<\[Sigma]= {0.05,        ,0.05}\>\"", ",", 
+             RowBox[{
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<\[Sigma]= {0.05, \!\(\*SubscriptBox[\(\[Sigma]\), \
+\(2\)]\) ,0.05}\>\"", ",", 
+                RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}], ",", 
               RowBox[{"{", 
-               RowBox[{"0.24", ",", "3.5"}], "}"}]}], "]"}], "]"}], ",", 
+               RowBox[{"0.24", ",", "3.2"}], "}"}]}], "]"}], "]"}], ",", 
            "\[IndentingNewLine]", 
            RowBox[{"(*", 
             RowBox[{"Graphics", "[", 
@@ -1784,14 +1794,25 @@ Cell[BoxData[{
                RowBox[{"{", 
                 RowBox[{"0.22", ",", "3.5"}], "}"}]}], "]"}], "]"}], "*)"}], 
            "\[IndentingNewLine]", 
+           RowBox[{"(*", 
+            RowBox[{
+             RowBox[{"Graphics", "[", 
+              RowBox[{"Inset", "[", 
+               RowBox[{
+                RowBox[{"Rasterize", "[", 
+                 RowBox[{"ColorBar", ",", 
+                  RowBox[{"ImageSize", "\[Rule]", "15"}]}], "]"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"0.275", ",", "3.5"}], "}"}]}], "]"}], "]"}], ","}], 
+            "*)"}], "\[IndentingNewLine]", 
            RowBox[{"Graphics", "[", 
-            RowBox[{"Inset", "[", 
+            RowBox[{"Text", "[", 
              RowBox[{
-              RowBox[{"Rasterize", "[", 
-               RowBox[{"ColorBar", ",", 
-                RowBox[{"ImageSize", "\[Rule]", "15"}]}], "]"}], ",", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(A)\>\"", ",", "Bold", ",", 
+                RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
               RowBox[{"{", 
-               RowBox[{"0.275", ",", "3.5"}], "}"}]}], "]"}], "]"}]}], 
+               RowBox[{"0.08", ",", "3.7"}], "}"}]}], "]"}], "]"}]}], 
           "\[IndentingNewLine]", "}"}], "]"}]}], ",", "\[IndentingNewLine]", 
        RowBox[{
         RowBox[{"mtable", "=", "\[IndentingNewLine]", 
@@ -1895,17 +1916,25 @@ Cell[BoxData[{
              "\[IndentingNewLine]", 
              RowBox[{"FrameLabel", "\[Rule]", 
               RowBox[{"{", 
-               RowBox[{"\"\<Specialization\>\"", ",", "\"\<\>\""}], "}"}]}], 
-             ",", 
+               RowBox[{
+                RowBox[{"Style", "[", 
+                 RowBox[{"\"\<Specialization\>\"", ",", 
+                  RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}], ",", 
+                "\"\<\>\""}], "}"}]}], ",", 
              RowBox[{
              "PlotLabel", "\[Rule]", "\"\<Peak variance mid-range\>\""}], ",", 
              RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}], ",", 
            "\[IndentingNewLine]", 
            RowBox[{"Graphics", "[", 
             RowBox[{"Text", "[", 
-             RowBox[{"\"\<\[Sigma]= {1.0,        ,1.0}\>\"", ",", 
+             RowBox[{
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<\[Sigma]= {1.0, \!\(\*SubscriptBox[\(\[Sigma]\), \(2\)]\) \
+,1.0}\>\"", ",", 
+                RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}], ",", 
               RowBox[{"{", 
-               RowBox[{"0.24", ",", "3.5"}], "}"}]}], "]"}], "]"}], ",", 
+               RowBox[{"0.22", ",", "3.2"}], "}"}]}], "]"}], "]"}], ",", 
            "\[IndentingNewLine]", 
            RowBox[{"(*", 
             RowBox[{"Graphics", "[", 
@@ -1919,14 +1948,25 @@ Cell[BoxData[{
                RowBox[{"{", 
                 RowBox[{"0.22", ",", "3.5"}], "}"}]}], "]"}], "]"}], "*)"}], 
            "\[IndentingNewLine]", 
+           RowBox[{"(*", 
+            RowBox[{
+             RowBox[{"Graphics", "[", 
+              RowBox[{"Inset", "[", 
+               RowBox[{
+                RowBox[{"Rasterize", "[", 
+                 RowBox[{"ColorBar", ",", 
+                  RowBox[{"ImageSize", "\[Rule]", "15"}]}], "]"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"0.275", ",", "3.5"}], "}"}]}], "]"}], "]"}], ","}], 
+            "*)"}], "\[IndentingNewLine]", 
            RowBox[{"Graphics", "[", 
-            RowBox[{"Inset", "[", 
+            RowBox[{"Text", "[", 
              RowBox[{
-              RowBox[{"Rasterize", "[", 
-               RowBox[{"ColorBar", ",", 
-                RowBox[{"ImageSize", "\[Rule]", "15"}]}], "]"}], ",", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(B)\>\"", ",", "Bold", ",", 
+                RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
               RowBox[{"{", 
-               RowBox[{"0.275", ",", "3.5"}], "}"}]}], "]"}], "]"}]}], 
+               RowBox[{"0.08", ",", "3.7"}], "}"}]}], "]"}], "]"}]}], 
           "\[IndentingNewLine]", "}"}], "]"}]}], ",", "\[IndentingNewLine]", 
        RowBox[{
         RowBox[{"mtable", "=", "\[IndentingNewLine]", 
@@ -2058,9 +2098,14 @@ Cell[BoxData[{
            "\[IndentingNewLine]", 
            RowBox[{"Graphics", "[", 
             RowBox[{"Text", "[", 
-             RowBox[{"\"\<\[Sigma]= {2.0,        ,2.0}\>\"", ",", 
+             RowBox[{
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<\[Sigma]= {2.0, \!\(\*SubscriptBox[\(\[Sigma]\), \(2\)]\) \
+,2.0}\>\"", ",", 
+                RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}], ",", 
               RowBox[{"{", 
-               RowBox[{"0.74", ",", "3.5"}], "}"}]}], "]"}], "]"}], ",", 
+               RowBox[{"0.74", ",", "3.2"}], "}"}]}], "]"}], "]"}], ",", 
            "\[IndentingNewLine]", 
            RowBox[{"(*", 
             RowBox[{"Graphics", "[", 
@@ -2074,14 +2119,25 @@ Cell[BoxData[{
                RowBox[{"{", 
                 RowBox[{"0.22", ",", "3.5"}], "}"}]}], "]"}], "]"}], "*)"}], 
            "\[IndentingNewLine]", 
+           RowBox[{"(*", 
+            RowBox[{
+             RowBox[{"Graphics", "[", 
+              RowBox[{"Inset", "[", 
+               RowBox[{
+                RowBox[{"Rasterize", "[", 
+                 RowBox[{"ColorBar", ",", 
+                  RowBox[{"ImageSize", "\[Rule]", "15"}]}], "]"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"0.775", ",", "3.5"}], "}"}]}], "]"}], "]"}], ","}], 
+            "*)"}], "\[IndentingNewLine]", 
            RowBox[{"Graphics", "[", 
-            RowBox[{"Inset", "[", 
+            RowBox[{"Text", "[", 
              RowBox[{
-              RowBox[{"Rasterize", "[", 
-               RowBox[{"ColorBar", ",", 
-                RowBox[{"ImageSize", "\[Rule]", "15"}]}], "]"}], ",", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<(C)\>\"", ",", "Bold", ",", 
+                RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
               RowBox[{"{", 
-               RowBox[{"0.775", ",", "3.5"}], "}"}]}], "]"}], "]"}]}], 
+               RowBox[{"0.08", ",", "3.7"}], "}"}]}], "]"}], "]"}]}], 
           "\[IndentingNewLine]", "}"}], "]"}]}]}], "\[IndentingNewLine]", 
       "}"}], "]"}], "\[IndentingNewLine]", "}"}], "]"}]}]}], "Input",
  CellChangeTimes->{{3.6500488881209917`*^9, 3.650048895726762*^9}, {
@@ -2110,7 +2166,11 @@ Cell[BoxData[{
    3.650394930551344*^9}, {3.650394969135707*^9, 3.650395108739757*^9}, {
    3.650395163643485*^9, 3.6503951901138983`*^9}, {3.650396837364452*^9, 
    3.650396915440627*^9}, {3.650396984676465*^9, 3.650397048630859*^9}, {
-   3.6505566875206003`*^9, 3.650556727284142*^9}, 3.65055757889567*^9}],
+   3.6505566875206003`*^9, 3.650556727284142*^9}, 3.65055757889567*^9, {
+   3.652031095147409*^9, 3.6520311316205997`*^9}, {3.652031162259643*^9, 
+   3.652031257927079*^9}, {3.6520313195940228`*^9, 3.652031363500455*^9}, {
+   3.652031397465317*^9, 3.652031499437929*^9}, {3.652032247313665*^9, 
+   3.652032302429545*^9}}],
 
 Cell[BoxData[
  TagBox[GridBox[{
@@ -4142,17 +4202,15 @@ DQS+2T/8DwS1X+wh+n/a66htmX7h3kf7s2dA4A/UvPf2EPMYHDrWzpNlMn8L
 Vc/o8HEVEEi9toe4h9mhRr0sSb3spf05sH4WB6vXzsm1Gi+g9rE5WL7Y0ugn
 /dyeEWwch8MHkP12z6DmcTrwCej5ZHU8hZrH7cApfMs74/0TqHk8Dmptp3e+
 yn0CNY/PYcahrxox/x9D3SfgAACo5YtB
-           "]]}}, {}}, 
-       InsetBox["\<\"\[Sigma]= {0.05,        ,0.05}\"\>", {0.24, 3.5}], 
-       InsetBox[
-        GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJmYGDgh2IQO0NmaoDKGvvgM4555zxaj8UsW5q1ob96e/WCfZFb
-9voe2+nyYKHVs27TpwUGd41URhWPKqa/YgCZVFo1
-          "], {{0, 0}, {20., 20.}}, {
-          0, 255},
-          ColorFunction->RGBColor],
-         ImageSize->15,
-         PlotRange->{{0, 20.}, {0, 20.}}], {0.275, 3.5}]},
+           "]]}}, {}}, InsetBox[
+        StyleBox["\<\"\[Sigma]= {0.05, \\!\\(\\*SubscriptBox[\\(\[Sigma]\\), \
+\\(2\\)]\\) ,0.05}\"\>",
+         StripOnInput->False,
+         FontSize->12], {0.24, 3.2}], InsetBox[
+        StyleBox["\<\"(A)\"\>",
+         StripOnInput->False,
+         FontSize->14,
+         FontWeight->Bold], {0.08, 3.7}]},
       AspectRatio->1,
       Axes->{True, True},
       AxesLabel->{None, None},
@@ -4160,7 +4218,9 @@ yn0CNY/PYcahrxox/x9D3SfgAACo5YtB
       DisplayFunction->Identity,
       Frame->{{True, True}, {True, True}},
       FrameLabel->{{
-         FormBox["\"Offset\"", TraditionalForm], None}, {
+         FormBox[
+          StyleBox["\"Offset\"", FontSize -> 14, StripOnInput -> False], 
+          TraditionalForm], None}, {
          FormBox["\"\"", TraditionalForm], None}},
       FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
       GridLines->{None, None},
@@ -6259,16 +6319,15 @@ gsyP/2gP0f/Tvvut6pbpF97Znz0DAn+g5r2Bm9srb3n2+quXUPWMDnmhIPDC
 HuIeZgeWuE8JBySf258D62dxWHHs14UI+WdQ+9gcwMpDn9ozgo3jcHgIsn/9
 E6h5nA6hRfPP/FR7AjWP28G7mhPoosdQ83gc8p7wGf8Iegw1jw/qz8dQ9wk4
 AADnUolL
-           "]]}}, {}}, 
-       InsetBox["\<\"\[Sigma]= {1.0,        ,1.0}\"\>", {0.24, 3.5}], InsetBox[
-        GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJmYGDgh2IQO0NmaoDKGvvgM4555zxaj8UsW5q1ob96e/WCfZFb
-9voe2+nyYKHVs27TpwUGd41URhWPKqa/YgCZVFo1
-          "], {{0, 0}, {20., 20.}}, {
-          0, 255},
-          ColorFunction->RGBColor],
-         ImageSize->15,
-         PlotRange->{{0, 20.}, {0, 20.}}], {0.275, 3.5}]},
+           "]]}}, {}}, InsetBox[
+        StyleBox["\<\"\[Sigma]= {1.0, \\!\\(\\*SubscriptBox[\\(\[Sigma]\\), \
+\\(2\\)]\\) ,1.0}\"\>",
+         StripOnInput->False,
+         FontSize->12], {0.22, 3.2}], InsetBox[
+        StyleBox["\<\"(B)\"\>",
+         StripOnInput->False,
+         FontSize->14,
+         FontWeight->Bold], {0.08, 3.7}]},
       AspectRatio->1,
       Axes->{True, True},
       AxesLabel->{None, None},
@@ -6277,7 +6336,10 @@ AADnUolL
       Frame->{{True, True}, {True, True}},
       FrameLabel->{{
          FormBox["\"\"", TraditionalForm], None}, {
-         FormBox["\"Specialization\"", TraditionalForm], None}},
+         FormBox[
+          StyleBox[
+          "\"Specialization\"", FontSize -> 12, StripOnInput -> False], 
+          TraditionalForm], None}},
       FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
       GridLines->{None, None},
       GridLinesStyle->Directive[
@@ -9070,17 +9132,15 @@ mnkMDt0o6hkdZKHyEPcwO0hD+efA+lkcVFHsY3OAmccIpjkcdqOYx+kghGIe
 twMnink8DhIo5vHBzYPQAg4AuoN4og==
               "]]}}}, {}}, 
          InsetBox[
-          FormBox["\"\[Sigma]= {2.0,        ,2.0}\"", TraditionalForm], {0.74,
-           3.5}], 
+          FormBox[
+           StyleBox[
+           "\"\[Sigma]= {2.0, \\!\\(\\*SubscriptBox[\\(\[Sigma]\\), \
+\\(2\\)]\\) ,2.0}\"", FontSize -> 12, StripOnInput -> False], 
+           TraditionalForm], {0.74, 3.2}], 
          InsetBox[
-          GraphicsBox[
-           RasterBox[CompressedData["
-1:eJxTTMoPSmJmYGDgh2IQO0NmaoDKGvvgM4555zxaj8UsW5q1ob96e/WCfZFb
-9voe2+nyYKHVs27TpwUGd41URhWPKqa/YgCZVFo1
-            
-            "], {{0, 0}, {20., 20.}}, {0, 255}, ColorFunction -> RGBColor], 
-           ImageSize -> 15, PlotRange -> {{0, 20.}, {0, 20.}}], {0.775, 
-          3.5}]}, {
+          FormBox[
+           StyleBox["\"(C)\"", Bold, FontSize -> 14, StripOnInput -> False], 
+           TraditionalForm], {0.08, 3.7}]}, {
         DisplayFunction -> Identity, PlotRangePadding -> {{0, 0}, {0, 0}}, 
          AxesOrigin -> {0, 0}, PlotRange -> {{0, 1}, {0, 4}}, DisplayFunction -> 
          Identity, AspectRatio -> 1, Axes -> {True, True}, 
@@ -9351,7 +9411,10 @@ twMnink8DhIo5vHBzYPQAg4AuoN4og==
    3.650395110515395*^9, {3.650395173791935*^9, 3.6503951912869787`*^9}, {
    3.650396838962841*^9, 3.650396917326497*^9}, 3.650396987386682*^9, {
    3.650397017526621*^9, 3.65039705738278*^9}, {3.6505566827654753`*^9, 
-   3.650556731873362*^9}, 3.6505575823335114`*^9}]
+   3.650556731873362*^9}, 3.6505575823335114`*^9, {3.6520311536408253`*^9, 
+   3.652031186558992*^9}, 3.652031263720954*^9, 3.652031367935849*^9, {
+   3.6520314342818203`*^9, 3.652031502113531*^9}, {3.652032257835147*^9, 
+   3.6520323048316813`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -9370,7 +9433,8 @@ Manuscript/fig_specvar.pdf\"\>"], "Output",
    3.650134756290081*^9}, 3.650135976998913*^9, 3.65021801911812*^9, 
    3.650392024696664*^9, 3.650393977942301*^9, 3.6503940867396717`*^9, 
    3.650395117545129*^9, 3.650395202252907*^9, 3.65039699840692*^9, 
-   3.6503970633819647`*^9, 3.6505575867146397`*^9}]
+   3.6503970633819647`*^9, 3.6505575867146397`*^9, 3.652031377995131*^9, 
+   3.652031525329133*^9, 3.652032309424664*^9}]
 }, Open  ]],
 
 Cell["\<\
@@ -9387,7 +9451,7 @@ moderate specialist has higher variance
  CellChangeTimes->{{3.650132606827429*^9, 3.650132708024623*^9}, {
   3.650133534545432*^9, 3.650133595161717*^9}}]
 },
-WindowSize->{1064, 855},
+WindowSize->{1256, 855},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 9, \
 2014)",
@@ -9435,23 +9499,23 @@ Cell[14556, 435, 657, 20, 53, "Output"]
 }, Open  ]],
 Cell[15228, 458, 157, 3, 30, "Text"],
 Cell[CellGroupData[{
-Cell[15410, 465, 5916, 159, 334, "Input"],
-Cell[21329, 626, 52135, 955, 260, "Output"]
+Cell[15410, 465, 5916, 159, 317, "Input"],
+Cell[21329, 626, 52161, 956, 260, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[73501, 1586, 246, 5, 28, "Input"],
-Cell[73750, 1593, 278, 4, 86, "Output"]
+Cell[73527, 1587, 246, 5, 28, "Input"],
+Cell[73776, 1594, 278, 4, 28, "Output"]
 }, Open  ]],
-Cell[74043, 1600, 111, 1, 30, "Text"],
+Cell[74069, 1601, 111, 1, 30, "Text"],
 Cell[CellGroupData[{
-Cell[74179, 1605, 22932, 507, 1444, "Input"],
-Cell[97114, 2114, 365400, 7239, 291, "Output"]
+Cell[74205, 1606, 25429, 566, 1495, "Input"],
+Cell[99637, 2174, 365479, 7242, 293, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[462551, 9358, 254, 5, 28, "Input"],
-Cell[462808, 9365, 477, 7, 28, "Output"]
+Cell[465153, 9421, 254, 5, 28, "Input"],
+Cell[465410, 9428, 547, 8, 86, "Output"]
 }, Open  ]],
-Cell[463300, 9375, 632, 12, 87, "Text"]
+Cell[465972, 9439, 632, 12, 87, "Text"]
 }
 ]
 *)
